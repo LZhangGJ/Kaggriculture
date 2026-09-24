@@ -40,13 +40,15 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
     parser.add_argument("--weights", type=Path, default=WEIGHTS)
     parser.add_argument("--threads", type=int, default=4)
+    parser.add_argument("--module-dir", type=Path, default=ROLLOUT / "build")
+    parser.add_argument("--no-action-traces", action="store_true")
     parser.add_argument("--prefix-only", action="store_true")
     parser.add_argument("--output", type=Path, default=(
         ROOT / "work/native-student-rollout/arbitrary-job-cache-parity-b4.json"))
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text())
     cases = manifest["cases"]
-    sys.path.insert(0, str(ROLLOUT / "build"))
+    sys.path.insert(0, str(args.module_dir))
     native = importlib.import_module("_paused_plan")
 
     bundle = NativeTeammateBundle(
@@ -112,8 +114,10 @@ def main() -> None:
     else:
         jobs.clear_action_traces()
         oracle.clear_action_traces()
+        suffix_args = (str(args.weights), 0, args.threads, 2 << 20, True)
         job_metrics = jobs.run_native_actor_suffix(
-            str(args.weights), 0, args.threads, 2 << 20, True)
+            *suffix_args, False, False) if args.no_action_traces else (
+                jobs.run_native_actor_suffix(*suffix_args))
         oracle_metrics = oracle.run_native_actor_suffix(
             str(args.weights), policy_seed, args.threads, 2 << 20, True)
         arrays = {name: np.asarray(value) for name, value in jobs.ppo_arrays().items()}
@@ -121,6 +125,9 @@ def main() -> None:
         oracle_terminal = oracle.summary()["cases"]
         actor_equal = jobs.actor_traces() == oracle.actor_traces()
         suffix_action_equal = jobs.action_traces() == oracle.action_traces()
+        traces_skipped = (args.no_action_traces and all(
+            not trace for side in jobs.action_traces().values()
+            for trace in side))
         terminal_equal = all(
             got["own_cash"] == want["own_cash"] and
             got["rival_cash"] == want["rival_cash"] and
@@ -144,13 +151,16 @@ def main() -> None:
                 np.arange(len(arrays["event_action"])), arrays["event_action"]]))
         result = {
             "status": "PASS" if all((prefix_action_equal, prefix_state_equal,
-                                      actor_equal, suffix_action_equal,
+                                      actor_equal,
+                                      traces_skipped if args.no_action_traces
+                                      else suffix_action_equal,
                                       terminal_equal, ppo_valid)) else "FAIL",
             "scope": "cache-free-job-full-rollout-and-ppo-arrays-parity",
             "prefix_action_equal": prefix_action_equal,
             "prefix_state_equal": prefix_state_equal,
             "actor_trace_equal": actor_equal,
             "suffix_action_equal": suffix_action_equal,
+            "traces_skipped": traces_skipped,
             "terminal_equal": terminal_equal,
             "ppo_arrays_valid": bool(ppo_valid),
             "switch_steps": switch_steps,

@@ -1,0 +1,53 @@
+{
+  "schema": "thomas-2945-native-benchmark-v1",
+  "build": "O3 -DNDEBUG -march=native",
+  "native_build_sha256": "eafd1a092a30e7c4b5d750f69eb829d808d18e24ddb4791d21b006b3b3722954",
+  "asset_sha256": "3f3a8dd2d51959dbbb25f749e8742dee0595f3604b77c813e3fedf7ccd7949fd",
+  "host": {
+    "architecture": "aarch64",
+    "model": "Kunpeng-920",
+    "cpus": 192,
+    "threads_per_core": 1,
+    "sockets": 4,
+    "numa_nodes": 4
+  },
+  "workload": {
+    "seed_start": 2720000000,
+    "games": 3840,
+    "steps_per_game": 719,
+    "rival_fixture_route": 0,
+    "threads": 192
+  },
+  "parallel_repeats": [
+    {
+      "seconds": 4.544402848,
+      "games_per_second": 844.9955095178217,
+      "steps_per_second": 607551.7713433139
+    },
+    {
+      "seconds": 2.325303163,
+      "games_per_second": 1651.3975730570148,
+      "steps_per_second": 1187354.8550279937
+    },
+    {
+      "seconds": 2.193327227,
+      "games_per_second": 1750.7647526230246,
+      "steps_per_second": 1258799.8571359548
+    }
+  ],
+  "parallel_checksum": 4223227777566175865,
+  "parallel_money0_sum": 376319801,
+  "parallel_money1_sum": 376755446,
+  "single_thread_reference": {
+    "games": 64,
+    "seconds": 5.245351438,
+    "games_per_second": 12.201279696218517,
+    "steps_per_second": 8772.720101581113,
+    "checksum": 7142796085223417439
+  },
+  "notes": [
+    "The timer includes construction and binary-asset loading for one Opponent per worker.",
+    "The first parallel repeat is cold; subsequent repeats are warm filesystem-cache measurements.",
+    "The loop contains the official native simulator, Thomas action generation, and an active raw replay-route fixture."
+  ]
+}

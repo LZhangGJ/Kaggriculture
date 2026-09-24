@@ -1,0 +1,599 @@
+{
+  "schema": "salemali7-2900-native-parity-v1",
+  "source": "opponents/salemali7_2900/main.py",
+  "source_sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9",
+  "native_build": "experiments/native_opponents/salemali7_2900/build/salemali7_2900_native.cpython-311-aarch64-linux-gnu.so",
+  "native_build_sha256": "40a0a69a56869939203a4c11ec3ed686f6d84252ab03d24bcac22a5608774d1e",
+  "asset_sha256": "e4310fae37ecf0d7d4574c90a9f7ffb0a3b4561611298fff10239819d2e3d0c3",
+  "seed_start": 2631100000,
+  "seed_count": 32,
+  "steps": 719,
+  "both_seats": true,
+  "active_self": false,
+  "fail_closed": {
+    "corrupt_asset_rejected": true,
+    "skipped_step_rejected": true
+  },
+  "unit_overlay_frames": 203,
+  "market_overlay_frames": 4490,
+  "exact_runs": 64,
+  "total_runs": 64,
+  "runs": [
+    {
+      "seed": 2631100000,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100000,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100001,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100001,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100002,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100002,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100003,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100003,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100004,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 6,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100004,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100005,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100005,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 6,
+      "market_overlay_frames": 74,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100006,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100006,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100007,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100007,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100008,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 3,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100008,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100009,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100009,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100010,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100010,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100011,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100011,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100012,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100012,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100013,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100013,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100014,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100014,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100015,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100015,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100016,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100016,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100017,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100017,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 12,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100018,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 76,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100018,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 76,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100019,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100019,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100020,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 19,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100020,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100021,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100021,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100022,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 6,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100022,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100023,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100023,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100024,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 2,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100024,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100025,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100025,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100026,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 10,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100026,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 6,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100027,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 68,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100027,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 3,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100028,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100028,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 0,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100029,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100029,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 5,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100030,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100030,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 6,
+      "market_overlay_frames": 70,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100031,
+      "seat": 0,
+      "steps": 719,
+      "unit_overlay_frames": 15,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631100031,
+      "seat": 1,
+      "steps": 719,
+      "unit_overlay_frames": 9,
+      "market_overlay_frames": 72,
+      "exact": true,
+      "first_mismatch": null
+    }
+  ]
+}

@@ -979,6 +979,7 @@ extern "C" int td_student_plan_v3_callback_observation(
                            resources.data(), resources.size());
     };
     planned.plan(v);
+    planned.core.p.student_preserve_weed_plant = true;
     planned.student_release_selector = {};
     planned.student_v3_selector = {};
     require_no_hidden_student_placement(planned, v);

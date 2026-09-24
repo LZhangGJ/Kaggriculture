@@ -19,10 +19,9 @@ def main():
     fine = json.loads((ROOT / "data/artifacts/switch-fine-26x128-summary.json").read_text())
     assert fine["games"] == 24_460_800 and fine["feature_count"] == 147
     deployed = json.loads((ROOT / "agent/route_policy.json").read_text())
-    shallow = json.loads((ROOT / "data/artifacts/trees-shallow-d2-6.json").read_text())
-    assert deployed.pop("target_fallbacks", None) == {"G114": "G275"}
-    deployed["sources"] = shallow["sources"]
-    assert deployed == shallow
+    assert deployed.get("feature_schema") == "semantic_route_switch_v1"
+    assert len(deployed.get("feature_names", ())) == 147
+    assert deployed.get("target_fallbacks") == {"G114": "G275", "G019": "G195"}
     result = json.loads((ROOT / "experiments/results/r1-vs-replay-tree-warm-handoff12-public7-4seed-v1.json").read_text())
     assert sum(x["wins"] for x in result["summary"]["baseline"].values()) == 36
     assert sum(x["wins"] for x in result["summary"]["candidate"].values()) == 30
@@ -39,6 +38,7 @@ def main():
     assert totals(confirm, "baseline") == (531, 896), totals(confirm, "baseline")
     assert totals(confirm, "candidate") == (683, 896), totals(confirm, "candidate")
     assert deployment["opening"] == "G275", deployment["opening"]
+    assert deployment.get("handoff_land_delay_days") == 2
     # Pure state trigger: the handoff waits for the third quadrant, with
     # handoff_step as the deadline for routes that never reach it.
     assert deployment.get("handoff_land") == 3

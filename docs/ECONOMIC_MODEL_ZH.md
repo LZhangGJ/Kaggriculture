@@ -713,8 +713,12 @@ switch-fine-26x128.npz    outcome (5, 3,  26, 245, 128, 2)   同上
 
 **净 −55 胜,七手均分差全负。大幅变差,不采纳。**
 
-**含义:精确知道对手已卖出多少,并不能帮我们 —— 说明对手的实际销量不是我们决策的瓶颈,
-把预测往它上面拉反而破坏了原有预测(从可见地块外推 + 补种 DP)里隐含的未来信息。**
+**2026-09-22 更正解释：这个实验只能否定当时的实现，不能否定隐藏库存状态。**
+`R2_PENDING_STOCK_WEIGHT` 把当前 `upper` 的固定比例全部注入“今天供给”，没有状态
+`Z_{t+1}=Z_t+H_t-S_t`，也没有持有/终局清仓或候选价格响应。后续固定 suffix 已找到相反证据：Thomas
+seed100 在 day24 的公开 WOOL 区间为 `[0,33]`，随后候选导致价格差 `+195`、对手终局现金差 `+5,659`。
+所以净 −55 胜说明“把上界一次性当今日销量”严重错时，不说明对手成交不是瓶颈。后续只能在库存 belief
+与条件成交多情景下重新评估，不能继续扫描这个旧权重。
 
 ---
 
@@ -1179,3 +1183,240 @@ thomas 的 day0 之所以能种 12 格瓜,不是因为某个参数,而是因为*
    脚手架已存在:356 维候选特征（`proposals.hpp:37`）+ `learned_value.hpp`（当前 `scenario<0` 才启用）用于残差学习。
 5. **MELON 要减、稀缺品要增。** 我们 MELON 卖出 96 单位而对手只有 78,单价被自己压到 149（对手 213）;
    而 WHEAT/CARROT/MILK/WOOL/FERTILIZER 全部产量低于对手。这直接对应作者的第 1、2、3 条直觉。
+
+---
+
+## 2026-09-22：candidate critic 的严格学习目标与准入条件
+
+这一节只讨论 step288 后、固定 R1 proposal generator 给出的完整候选如何排序。前期 replay、浅树和
+接管点不动；现有非 NN R1 仍是默认关闭学习开关时的冻结基线。
+
+### 1. 真正目标、现有 teacher 和 student 是三件不同的事
+
+令 `H_x` 为某个日边界线上真正可见的历史，`C_x=N_x∪O_x` 为同一状态的 normal 与诊断 outer
+候选集，`ω` 包含未来商店/杂草、对手隐藏库存与其条件行动。候选 `c` 的真实终局 margin 和胜负效用是
+
+```
+M(x,c,ω) = own_cash_T - rival_cash_T
+W(x,c,ω) = 1[M(x,c,ω) > 0]
+```
+
+若比赛目标是胜率，理论上的主目标只能是
+
+```
+Qwin(x,c) = E[W(x,c,ω) | H_x]
+```
+
+终局 margin 可作同胜率置信区间内的次级 tie-break，不能反过来把 `own-2*rival`、现金相关 discount
+或 `competition=2` 宣称为真实效用。它们仍只是旧规划器的经验补偿参数。
+
+当前四情景返回的 `Q_model(x,c,s)` 则是：在一个确定的公开供给 support `s` 下，用当前闭环 R1 和
+当前 surrogate cash objective 算出的模型值。它有两个合理用途：
+
+1. 蒸馏昂贵 scorer，使 student 近似当前 teacher 的候选排序；
+2. 作为真实 suffix 学习的辅助头或 control variate。
+
+它**不是** `Qwin`，也不是实际终局 margin。只用四个 `Q_model` 训练可以得到更快的 scorer，不能单凭
+这一点声称优化目标已经修正。要改善策略，还必须有 forced-candidate 的真实闭环 suffix 标签。
+
+### 2. 同状态候选差分是基本训练单元
+
+对任一固定且不看未来结果选出的 anchor `a_x`，定义
+
+```
+A_model(x,c,s) = Q_model(x,c,s) - Q_model(x,a_x,s)
+Δ_model(x,c,d,s) = Q_model(x,c,s) - Q_model(x,d,s)
+```
+
+候选两两差分消掉了该状态、该情景共有的绝对尾值偏移。网络可以输出任意未定零点的
+`f_theta(H_x,c,s)`，训练和推理只使用
+
+```
+A_hat(x,c,s) = f_theta(H_x,c,s) - f_theta(H_x,a_x,s)
+```
+
+因此不会发生“不同状态绝对 Q 不可比”的不可辨识问题，也无需学习一个无意义的 state-scenario 截距。
+
+当前 ABI 的 reference 是“短分 top-K normal 中，base scenario 闭环分最高者”。这使现有
+`paired_advantage` 仍只是诊断字段：若 `top_k` 改变，reference 可能从 `r` 变成 `r'`，所有标签会按情景
+整体平移 `Q(r,s)-Q(r',s)`。候选内排序不变，但“是否相对零安全改善”会改变。训练时应优先使用已导出的
+原始 `scenario_q` 构造 `Δ_model`；正式 shard 还必须：
+
+- 导出全部线上会比较的 normal，而不是先用待替换的 `short_score` 截 top-K；
+- 永远包含一个固定 canonical anchor（首个 base/id0 normal 即可），保存其 candidate key；
+- 对 `proposal_key` 去重，并让同一候选集在全部情景下保持不变；
+- outer 集只能扩展 normal 集，不能另截一套 baseline；outer 目前依赖短分 winner 生成，只适合作为离线
+  候选覆盖诊断，第一版线上 critic 先只重排 production 本来就有的全部 normal。
+
+若情景 `s` 表示同一个潜在对手世界，则其库存粒子、历史和外生随机量也必须在候选间相同。允许销量对候选
+价格作条件响应，但必须写成“同一 latent particle + 同一 response rule”，不能为每个候选悄悄重定义一个
+世界。shard 应保存 scenario input/flow hash；候选间不一致时 fail closed，或显式标成 conditional response。
+
+### 3. 四个 support 没有概率时，不存在唯一正确的标量排序
+
+现有四项是可行 support/stress points，不是互斥事件，也没有概率。Thomas smoke 的 outer 相对 normal 为
+
+```
+[+966.5, +966.5, -2552.4, -795.6]
+```
+
+所以未知分布下它的期望优势可以是区间 `[-2552.4,+966.5]` 中的任意值；等权平均约 `-353.8`，但
+`0.25` 权重没有任何理论来源。这个例子本身已经证明符号不可辨识，不能通过换一个 loss 解决。
+
+在概率未知时，数学上只允许以下三种口径，并须明确标成主动风险假设：
+
+1. **Pareto partial order**：若对所有 `s` 都有 `Q(c,s)>=Q(d,s)` 且至少一项严格大于，则 `c` 支配 `d`；
+   情景间交叉时保持“未决定”，不伪造全序。
+2. **相对 reference 的安全门**：固定现有 normal `r`，令
+   `R_safe(c)=min_s [Q(c,s)-Q(r,s)]`。只有其扣除预测误差上界后仍大于零才采用 `c`，否则回退 `r`。
+   这等价于在“任意 support 权重”上做最坏期望改善。若 `r` 本身是 base-scenario 最优 normal，这条规则
+   只适合给 outer 做安全准入；它不会重新选择 normal，因为其他 normal 在 base 项上不可能严格优于 `r`。
+3. **minimax regret**：若确实要在 normal 间作无概率的稳健选择，可声明
+   `Reg(c)=max_s(max_d Q(d,s)-Q(c,s))`，选择 regret 最小者。它是风险偏好，不是真实期望。
+
+只有先把隐藏库存与 liquidation policy 定义成真正的 belief particles，并从独立数据得到条件权重/约束集
+`P(H_x)`，才可以用
+
+```
+R_DRO(c) = min_{p in P(H_x)} sum_s p_s A_model(x,c,s)
+```
+
+若 `P` 退化成校准后的单一分布，这才是加权期望。当前四个 endpoint 有重叠、不是事件分区，不能直接为
+它们拟合四分类概率；在这一步完成前也不能把“四情景最差若干项平均”称为 CVaR。
+
+因此第一版网络应保留四维输出，不在训练标签中提前标量化。标量只在最后的 chooser 中由明确、可替换的
+风险规则产生。
+
+### 4. 真实 suffix 标签必须 paired，并把 future replicas 当组而非样本
+
+对同一 checkpoint `x`、同一固定候选集和 future replica `j`，所有候选都从同一保存状态及同一 future
+seed 出发，得到
+
+```
+D_margin(x,c,j) = M(x,c,j) - M(x,a_x,j)
+D_win(x,c,j)    = W(x,c,j) - W(x,a_x,j)       # {-1,0,+1}
+```
+
+`m` 个 replicas 只用来估计该 checkpoint 的条件均值与标准误：
+
+```
+mean_D = sum_j D_j / m
+SE_D   = sample_std(D_j) / sqrt(m)
+```
+
+它们不是 `m` 个独立状态，训练权重、数据切分和置信区间都必须按原 checkpoint 聚合。同 seed 双座、同一
+checkpoint 的全部候选、baseline/candidate 和所有 replicas 必须在同一个 split。
+
+common random numbers 的降噪量可直接报告：
+
+```
+Var(Y_c-Y_d) = Var(Y_c)+Var(Y_d)-2 Cov(Y_c,Y_d)
+VR = Var(Y_c-Y_d) / (Var(Y_c)+Var(Y_d))
+```
+
+`VR<1` 才说明配对确实降噪。候选改变空地后会改变 weed/shop RNG 的消耗顺序，所以“同 future seed”只是
+部分耦合，不能假称完全相同的外生路径；仍须多个 future seeds。先用现有 reseed 能力测 `VR`，只有它长期
+接近或超过 1 时，才值得实现按事件类型分流的 counter-based RNG，避免先造复杂基础设施。
+
+建议训练采样先固定每臂 2 个 replicas；只对置信区间重叠的 top-2/3 扩到 4/8/16。自适应追加只能节省
+teacher 成本，最终离线评估仍使用预注册的固定 replica 数；否则“看到结果再停”的 oracle 与均值都有
+optional-stopping 偏差。有限 replicas 下也不要把样本均值 argmax 压成单一类别标签：max-of-noise 会重复
+此前路线树把未来 RNG 当确定标签的问题。
+
+### 5. teacher state 的恢复边界
+
+`observe_external` 能可信恢复的是首次 step288 前的公开历史 belief。首次 handoff 合法地满足：ledger、
+SaleClock、CropClock 已 warm，而 R1 自己的 `book/joint/queue/restore_day` 尚未由 R1 建立。
+
+step>288 的日边界不能再从 JSON observation 加 `observe_external` 直接跳入 teacher。那些内部承诺取决于
+此前实际采用的 R1 候选，静态公开盘面无法唯一重建。后续日样本必须从 step288 开始：
+
+1. 用同一 R1 二进制、设置与历史 observation 顺序重放；
+2. 每步调用真实 `act` 推进内部状态，并与保存 action 逐原子 parity；
+3. 到采样点再 fork handle，核对 candidate key、book/joint/restore_day 及 executor commitment；
+4. 任一步不一致即拒绝该样本，不能继续产标签。
+
+forced candidate 之后的每条反事实臂还必须维护各自的 controller 状态，不能在次日重新嫁接 baseline 的
+`book/joint`。binary shard 必须保存 `first_handoff`，并把“首次承诺为空”与“没有导出承诺”区分开。
+
+### 6. 最小可检验 loss
+
+第一阶段只蒸馏四维 model teacher。对每个状态、情景和候选对 `(c,d)`，令
+`Δ=Q_model(c,s)-Q_model(d,s)`，使用同一个 scorer `f_theta`：
+
+```
+L_value = mean Huber(((f(c,s)-f(d,s))-Δ) / tau_s)
+L_rank  = mean w(Δ) * softplus(-sign(Δ)*(f(c,s)-f(d,s))/T_s)
+L_model = L_value + lambda_rank * L_rank
+```
+
+其中 `tau_s/T_s` 只能由训练集 pair-difference 的稳健尺度（如 MAD）确定，不能逐状态归一化后丢掉美元
+量级；`|Δ|` 小于数值/标签不确定度的 pair 置低权，`w` 对大 regret pair 封顶。每个状态先归一为总权重 1，
+避免“候选较多的状态”在 loss 中自动占更大权重。验证时从不看绝对 Q MSE，只看差分、排序与 regret。
+
+第二阶段加入真实 suffix 两个独立头，不把不同目标硬揉成一个标量：
+
+- `p_theta(H,c)` 用每个 checkpoint/candidate 的 `k wins / m replicas` 做 binomial log-loss；
+- `mu_theta(H,c)-mu_theta(H,a)` 对 `mean_D_margin` 做带上限 reliability weight 的 Huber loss；
+- 可再约束 `(p_theta(c)-p_theta(a))-mean_D_win`，但 replicas 少时不能用 `1/SE^2` 无限放大偶然零方差；
+- 四情景蒸馏头只作辅助任务。真实 win/margin head 与 surrogate Q 使用独立尺度，禁止把
+  `own-2*rival` 的数值直接当真实 margin。
+
+部署选择按字典序处理：先比较校准后的胜率下界；在差异落入预注册的不确定区间时才用期望 margin，仍不
+需要人为指定“1 个胜局等于多少美元”。若只有 model-teacher 标签，则只能声称“加速复现 teacher”，不能
+声称改善真实目标。
+
+### 7. 校准数据与离线评价
+
+四情景是否覆盖真实不确定性，需要两类数据，不能由当前 smoke 自证：
+
+1. 保存轨迹中的对手 private/动作只作训练期 target，拟合 `hidden stock + conditional liquidation` 与公开
+   历史的关系；线上 forward 严禁对手名、family、seed 和 private。真实轨迹只能校准 observed-policy
+   belief，不能提供我方反事实动作下的对手响应。
+2. 对同一 checkpoint 强制全部 normal（少量 outer 只作覆盖诊断），用真实对手/自博弈和成组 future
+   replicas 跑到终局，得到真正的 counterfactual `D_win/D_margin`。这是检验 scenario response 与学习
+   model residual 的必要数据。
+
+至少报告以下离线指标，并按 day、score-gap 桶、normal/outer、首次 handoff/后续日和 held-out
+opponent family 分层：
+
+- **内部不变量**：候选 key 集一致、canonical anchor 存在、`A(anchor)=0`、
+  `A(c)-A(d)=Q(c)-Q(d)`、scenario valid/flow hash、恢复重放 parity；
+- **teacher fidelity**：逐情景 pairwise sign error、加权 sign error、top-1 agreement、
+  `Reg_model=Q(best)-Q(chosen)` 的 p50/p90/p99 与 material-regret 发生率；
+- **support calibration**：先按与 `Q_model` 完全相同的 `own-competition*rival`、discount 和时钟口径，
+  从真实 suffix 重算 paired surrogate return，再检查它落在四情景 `[min A_model,max A_model]` 内的覆盖率；
+  不能拿真实 margin 与不同口径的 surrogate 区间直接比较。另报真实对手库存/销售路径是否落在情景流包络；
+  若要校准 margin 包络，teacher 必须另外导出同口径的 scenario terminal margin；
+- **真实决策质量**：held-out `win regret`、margin regret、相对 frozen normal reference 的
+  rescue/harm、Brier/calibration curve；置信区间以 checkpoint 为单位 bootstrap，replicas 不扩样本数；
+- **选择偏差控制**：有限 replica 的 oracle 用独立 selection/evaluation halves 或 nested bootstrap，不能用
+  同一批噪声既选 winner 又报 regret。
+
+### 8. 何时允许替换 `score()` 排名
+
+按最小风险分三道门：
+
+1. **只替换 normal 的昂贵排序**：导出全部 normal 与完整因果 context 后，held-out teacher 上 student
+   的 material pairwise error、top-1 regret 与 OOD 回退达到预注册非劣界；线上仍由原 planner 生成候选、
+   规则层执行。此时只可声称提速。
+2. **改变 normal/放行 outer**：在嵌套候选的真实 paired suffix 上，相对 frozen normal reference 的
+   `E[D_win]` 下置信界通过预注册非劣门槛，且严重 harm 率上置信界过门；四情景 support 先通过覆盖检查，
+   或 chooser 明确使用真实 outcome head 而非伪概率。任何 NaN、缺字段、support/OOD 或可行性异常立即
+   回退旧 R1。
+3. **最终部署**：固定状态 suffix 通过后，才跑互斥 seed 的七强完整 warm 链；这是部署门，不反过来决定
+   已证明的内部正确性。learned-off 必须逐步 action parity，且不覆盖现有生产二进制/配置。
+
+### 9. 当前最高影响瓶颈
+
+优先级不是继续调网络大小，而是依次解决：
+
+1. **目标偏差**：四情景 Q 仍优化 surrogate cash objective，不是胜率；纯蒸馏无法纠正它。
+2. **support 偏差**：四点只改变库存/清仓时序，尚未形成带概率、带条件对手响应的完整 belief；等权平均错误。
+3. **样本选择偏差**：当前 top-K 与 outer 都由待替换的 short score 筛选，不能据此证明已替换全候选排名。
+4. **状态有效性**：step>288 若未从 handoff 重放 R1，缺失承诺会让 teacher label 无意义。
+5. **信息瓶颈**：356 维候选特征没有完整历史 belief 与内部 commitments；在这些字段补齐前，扩大 MLP
+   或改成 Transformer 只会更好地拟合一个不可辨识目标。
+
+最小实现因此不是另造一个复杂 RL 系统，而是：**全 normal 导出 + 固定 anchor/pairwise loss + 首次/后续日
+严格恢复 + 少量真实 paired suffix outcome head**。这四项成立后，再讨论概率 belief、outer 或逐格 decoder。

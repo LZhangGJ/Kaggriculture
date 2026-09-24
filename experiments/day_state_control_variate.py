@@ -177,7 +177,8 @@ def extract_day_state_features(
     observation = np.asarray(normalized_observation, dtype=np.float32)
     lengths = np.asarray(normalized_observation_length, dtype=np.float64).reshape(-1)
     steps = np.asarray(day_steps, dtype=np.int64).reshape(-1)
-    if (observation.ndim != 2 or observation.shape[1] != OBSERVATION_WIDTH or
+    if (observation.ndim != 2 or observation.shape[1] not in
+            (OBSERVATION_WIDTH, OBSERVATION_WIDTH + 71) or
             len(observation) != len(lengths) or len(observation) != len(steps) or
             not len(observation) or chunk_size <= 0):
         raise ValueError("invalid native day-state array shapes")
@@ -190,12 +191,18 @@ def extract_day_state_features(
         normalization.get("observation_length_mean")).reshape(-1)[0])
     length_std = float(_as_numpy(
         normalization.get("observation_length_std")).reshape(-1)[0])
-    if (mean.shape != (OBSERVATION_WIDTH,) or
-            std.shape != (OBSERVATION_WIDTH,) or
+    if (mean.shape != (observation.shape[1],) or
+            std.shape != (observation.shape[1],) or
             not np.all(np.isfinite(mean)) or not np.all(np.isfinite(std)) or
             np.any(std <= 0) or not math.isfinite(length_mean) or
             not math.isfinite(length_std) or length_std <= 0):
         raise RuntimeError("invalid behavior-checkpoint observation normalization")
+
+    # Economic inputs append 71 public-only fields; this frozen 163D critic
+    # intentionally reads the original packed observation contract only.
+    observation = observation[:, :OBSERVATION_WIDTH]
+    mean = mean[:OBSERVATION_WIDTH]
+    std = std[:OBSERVATION_WIDTH]
 
     raw_lengths = _integers(
         lengths * length_std + length_mean, "observation_length").reshape(-1)

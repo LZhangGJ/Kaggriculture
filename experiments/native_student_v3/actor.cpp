@@ -7,6 +7,9 @@
 #include <fstream>
 #include <limits>
 #include <stdexcept>
+#if defined(__aarch64__) && defined(STUDENT_NEON_LINEAR) && !defined(STUDENT_SCALAR_LINEAR)
+#include <arm_neon.h>
+#endif
 
 namespace student_v3 {
 namespace {
@@ -17,6 +20,11 @@ constexpr std::array<unsigned char, 32> kContractSha = {
     0x12, 0xb3, 0x15, 0x74, 0xcd, 0x62, 0x41, 0xc7,
     0x1e, 0xaf, 0x94, 0xbc, 0xac, 0x27, 0x7e, 0x88,
     0x7d, 0x54, 0x66, 0x7e, 0x20, 0x80, 0x28, 0xb2};
+constexpr std::array<unsigned char, 32> kShopContractSha = {
+    0xea, 0xc5, 0xeb, 0x1b, 0x81, 0xda, 0x09, 0x3a,
+    0x82, 0xb5, 0x46, 0x9c, 0x95, 0x31, 0x29, 0xe2,
+    0xd2, 0x5c, 0x6b, 0x92, 0x1e, 0x1c, 0xe6, 0x74,
+    0x8e, 0x60, 0xaa, 0x51, 0x62, 0xdb, 0x5a, 0xb2};
 constexpr std::array<std::uint32_t, 7> kCategorySizes = {7, 32, 32, 32,
                                                          64, 64, 4};
 
@@ -102,10 +110,21 @@ void linear(const float* weight, const float* bias, const float* values,
             std::size_t inputs, std::size_t outputs,
             float* result) {
   for (std::size_t output = 0; output < outputs; ++output) {
-    float value = bias[output];
     const float* row = weight + output * inputs;
+#if defined(__aarch64__) && defined(STUDENT_NEON_LINEAR) && !defined(STUDENT_SCALAR_LINEAR)
+    float32x4_t sum = vdupq_n_f32(0.0f);
+    std::size_t input = 0;
+    for (; input + 4 <= inputs; input += 4)
+      sum = vfmaq_f32(sum, vld1q_f32(row + input),
+                      vld1q_f32(values + input));
+    float value = bias[output] + vaddvq_f32(sum);
+    for (; input < inputs; ++input)
+      value += row[input] * values[input];
+#else
+    float value = bias[output];
     for (std::size_t input = 0; input < inputs; ++input)
       value += row[input] * values[input];
+#endif
     result[output] = value;
   }
 }
@@ -202,11 +221,16 @@ Actor Actor::load(const std::string& path) {
   stream.read(reinterpret_cast<char*>(bytes.data()), length);
   if (!stream) throw std::runtime_error("cannot read actor weights");
   const auto* header = bytes.data();
-  if (std::memcmp(header, "KAGSV3A\0", 8) || u32(header + 8) != 1 ||
+  const auto version = u32(header + 8);
+  const bool shop_action_head = version == 2;
+  if (std::memcmp(header, "KAGSV3A\0", 8) ||
+      (version != 1 && version != 2) ||
       u32(header + 12) != kHeaderBytes || u32(header + 16) != 0x01020304 ||
       u32(header + 20) != 1 || u32(header + 24) != 8 ||
-      u32(header + 28) != 28 ||
-      !std::equal(kContractSha.begin(), kContractSha.end(), header + 172))
+      u32(header + 28) != (shop_action_head ? 30u : 28u) ||
+      (shop_action_head
+        ? !std::equal(kShopContractSha.begin(), kShopContractSha.end(), header + 172)
+        : !std::equal(kContractSha.begin(), kContractSha.end(), header + 172)))
     throw std::runtime_error("actor weight contract mismatch");
   const auto payload_bytes = u64(header + 100);
   if (payload_bytes % sizeof(float) ||
@@ -217,6 +241,7 @@ Actor Actor::load(const std::string& path) {
     throw std::runtime_error("actor weight payload digest mismatch");
 
   Actor actor;
+  actor.shop_action_head_ = shop_action_head;
   auto& d = actor.dimensions_;
   d.classes = u32(header + 32); d.token_capacity = u32(header + 36);
   d.token_continuous = u32(header + 40); d.categories = u32(header + 44);
@@ -276,6 +301,12 @@ Actor Actor::load(const std::string& path) {
   actor.gru_bias_ih_ = take(3 * d.hidden); actor.gru_bias_hh_ = take(3 * d.hidden);
   actor.head_weight_ = take(std::size_t(d.classes) * d.hidden);
   actor.head_bias_ = take(d.classes);
+  if (shop_action_head) {
+    if (d.resources != 383)
+      throw std::runtime_error("shop action head requires 383 resources");
+    actor.shop_gate_weight_ = take(std::size_t(8) * d.hidden);
+    actor.shop_gate_bias_ = take(8);
+  }
   if (offset != actor.payload_.size())
     throw std::runtime_error("actor payload has trailing floats");
   for (float value : actor.payload_)
@@ -419,6 +450,13 @@ void Actor::step_normalized(const float* hidden, const float* resources,
   }
   linear(head_weight_.data, head_bias_.data, next_hidden, d.hidden, d.classes,
          logits);
+  if (shop_action_head_) {
+    float gate[8];
+    linear(shop_gate_weight_.data, shop_gate_bias_.data, next_hidden,
+           d.hidden, 8, gate);
+    for (std::uint32_t item = 0; item < 8; ++item)
+      logits[item + 3] += gate[item] * resources[374 + item] * (1.0f / 32.0f);
+  }
   for (std::uint32_t i = 0; i < d.classes; ++i)
     if (!(legal_mask & (1u << i))) logits[i] = -1.0e9f;
 }

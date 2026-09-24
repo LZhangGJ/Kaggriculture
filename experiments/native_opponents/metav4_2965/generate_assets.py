@@ -36,8 +36,8 @@ SHOPS = [
 ]
 
 
-def load_source():
-    spec = importlib.util.spec_from_file_location("metav4_2965_asset_source", SOURCE)
+def load_source(source: Path = SOURCE):
+    spec = importlib.util.spec_from_file_location("metav4_2965_asset_source", source)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -72,7 +72,7 @@ def route_table(rows: dict, default: int = -1) -> list[int]:
     return result
 
 
-def build_blob(module, source_sha: bytes) -> tuple[bytes, dict]:
+def build_blob(module, source_sha: bytes, source: Path = SOURCE) -> tuple[bytes, dict]:
     routes = module._IMPL.chassis.routes
     route_ids = sorted(int(route) for route in routes)
     if len(route_ids) != 41 or any(len(routes[route]) != 719 for route in route_ids):
@@ -115,7 +115,7 @@ def build_blob(module, source_sha: bytes) -> tuple[bytes, dict]:
     blob = b"".join(chunks)
     manifest = {
         "schema": "metav4-2965-native-assets-v1",
-        "source": str(SOURCE.relative_to(ROOT)),
+        "source": str(source.relative_to(ROOT)),
         "source_sha256": source_sha.hex(),
         "asset_sha256": hashlib.sha256(blob).hexdigest(),
         "bytes": len(blob),
@@ -130,12 +130,13 @@ def build_blob(module, source_sha: bytes) -> tuple[bytes, dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source", type=Path, default=SOURCE)
     parser.add_argument("--output", type=Path, default=HERE / "metav4_2965.assets.bin")
     parser.add_argument("--manifest", type=Path, default=HERE / "assets.manifest.json")
     args = parser.parse_args()
 
-    source_bytes = SOURCE.read_bytes()
-    blob, manifest = build_blob(load_source(), hashlib.sha256(source_bytes).digest())
+    source_bytes = args.source.read_bytes()
+    blob, manifest = build_blob(load_source(args.source), hashlib.sha256(source_bytes).digest(), args.source)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(blob)
     args.manifest.write_text(json.dumps(manifest, indent=2) + "\n")

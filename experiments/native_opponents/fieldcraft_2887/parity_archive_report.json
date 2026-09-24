@@ -1,0 +1,356 @@
+{
+  "schema": "fieldcraft-2887-native-archive-parity-v1",
+  "asset_sha256": "58fafe70c03c398c850951a684a0cc6d53d57416e6aeec723c6ec1f884a8aa25",
+  "requested_steps": 719,
+  "total_games": 40,
+  "exact_games": 40,
+  "exact_frames": 28760,
+  "compared_frames": 28760,
+  "routes": [
+    -1,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    111,
+    112,
+    113,
+    116,
+    117,
+    118,
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "opponent_seats": [
+    1
+  ],
+  "runs": [
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000002-seat0.jsonl.gz",
+      "seed": 2621000002,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": -1,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000007-seat0.jsonl.gz",
+      "seed": 2621000007,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 101,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000029-seat0.jsonl.gz",
+      "seed": 2621000029,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 103,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000017-seat0.jsonl.gz",
+      "seed": 2621000017,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 104,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000005-seat0.jsonl.gz",
+      "seed": 2621000005,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 105,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000059-seat0.jsonl.gz",
+      "seed": 2621000059,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 106,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000008-seat0.jsonl.gz",
+      "seed": 2621000008,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 107,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000094-seat0.jsonl.gz",
+      "seed": 2621000094,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 108,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000098-seat0.jsonl.gz",
+      "seed": 2621000098,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 110,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000010-seat0.jsonl.gz",
+      "seed": 2621000010,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 112,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000001-seat0.jsonl.gz",
+      "seed": 2621000001,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 113,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000057-seat0.jsonl.gz",
+      "seed": 2621000057,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 116,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000111-seat0.jsonl.gz",
+      "seed": 2621000111,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 117,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000000-seat0.jsonl.gz",
+      "seed": 2621000000,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 118,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000004-seat0.jsonl.gz",
+      "seed": 2621000004,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 120,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000014-seat0.jsonl.gz",
+      "seed": 2621000014,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 121,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000019-seat0.jsonl.gz",
+      "seed": 2621000019,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 122,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000053-seat0.jsonl.gz",
+      "seed": 2621000053,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 123,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000022-seat0.jsonl.gz",
+      "seed": 2621000022,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 124,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public10-seed2621000000-n128-trajectories/candidate/fieldcraft_2887/2621000047-seat0.jsonl.gz",
+      "seed": 2621000047,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": -1,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000640-seat0.jsonl.gz",
+      "seed": 2621000640,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": -1,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000655-seat0.jsonl.gz",
+      "seed": 2621000655,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 101,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000643-seat0.jsonl.gz",
+      "seed": 2621000643,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 103,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000642-seat0.jsonl.gz",
+      "seed": 2621000642,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 104,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000641-seat0.jsonl.gz",
+      "seed": 2621000641,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 105,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000647-seat0.jsonl.gz",
+      "seed": 2621000647,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 106,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000644-seat0.jsonl.gz",
+      "seed": 2621000644,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 107,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000659-seat0.jsonl.gz",
+      "seed": 2621000659,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 108,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000650-seat0.jsonl.gz",
+      "seed": 2621000650,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 110,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000684-seat0.jsonl.gz",
+      "seed": 2621000684,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 111,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000754-seat0.jsonl.gz",
+      "seed": 2621000754,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 112,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000678-seat0.jsonl.gz",
+      "seed": 2621000678,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 113,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000717-seat0.jsonl.gz",
+      "seed": 2621000717,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 116,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000648-seat0.jsonl.gz",
+      "seed": 2621000648,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 117,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000690-seat0.jsonl.gz",
+      "seed": 2621000690,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 118,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000718-seat0.jsonl.gz",
+      "seed": 2621000718,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 120,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000674-seat0.jsonl.gz",
+      "seed": 2621000674,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 121,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000748-seat0.jsonl.gz",
+      "seed": 2621000748,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 122,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000663-seat0.jsonl.gz",
+      "seed": 2621000663,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 123,
+      "first_mismatch": null
+    },
+    {
+      "path": "data/bc/midgame-v1/train-isolated-public3families-seed2621000640-n128-trajectories/candidate/fieldcraft_2887/2621000726-seat0.jsonl.gz",
+      "seed": 2621000726,
+      "opponent_seat": 1,
+      "exact_steps": 719,
+      "route": 124,
+      "first_mismatch": null
+    }
+  ]
+}

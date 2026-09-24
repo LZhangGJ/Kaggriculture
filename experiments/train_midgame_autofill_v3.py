@@ -185,7 +185,7 @@ def load_training_data(base_directory: Path, dagger_directories: list[Path]):
 
 
 def build_model(context_width: int, observation_width: int, resource_width: int,
-                scale: int = 1):
+                scale: int = 1, *, shop_action_head: bool = False):
     import torch
 
     if not 1 <= scale <= 4:
@@ -213,6 +213,12 @@ def build_model(context_width: int, observation_width: int, resource_width: int,
             self.gru = torch.nn.GRUCell(
                 resource_hidden + 3 * event_embedding, hidden)
             self.head = torch.nn.Linear(hidden, len(EVENT_CLASSES))
+            if shop_action_head:
+                if resource_width != 383:
+                    raise ValueError("shop action head requires the 383D resource ABI")
+                self.shop_gate = torch.nn.Linear(hidden, 8)
+                torch.nn.init.zeros_(self.shop_gate.weight)
+                torch.nn.init.zeros_(self.shop_gate.bias)
 
         def initial_hidden(self, context, observation, observation_length,
                            token_continuous, token_categories, token_count):
@@ -235,7 +241,13 @@ def build_model(context_width: int, observation_width: int, resource_width: int,
             inputs = torch.cat((torch.relu(self.resource(resources)), self.cell(cells),
                                 self.stage(stages), self.previous(previous)), dim=1)
             hidden = self.gru(inputs, hidden)
-            return self.head(hidden).masked_fill(~legal, -1e9), hidden
+            logits = self.head(hidden)
+            if shop_action_head:
+                # These normalized columns equal 32 * exact demand per tick / 8.
+                # Actions 3..10 produce products 0..7 respectively.
+                logits = torch.cat((logits[:, :3], logits[:, 3:] +
+                    self.shop_gate(hidden) * resources[:, 374:382] / 32), dim=1)
+            return logits.masked_fill(~legal, -1e9), hidden
 
     return ActionEventStudent()
 

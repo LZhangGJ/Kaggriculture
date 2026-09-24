@@ -33,9 +33,17 @@ INCLUDES=(
   -I"$ROOT/native_deps/findNewRoad/marketMechanismCpp/general_econ_audit/include"
   -I"$ROOT/native_deps/findNewRoad/marketMechanismCpp/include"
 )
+ECONOMIC_FLAGS=()
+if [[ "${ECONOMIC_FEATURES_MATURE_STORED:-0}" == 1 ]]; then
+  ECONOMIC_FLAGS=(-DECONOMIC_FEATURES_MATURE_STORED=1)
+fi
+if [[ "${STUDENT_EXPLICIT_SHOP_TOKENS:-0}" == 1 ]]; then
+  ECONOMIC_FLAGS+=(-DSTUDENT_EXPLICIT_SHOP_TOKENS=1
+                   -DSHOP_TOKEN_GAIN="${SHOP_TOKEN_GAIN:-1}")
+fi
 
 "$CXX_BIN" -O3 -DNDEBUG -std=c++20 -fPIC -shared -pthread \
-  "${PY_INCLUDES[@]}" "${INCLUDES[@]}" \
+  "${PY_INCLUDES[@]}" "${INCLUDES[@]}" "${ECONOMIC_FLAGS[@]}" \
   "$HERE/paused_plan.cpp" "$HERE/prefix_batch.cpp" \
   "$ROOT/experiments/native_student_v3/actor.cpp" \
   "$ROOT/experiments/native_student_v3/tokenizer.cpp" \

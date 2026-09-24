@@ -42,14 +42,21 @@ PARAMETER_ORDER = (
     "cell.weight", "stage.weight", "previous.weight", "gru.weight_ih",
     "gru.weight_hh", "gru.bias_ih", "gru.bias_hh", "head.weight", "head.bias",
 )
-CONTRACT_TEXT = "\n".join((
-    "kaggriculture.action-event-v3.actor-a.le-f32.v1",
-    "normalization:" + ",".join(NORMALIZATION_ORDER),
-    "state_dict:" + ",".join(PARAMETER_ORDER),
-    "gru_gate_order:r,z,n",
-    "payload:raw-c-contiguous-f32",
-))
-CONTRACT_SHA256 = hashlib.sha256(CONTRACT_TEXT.encode("ascii")).digest()
+SHOP_PARAMETER_ORDER = PARAMETER_ORDER + ("shop_gate.weight", "shop_gate.bias")
+
+
+def contract_sha(version, parameter_order):
+    contract = "\n".join((
+        f"kaggriculture.action-event-v3.actor-a.le-f32.v{version}",
+        "normalization:" + ",".join(NORMALIZATION_ORDER),
+        "state_dict:" + ",".join(parameter_order),
+        "gru_gate_order:r,z,n",
+        "payload:raw-c-contiguous-f32",
+    ))
+    return hashlib.sha256(contract.encode("ascii")).digest()
+
+
+CONTRACT_SHA256 = contract_sha(1, PARAMETER_ORDER)
 
 
 def file_sha256(path: Path) -> bytes:
@@ -69,7 +76,7 @@ def f32_bytes(value) -> bytes:
     return array.astype("<f4", copy=False).tobytes(order="C")
 
 
-def expected_shapes(d: dict[str, int]) -> dict[str, tuple[int, ...]]:
+def expected_shapes(d: dict[str, int], shop_action_head=False) -> dict[str, tuple[int, ...]]:
     p, s, e, h = d["projection"], d["scalar"], d["embedding"], d["hidden"]
     rh, ee = d["resource_hidden"], d["event_embedding"]
     shapes = {
@@ -87,6 +94,9 @@ def expected_shapes(d: dict[str, int]) -> dict[str, tuple[int, ...]]:
     }
     for index, size in enumerate((7, 32, 32, 32, 64, 64, 4)):
         shapes[f"token_embeddings.{index}.weight"] = (size, e)
+    if shop_action_head:
+        shapes["shop_gate.weight"] = (8, h)
+        shapes["shop_gate.bias"] = (8,)
     return shapes
 
 
@@ -114,7 +124,11 @@ def main() -> None:
         "embedding": 4 * scale, "hidden": 64 * scale,
         "resource_hidden": 64 * scale, "event_embedding": 8 * scale,
     }
-    shapes = expected_shapes(dims)
+    shop_action_head = checkpoint.get("shop_action_head_semantics") == 1
+    parameter_order = SHOP_PARAMETER_ORDER if shop_action_head else PARAMETER_ORDER
+    version = 2 if shop_action_head else VERSION
+    contract_digest = contract_sha(version, parameter_order)
+    shapes = expected_shapes(dims, shop_action_head)
     normalization_shapes = {
         "context_mean": (dims["context"],), "context_std": (dims["context"],),
         "observation_mean": (dims["observation"],),
@@ -123,9 +137,14 @@ def main() -> None:
         "resource_mean": (dims["resource"],), "resource_std": (dims["resource"],),
     }
     if (not 1 <= scale <= 4 or tuple(checkpoint.get("event_classes", ())) !=
-            EVENT_CLASSES or tuple(state) != PARAMETER_ORDER or
+            EVENT_CLASSES or tuple(state) != parameter_order or
             tuple(normalization) != NORMALIZATION_ORDER):
         raise ValueError("checkpoint does not match the fixed v3 actor contract")
+    if shop_action_head and (dims["resource"] != 383 or
+                             checkpoint.get("shop_resource_semantics") != 1 or
+                             not np.all(np.asarray(normalization["resource_mean"])[374:383] == 0) or
+                             not np.all(np.asarray(normalization["resource_std"])[374:383] == 1 / 32)):
+        raise ValueError("shop action head requires the exact shop-rate normalization")
     for name, shape in shapes.items():
         if tuple(state[name].shape) != shape:
             raise ValueError(f"{name}: {tuple(state[name].shape)} != {shape}")
@@ -139,7 +158,7 @@ def main() -> None:
 
     payload = b"".join(f32_bytes(normalization[name])
                        for name in NORMALIZATION_ORDER)
-    payload += b"".join(f32_bytes(state[name]) for name in PARAMETER_ORDER)
+    payload += b"".join(f32_bytes(state[name]) for name in parameter_order)
     payload_sha = hashlib.sha256(payload).digest()
     checkpoint_sha = file_sha256(args.checkpoint)
     try:
@@ -150,13 +169,13 @@ def main() -> None:
         raise ValueError("invalid checkpoint shard manifest hash length")
 
     header = HEADER.pack(
-        MAGIC, VERSION, HEADER.size, ENDIAN_TAG, SCALAR_F32,
-        len(NORMALIZATION_ORDER), len(PARAMETER_ORDER), len(EVENT_CLASSES),
+        MAGIC, version, HEADER.size, ENDIAN_TAG, SCALAR_F32,
+        len(NORMALIZATION_ORDER), len(parameter_order), len(EVENT_CLASSES),
         320, 24, 7, dims["context"], dims["observation"], dims["resource"],
         scale, dims["projection"], dims["scalar"], dims["embedding"],
         dims["hidden"], dims["resource_hidden"], dims["event_embedding"],
         100, 2, len(EVENT_CLASSES) + 1, len(payload),
-        checkpoint_sha, shard_sha, CONTRACT_SHA256, payload_sha)
+        checkpoint_sha, shard_sha, contract_digest, payload_sha)
     temporary = args.output.with_suffix(args.output.suffix + ".tmp")
     with temporary.open("wb") as target:
         target.write(header)
@@ -176,11 +195,11 @@ def main() -> None:
         "header_bytes": HEADER.size, "payload_bytes": len(payload),
         "checkpoint_sha256": checkpoint_sha.hex(),
         "shard_manifest_sha256": shard_sha.hex(),
-        "contract_sha256": CONTRACT_SHA256.hex(),
+        "contract_sha256": contract_digest.hex(),
         "payload_sha256": payload_sha.hex(),
         "file_sha256": hashlib.sha256(written).hexdigest(),
         "normalization_tensors": len(NORMALIZATION_ORDER),
-        "parameter_tensors": len(PARAMETER_ORDER), "dimensions": dims,
+        "parameter_tensors": len(parameter_order), "dimensions": dims,
     }))
 
 

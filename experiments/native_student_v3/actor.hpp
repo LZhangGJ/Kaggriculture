@@ -96,6 +96,7 @@ class Actor {
   };
 
   Dimensions dimensions_;
+  bool shop_action_head_ = false;
   std::vector<float> payload_;
   Tensor context_mean_, context_std_, observation_mean_, observation_std_;
   Tensor observation_length_mean_, observation_length_std_;
@@ -107,6 +108,7 @@ class Actor {
   Tensor resource_weight_, resource_bias_, cell_embedding_, stage_embedding_;
   Tensor previous_embedding_, gru_weight_ih_, gru_weight_hh_;
   Tensor gru_bias_ih_, gru_bias_hh_, head_weight_, head_bias_;
+  Tensor shop_gate_weight_, shop_gate_bias_;
 };
 
 }  // namespace student_v3

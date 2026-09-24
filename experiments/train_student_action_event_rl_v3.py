@@ -67,6 +67,12 @@ NATIVE_OPPONENTS = {
         "directory": ROOT / "experiments/native_opponents/metav4_2965",
         "asset": "metav4_2965.assets.bin",
     },
+    "soil_current": {
+        "module": "metav4_2965_native",
+        "directory": ROOT / "experiments/native_opponents/metav4_2965",
+        "asset": "soil_current.assets.bin",
+        "soil_variant": True,
+    },
     "salemali7_2900": {
         "module": "salemali7_2900_native",
         "directory": ROOT / "experiments/native_opponents/salemali7_2900",
@@ -81,7 +87,7 @@ NATIVE_OPPONENTS = {
 NATIVE_POOL = (*NATIVE_OPPONENTS, "replay_clean")
 NATIVE_JOB_OPPONENT_CODES = {
     "thomas_2945_cpp": 1, "metav4_2965": 2, "replay_clean": 3,
-    "salemali7_2900": 4, "fieldcraft_2887": 5,
+    "salemali7_2900": 4, "fieldcraft_2887": 5, "soil_current": 6,
 }
 NATIVE_JOB_REPLAY_FAMILIES = ("G397",)
 STUDENT_STEPS = tuple(range(288, 673, 24))
@@ -344,7 +350,8 @@ def _collect_one(job: dict) -> dict:
         elif job["opponent_backend"] == "native_cpp":
             module = _load_native(
                 job["native_module_name"], job["native_module_path"])
-            opponent = module.Opponent(job["native_asset_path"])
+            opponent = module.Opponent(
+                job["native_asset_path"], job["opponent"] == "soil_current")
             takes_configuration = False
         else:
             path = ROOT / "opponents" / job["opponent"] / "main.py"
@@ -438,6 +445,19 @@ def _collect_one(job: dict) -> dict:
             candidate.close()
 
 
+def _student_scaffold_settings(args) -> list[float]:
+    config = json.loads((ROOT / "policy/r1/config.json").read_text())
+    override = getattr(args, "student_intraday", None)
+    if override is not None:
+        config["intraday"] = override
+    probe = production.policy.Agent(config=config, binary_path=args.binary)
+    try:
+        return [float(probe.config[name]) for name in
+                production.policy._ORDER[:probe.settings_count]]
+    finally:
+        probe.close()
+
+
 def _collect_native_job_batch(
         args, jobs: list[dict]) -> tuple[list[dict], dict, dict[str, np.ndarray]]:
     """Run the accepted replay opening, v3 actor, and suffix entirely in C++."""
@@ -446,7 +466,7 @@ def _collect_native_job_batch(
     from experiments.native_student_actor.native_job_batch import ppo_games
     from meta_agent.src.native_teammate_executor import NativeTeammateBundle
 
-    build = ROOT / "experiments/native_student_rollout/build"
+    build = args.native_job_module_dir
     modules = list(build.glob("_paused_plan*.so"))
     if len(modules) != 1:
         raise RuntimeError(f"native JobBatch needs one extension, found {modules}")
@@ -460,13 +480,7 @@ def _collect_native_job_batch(
         ROOT / "agent/route_library.json")
     deployment_routes = [bundle.index(name) for name in
                          ("G275", "G195", "G024", "G316", "G267")]
-    config = json.loads((ROOT / "policy/r1/config.json").read_text())
-    probe = production.policy.Agent(config=config, binary_path=args.binary)
-    try:
-        settings = [float(probe.config[name]) for name in
-                    production.policy._ORDER[:probe.settings_count]]
-    finally:
-        probe.close()
+    settings = _student_scaffold_settings(args)
     routes = []
     for job in jobs:
         if job["opponent"] != "replay_clean":
@@ -485,7 +499,9 @@ def _collect_native_job_batch(
                 "salemali7_2900.assets.bin")
     fieldcraft = (ROOT / "experiments/native_opponents/fieldcraft_2887/"
                   "fieldcraft_2887.assets.bin")
-    batch = native.JobBatch(
+    soil = (ROOT / "experiments/native_opponents/metav4_2965/"
+            "soil_current.assets.bin")
+    batch_args = [
         str(args.binary), bundle.executor,
         [int(job["seed"]) for job in jobs],
         [int(job["seat"]) for job in jobs],
@@ -493,14 +509,20 @@ def _collect_native_job_batch(
         routes,
         [int(job["policy_seed"]) for job in jobs], settings,
         deployment_routes, str(thomas), str(meta), str(salemali),
-        str(fieldcraft))
+        str(fieldcraft)]
+    if any(job["opponent"] == "soil_current" for job in jobs):
+        batch_args.append(str(soil))
+    batch = native.JobBatch(*batch_args)
     started = time.perf_counter()
     batch.run(args.native_job_threads, 2 << 20, False)
     prefix_seconds = time.perf_counter() - started
     suffix = batch.run_native_actor_suffix(
-        str(args.native_weights), 0, args.native_job_threads, 2 << 20, True)
+        str(args.native_weights), 0, args.native_job_threads, 2 << 20,
+        True, False, False)
+    arrays_started = time.perf_counter()
     arrays = {name: np.asarray(value)
               for name, value in batch.ppo_arrays().items()}
+    array_export_seconds = time.perf_counter() - arrays_started
     _validate_native_job_routes(arrays, len(jobs), jobs)
     results = ppo_games(
         arrays, margin_weight=args.margin_weight, margin_scale=args.margin_scale,
@@ -536,6 +558,7 @@ def _collect_native_job_batch(
         "actor_plan_seconds": float(suffix["plan_seconds"]),
         "environment_seconds": float(suffix["environment_seconds"]),
         "suffix_seconds": float(suffix["wall_seconds"]),
+        "array_export_seconds": array_export_seconds,
         "wall_seconds": total_seconds,
         "games_per_second": len(results) / total_seconds,
         "threads": args.native_job_threads,
@@ -546,7 +569,8 @@ def _collect_native_job_batch(
 
 
 def _batch_terms(model, games: list[dict], device: torch.device,
-                 temperature: float, *, safe_hidden_index_copy: bool | None = None):
+                 temperature: float, *, safe_hidden_index_copy: bool | None = None,
+                 resident: dict[str, torch.Tensor] | None = None):
     """Re-evaluate variable-length day sequences in one padded time loop."""
     if safe_hidden_index_copy is None:
         # torch-npu index_copy mutates its input storage; clone preserves the
@@ -557,23 +581,39 @@ def _batch_terms(model, games: list[dict], device: torch.device,
     if not days:
         raise RuntimeError("empty PPO trajectory batch")
     native = "native_index" in days[0][1]
+    if resident is not None and not native:
+        raise ValueError("resident rollout requires native array-backed days")
     if native:
         values = days[0][1]["native_arrays"]
         day_ids = np.asarray([day["native_index"] for _game, day in days],
                              dtype=np.int64)
         offsets = values["day_event_offsets"]
 
+    def on_device(name, indices, dtype):
+        if resident is not None:
+            return resident[name].index_select(
+                0, torch.as_tensor(indices, device=device, dtype=torch.long))
+        return torch.from_numpy(np.ascontiguousarray(values[name][indices])).to(
+            device=device, dtype=dtype)
+
     def state(name, dtype):
+        if native and resident is not None:
+            return on_device(name, day_ids, dtype)
         rows = (values[name][day_ids] if native else np.concatenate(
             [day["state"][name] for _game, day in days], axis=0))
         return torch.from_numpy(np.ascontiguousarray(rows)).to(
                 device=device, dtype=dtype)
 
-    categories = [torch.from_numpy(np.ascontiguousarray(
-        values["token_categories"][day_ids, index] if native else
-        np.concatenate([
-            day["state"]["token_categories"][index] for _game, day in days],
-            axis=0))).to(device=device, dtype=torch.long)
+    resident_categories = (on_device("token_categories", day_ids, torch.long)
+                           if native and resident is not None else None)
+    categories = [(
+        resident_categories.select(1, index)
+        if native and resident is not None else
+        torch.from_numpy(np.ascontiguousarray(
+            values["token_categories"][day_ids, index] if native else
+            np.concatenate([
+                day["state"]["token_categories"][index] for _game, day in days],
+                axis=0))).to(device=device, dtype=torch.long))
                   for index in range(7)]
     hidden = model.initial_hidden(
         state("context", torch.float32),
@@ -593,33 +633,45 @@ def _batch_terms(model, games: list[dict], device: torch.device,
         event_ids = offsets[day_ids[active_np]] + event_index if native else None
         rows = ([] if native else
                 [days[index][1]["events"][event_index] for index in active_np])
-        resources_np = (values["event_resources"][event_ids] if native else
+        resources_np = (None if native and resident is not None else
+                        values["event_resources"][event_ids] if native else
                         np.concatenate([row["resources"] for row in rows], axis=0))
-        resources = torch.from_numpy(np.ascontiguousarray(resources_np)).to(
-                device=device, dtype=torch.float32)
-        cells = torch.as_tensor(
-            values["event_cell"][event_ids] if native else
-            [row["cell"] for row in rows], device=device, dtype=torch.long)
-        stages = torch.as_tensor(
-            values["event_stage"][event_ids] if native else
-            [row["stage"] for row in rows], device=device, dtype=torch.long)
+        resources = (on_device("event_resources", event_ids, torch.float32)
+                     if native and resident is not None else
+                     torch.from_numpy(np.ascontiguousarray(resources_np)).to(
+                         device=device, dtype=torch.float32))
+        cells = (on_device("event_cell", event_ids, torch.long)
+                 if native and resident is not None else torch.as_tensor(
+                     values["event_cell"][event_ids] if native else
+                     [row["cell"] for row in rows], device=device, dtype=torch.long))
+        stages = (on_device("event_stage", event_ids, torch.long)
+                  if native and resident is not None else torch.as_tensor(
+                      values["event_stage"][event_ids] if native else
+                      [row["stage"] for row in rows], device=device,
+                      dtype=torch.long))
         legal_np = (values["event_legal"][event_ids] if native else
                     np.concatenate([row["legal"] for row in rows], axis=0))
-        legal = torch.from_numpy(np.ascontiguousarray(legal_np)).to(
-                device=device, dtype=torch.bool)
-        actions = torch.as_tensor(
-            values["event_action"][event_ids] if native else
-            [row["action"] for row in rows], device=device, dtype=torch.long)
+        legal = (on_device("event_legal", event_ids, torch.bool)
+                 if native and resident is not None else
+                 torch.from_numpy(np.ascontiguousarray(legal_np)).to(
+                     device=device, dtype=torch.bool))
+        actions = (on_device("event_action", event_ids, torch.long)
+                   if native and resident is not None else torch.as_tensor(
+                       values["event_action"][event_ids] if native else
+                       [row["action"] for row in rows], device=device,
+                       dtype=torch.long))
         logits, next_hidden = model.step(
             hidden.index_select(0, active), resources, cells, stages,
             previous.index_select(0, active), legal)
         distribution = torch.distributions.Categorical(
             logits=logits.float() / temperature)
         logprobs.append(distribution.log_prob(actions))
-        old_logprobs.append(torch.as_tensor(
-            values["old_logprob"][event_ids] if native else
-            [row["old_logprob"] for row in rows],
-            device=device, dtype=torch.float32))
+        old_logprobs.append(
+            on_device("old_logprob", event_ids, torch.float32)
+            if native and resident is not None else torch.as_tensor(
+                values["old_logprob"][event_ids] if native else
+                [row["old_logprob"] for row in rows],
+                device=device, dtype=torch.float32))
         entropies.append(distribution.entropy())
         actionable.extend(
             (np.count_nonzero(legal_np, axis=1) > 1).tolist() if native else
@@ -639,9 +691,70 @@ def _batch_terms(model, games: list[dict], device: torch.device,
     )
 
 
+_RESIDENT_DTYPES = {
+    "context": torch.float32, "observation": torch.float32,
+    "observation_length": torch.float32, "token_continuous": torch.float32,
+    "token_categories": torch.long, "token_count": torch.long,
+    "event_resources": torch.float32, "event_cell": torch.long,
+    "event_stage": torch.long, "event_legal": torch.bool,
+    "event_action": torch.long, "old_logprob": torch.float32,
+}
+
+
+def _resident_rollout(arrays: dict, device: torch.device):
+    """Move immutable rollout inputs once; minibatch autograd graphs stay separate."""
+    return {
+        name: torch.from_numpy(np.ascontiguousarray(arrays[name])).to(
+            device=device, dtype=dtype)
+        for name, dtype in _RESIDENT_DTYPES.items()
+    }
+
+
 def _approx_kl(new_logprob, old_logprob, active):
     logratio = (new_logprob - old_logprob)[active]
     return (torch.expm1(logratio) - logratio).clamp_min(0).mean()
+
+
+def _cpu_old_policy_replay(model, results, args):
+    started = time.perf_counter()
+    max_error = abs_error_sum = kl_sum = 0.0
+    total_events = actionable_events = 0
+    with torch.no_grad():
+        for offset in range(0, len(results), args.replay_batch_games):
+            (new, old, _entropy, actionable, _event_games,
+             _event_days, _day_games) = _batch_terms(
+                 model, results[offset:offset + args.replay_batch_games],
+                 torch.device("cpu"), args.temperature)
+            delta = new - old
+            max_error = max(max_error, float(delta.abs().max()))
+            total_events += len(new)
+            active_delta = delta[actionable].float()
+            actionable_events += len(active_delta)
+            abs_error_sum += float(active_delta.abs().double().sum())
+            kl_sum += float((torch.expm1(active_delta) - active_delta)
+                            .clamp_min(0).double().sum())
+    if not actionable_events:
+        raise RuntimeError("PPO rollout has no multi-action event")
+    mean_error = abs_error_sum / actionable_events
+    replay_kl = kl_sum / actionable_events
+    if args.native_job_rollout:
+        if max_error > args.native_logprob_max_tolerance:
+            print(json.dumps({
+                "event": "native_logprob_max_warning",
+                "max_abs_error": max_error,
+                "warning_threshold": args.native_logprob_max_tolerance,
+            }), flush=True)
+        gate_failed = (
+            not all(map(math.isfinite, (max_error, mean_error, replay_kl))) or
+            mean_error > args.native_logprob_mean_tolerance or
+            replay_kl > args.native_replay_kl_tolerance)
+    else:
+        gate_failed = max_error > args.logprob_tolerance
+    if gate_failed:
+        raise RuntimeError(
+            "captured CPU old-policy logprob replay mismatch: "
+            f"max={max_error}, mean={mean_error}, kl={replay_kl}")
+    return max_error, mean_error, replay_kl, total_events, actionable_events, time.perf_counter() - started
 
 
 def _stratified_loo_advantages(results: list[dict], rewards: np.ndarray):
@@ -876,7 +989,7 @@ def _day_bundle_objective(new_logprob, old_logprob, entropy_values,
 
 
 def _full_policy_drift(model, games, device, temperature, batch_games,
-                       clip_ratio):
+                       clip_ratio, resident=None):
     """Exact post-update drift on the complete behavior rollout."""
     totals = {
         name: torch.zeros((), device=device, dtype=torch.float32)
@@ -893,7 +1006,7 @@ def _full_policy_drift(model, games, device, temperature, batch_games,
             batch = games[offset:offset + batch_games]
             (new, old, entropy_values, actionable, _event_games,
              event_days, day_games) = _batch_terms(
-                 model, batch, device, temperature)
+                 model, batch, device, temperature, resident=resident)
             dummy_advantages = torch.zeros(
                 len(batch), device=device, dtype=torch.float32)
             _loss, _entropy, bundle = _day_bundle_objective(
@@ -1125,6 +1238,9 @@ def _jobs(args, fingerprints: dict, native_artifacts: dict) -> list[dict]:
 
 
 def _validate_inputs(args) -> dict:
+    if (getattr(args, "student_intraday", None) is not None and
+            not getattr(args, "native_job_rollout", False)):
+        raise ValueError("student intraday override requires native JobBatch rollout")
     if getattr(args, "day_state_crossfit_baseline", False):
         if not getattr(args, "native_job_rollout", False):
             raise ValueError(
@@ -1151,13 +1267,20 @@ def _validate_inputs(args) -> dict:
         raise FileExistsError(f"refusing to overwrite: {args.rollout_output}")
     args.rollout_output.parent.mkdir(parents=True, exist_ok=True)
     checkpoint = torch.load(args.checkpoint, map_location="cpu", weights_only=False)
+    expected_dimensions = {
+        "causal_context": 2233,
+        "packed_observation": 3145 if args.economic_input_v1 else 3074,
+        "event_resources": (383 if getattr(args, "shop_resource_v1", False) else 374)
+        if args.economic_input_v1 else 347,
+    }
     if (tuple(checkpoint.get("event_classes", ())) != EVENT_CLASSES or
             tuple(checkpoint.get("training_state_steps", ())) != STUDENT_STEPS or
-            checkpoint.get("model_dimensions") != {
-                "causal_context": 2233,
-                "packed_observation": 3074,
-                "event_resources": 347,
-            }):
+            checkpoint.get("model_dimensions") != expected_dimensions or
+            (checkpoint.get("shop_action_head_semantics") == 1) !=
+            bool(args.shop_action_head_v1) or
+            (args.economic_input_v1 and checkpoint.get(
+                "economic_fork", {}).get("schema") !=
+                "public-economic-input-v1-diagnostic-only")):
         raise ValueError("checkpoint is not the full-day v3 actor")
     fingerprints = {
         "checkpoint_sha256": _sha256(args.checkpoint),
@@ -1177,15 +1300,46 @@ def _validate_inputs(args) -> dict:
             raise ValueError("native JobBatch opponent is unsupported")
         frozen = args.native_weights.read_bytes()
         if (len(frozen) < 236 or frozen[:8] != b"KAGSV3A\0" or
+                int.from_bytes(frozen[8:12], "little") !=
+                (2 if args.shop_action_head_v1 else 1) or
                 frozen[108:140].hex() != fingerprints["checkpoint_sha256"]):
             raise ValueError("native actor weights/checkpoint fingerprint mismatch")
         fingerprints["native_weights_sha256"] = _sha256(args.native_weights)
-        native_job_modules = list((
-            ROOT / "experiments/native_student_rollout/build").glob(
-                "_paused_plan*.so"))
+        native_job_modules = list(args.native_job_module_dir.glob(
+            "_paused_plan*.so"))
         if len(native_job_modules) != 1:
             raise RuntimeError(
                 f"native JobBatch needs one extension, found {native_job_modules}")
+        sys.path.insert(0, str(args.native_job_module_dir.resolve()))
+        try:
+            native_module = importlib.import_module("_paused_plan")
+        finally:
+            sys.path.pop(0)
+        if Path(native_module.__file__).resolve() != native_job_modules[0].resolve():
+            raise RuntimeError("loaded native JobBatch module differs from selected build")
+        expected_semantics = checkpoint.get("economic_features_semantics", 1)
+        if (args.economic_input_v1 and
+                getattr(native_module, "ECONOMIC_FEATURES_SEMANTICS", 1) !=
+                expected_semantics):
+            raise ValueError("checkpoint/native economic feature semantics mismatch")
+        if (args.economic_input_v1 and
+                getattr(native_module, "SHOP_TOKEN_SEMANTICS", 1) !=
+                checkpoint.get("shop_token_semantics", 1)):
+            raise ValueError("checkpoint/native shop token semantics mismatch")
+        if (args.economic_input_v1 and
+                getattr(native_module, "SHOP_TOKEN_GAIN", 1.) !=
+                checkpoint.get("shop_token_gain", 1.)):
+            raise ValueError("checkpoint/native shop token gain mismatch")
+        if getattr(args, "shop_resource_v1", False) and (
+                checkpoint.get("shop_resource_semantics") != 1 or
+                getattr(native_module, "SHOP_RESOURCE_SEMANTICS", 0) != 1):
+            raise ValueError("checkpoint/native per-slot shop rate mismatch")
+        if getattr(args, "shop_action_head_v1", False) and (
+                checkpoint.get("shop_action_head_semantics") != 1 or
+                checkpoint.get("shop_resource_semantics") != 1 or
+                not np.all(np.asarray(checkpoint["normalization"]["resource_mean"])[374:383] == 0) or
+                not np.all(np.asarray(checkpoint["normalization"]["resource_std"])[374:383] == 1 / 32)):
+            raise ValueError("checkpoint shop action head input contract mismatch")
         fast_modules = list((
             ROOT / "fast_kaggriculture/python/fast_kaggriculture").glob(
                 "_fast_kaggriculture*.so"))
@@ -1201,6 +1355,10 @@ def _validate_inputs(args) -> dict:
             "route_actions": _sha256(ROOT / "agent/route_actions.json.zlib"),
             "route_library": _sha256(ROOT / "agent/route_library.json"),
         }
+        if getattr(args, "student_intraday", None) is not None:
+            settings = _student_scaffold_settings(args)
+            fingerprints["native_job_inputs_sha256"]["student_scaffold_settings"] = (
+                hashlib.sha256(np.asarray(settings, dtype="<f8").tobytes()).hexdigest())
     native_artifacts = (_native_artifacts(args.opponents)
                         if args.opponent_backend == "native_cpp" else {})
     return {"checkpoint": checkpoint, "fingerprints": fingerprints,
@@ -1419,59 +1577,30 @@ def train(args) -> dict:
         payload["model_dimensions"]["causal_context"],
         payload["model_dimensions"]["packed_observation"],
         payload["model_dimensions"]["event_resources"],
-        payload["model_scale"])
+        payload["model_scale"], shop_action_head=args.shop_action_head_v1)
     model.load_state_dict(payload["model"])
     model.train()
 
-    # The behavior policy ran on CPU, so semantic replay parity is checked on
-    # CPU.  A second gate records the small backend numerical drift before NPU
-    # optimization; conflating the two made valid rollouts fail at 3e-4.
-    max_logprob_error = 0.0
-    logprob_abs_error_sum = 0.0
-    replay_kl_sum = 0.0
-    total_events = actionable_events = 0
-    cpu_replay_started = time.perf_counter()
-    with torch.no_grad():
-        for offset in range(0, len(results), args.replay_batch_games):
-            (new, old, _entropy, actionable, _event_games,
-             _event_days, _day_games) = _batch_terms(
-                 model, results[offset:offset + args.replay_batch_games],
-                 torch.device("cpu"), args.temperature)
-            delta = new - old
-            max_logprob_error = max(
-                max_logprob_error, float(delta.abs().max()))
-            total_events += len(new)
-            active_delta = delta[actionable].float()
-            actionable_events += len(active_delta)
-            logprob_abs_error_sum += float(
-                active_delta.abs().double().sum())
-            replay_kl_sum += float((
-                torch.expm1(active_delta) - active_delta
-            ).clamp_min(0).double().sum())
-    if not actionable_events:
-        raise RuntimeError("PPO rollout has no multi-action event")
-    mean_logprob_error = logprob_abs_error_sum / actionable_events
-    replay_approx_kl = replay_kl_sum / actionable_events
-    if args.native_job_rollout:
-        if max_logprob_error > args.native_logprob_max_tolerance:
-            print(json.dumps({
-                "event": "native_logprob_max_warning",
-                "max_abs_error": max_logprob_error,
-                "warning_threshold": args.native_logprob_max_tolerance,
-            }), flush=True)
-        gate_failed = (
-            not all(map(math.isfinite, (
-                max_logprob_error, mean_logprob_error, replay_approx_kl))) or
-            mean_logprob_error > args.native_logprob_mean_tolerance or
-            replay_approx_kl > args.native_replay_kl_tolerance)
+    # Keep the full CPU and device gates.  The opt-in path only overlaps the
+    # read-only CPU oracle with device replay/update; checkpoint saving still
+    # waits for its result.
+    cpu_replay_pool = cpu_replay_future = None
+    cpu_replay_wait_seconds = 0.0
+    if args.overlap_cpu_replay:
+        cpu_model = build_model(
+            payload["model_dimensions"]["causal_context"],
+            payload["model_dimensions"]["packed_observation"],
+            payload["model_dimensions"]["event_resources"],
+            payload["model_scale"], shop_action_head=args.shop_action_head_v1)
+        cpu_model.load_state_dict(payload["model"])
+        cpu_model.train()
+        cpu_replay_pool = ThreadPoolExecutor(max_workers=1)
+        cpu_replay_future = cpu_replay_pool.submit(
+            _cpu_old_policy_replay, cpu_model, results, args)
     else:
-        gate_failed = max_logprob_error > args.logprob_tolerance
-    if gate_failed:
-        raise RuntimeError(
-            "captured CPU old-policy logprob replay mismatch: "
-            f"max={max_logprob_error}, mean={mean_logprob_error}, "
-            f"kl={replay_approx_kl}")
-    cpu_replay_seconds = time.perf_counter() - cpu_replay_started
+        (max_logprob_error, mean_logprob_error, replay_approx_kl,
+         total_events, actionable_events, cpu_replay_seconds) = (
+             _cpu_old_policy_replay(model, results, args))
     if save_future is not None:
         wait_started = time.perf_counter()
         rollout_save_seconds = save_future.result()
@@ -1493,6 +1622,8 @@ def train(args) -> dict:
     device = torch.device(args.device)
     device_replay_started = time.perf_counter()
     model.to(device)
+    resident = (_resident_rollout(native_rollout_arrays, device)
+                if args.device_resident_rollout else None)
     device_logprob_error = 0.0
     device_replay_kl_sum = 0.0
     device_replay_shift_sum = 0.0
@@ -1502,7 +1633,7 @@ def train(args) -> dict:
             (new, old, _entropy, actionable, _event_games,
              _event_days, _day_games) = _batch_terms(
                  model, results[offset:offset + args.replay_batch_games],
-                 device, args.temperature)
+                 device, args.temperature, resident=resident)
             device_logprob_error = max(
                 device_logprob_error, float((new - old).abs().max().cpu()))
             count = int(actionable.sum().cpu())
@@ -1571,7 +1702,7 @@ def train(args) -> dict:
             games = [results[int(index)] for index in indices]
             (new, old, entropy_values, active, _event_games,
              event_days, day_games) = _batch_terms(
-                 model, games, device, args.temperature)
+                 model, games, device, args.temperature, resident=resident)
             batch_advantages = torch.tensor(
                 [float(advantages[int(index)]) for index in indices],
                 device=device, dtype=torch.float32)
@@ -1601,7 +1732,7 @@ def train(args) -> dict:
         audit_started = time.perf_counter()
         drift = _full_policy_drift(
             model, results, device, args.temperature, args.replay_batch_games,
-            args.clip_ratio)
+            args.clip_ratio, resident=resident)
         drift_audit_seconds += time.perf_counter() - audit_started
         epoch_drift.append({"epoch": epoch + 1, **drift})
         print(json.dumps({
@@ -1620,6 +1751,14 @@ def train(args) -> dict:
             parameter_delta_l2 <= 0):
         raise RuntimeError("PPO did not produce a finite parameter update")
     gradient_norms = np.asarray(gradient_norms, dtype=np.float64)
+
+    if cpu_replay_future is not None:
+        wait_started = time.perf_counter()
+        (max_logprob_error, mean_logprob_error, replay_approx_kl,
+         total_events, actionable_events, cpu_replay_seconds) = (
+             cpu_replay_future.result())
+        cpu_replay_wait_seconds = time.perf_counter() - wait_started
+        cpu_replay_pool.shutdown()
 
     output_payload = dict(payload)
     update_seconds = time.perf_counter() - update_started
@@ -1658,6 +1797,8 @@ def train(args) -> dict:
         "npu_hidden_index_copy_safe": device.type == "npu",
         "optimizer_moments_reset": optimizer_moments_reset,
         "optimizer_step_before": optimizer_step_before,
+        "overlap_cpu_replay": args.overlap_cpu_replay,
+        "device_resident_rollout": args.device_resident_rollout,
         "training_batch_games": args.batch_games,
         "replay_batch_games": args.replay_batch_games,
         "rollout_engine": rollout_payload.get("rollout_engine", "python_workers"),
@@ -1666,6 +1807,7 @@ def train(args) -> dict:
             "native_job_module_sha256"),
         "native_job_inputs_sha256": rollout_payload.get(
             "native_job_inputs_sha256"),
+        "student_intraday": getattr(args, "student_intraday", None),
     }
     if day_state_baseline_metrics is not None:
         output_payload["rl"]["day_state_control_variate"] = (
@@ -1731,6 +1873,7 @@ def train(args) -> dict:
             "native_job_module_sha256"),
         "native_job_inputs_sha256": rollout_payload.get(
             "native_job_inputs_sha256"),
+        "student_intraday": getattr(args, "student_intraday", None),
         "native_job_metrics": rollout_payload.get("native_job_metrics"),
         "games": len(results), "events": total_events,
         "actionable_events": actionable_events,
@@ -1820,6 +1963,7 @@ def train(args) -> dict:
             "rollout_save_seconds": rollout_save_seconds,
             "rollout_save_wait_seconds": rollout_save_wait_seconds,
             "cpu_replay_seconds": cpu_replay_seconds,
+            "cpu_replay_wait_seconds": cpu_replay_wait_seconds,
             "device_replay_seconds": device_replay_seconds,
             "npu_init_seconds": npu_init_seconds,
             "npu_init_wait_seconds": npu_init_wait_seconds,
@@ -1881,8 +2025,18 @@ def main() -> None:
         "--native-job-rollout", action="store_true",
         help="run replay opening, actor, and suffix in the experiment C++ JobBatch")
     parser.add_argument("--native-weights", type=Path)
+    parser.add_argument("--native-job-module-dir", type=Path,
+                        default=ROOT / "experiments/native_student_rollout/build")
+    parser.add_argument("--economic-input-v1", action="store_true",
+                        help="isolated zero-initialized economic feature fork")
+    parser.add_argument("--shop-resource-v1", action="store_true",
+                        help="isolated per-slot known shop demand input")
+    parser.add_argument("--shop-action-head-v1", action="store_true",
+                        help="isolated state-conditioned product demand logit gate")
     parser.add_argument("--native-job-threads", type=int,
                         default=min(128, os.cpu_count() or 1))
+    parser.add_argument("--student-intraday", type=int, choices=(0, 1),
+                        help="student-only executor intraday admission; production R1 is unchanged")
     parser.add_argument("--native-logprob-max-tolerance", type=float,
                         default=2.5e-4)
     parser.add_argument("--native-logprob-mean-tolerance", type=float,
@@ -1893,6 +2047,10 @@ def main() -> None:
     parser.add_argument("--device-replay-kl-tolerance", type=float, default=1e-5)
     parser.add_argument("--resume-rollout", action="store_true",
                         help="resume a saved on-policy rollout before any update")
+    parser.add_argument("--overlap-cpu-replay", action="store_true",
+                        help="overlap full CPU old-policy gate with NPU update")
+    parser.add_argument("--device-resident-rollout", action="store_true",
+                        help="keep immutable native rollout tensors on NPU across minibatches")
     parser.add_argument(
         "--day-state-crossfit-baseline", action="store_true",
         help=("opt in to the training-only whole-seed 6-fold global-HGB "
@@ -1940,6 +2098,16 @@ def main() -> None:
         parser.error("invalid rollout/PPO hyperparameter")
     if args.native_job_rollout and args.native_weights is None:
         parser.error("--native-weights is required with --native-job-rollout")
+    if args.shop_resource_v1 and not args.economic_input_v1:
+        parser.error("--shop-resource-v1 requires --economic-input-v1")
+    if args.shop_action_head_v1 and not args.shop_resource_v1:
+        parser.error("--shop-action-head-v1 requires --shop-resource-v1")
+    if args.overlap_cpu_replay and (
+            not args.native_job_rollout or not args.device.startswith("npu")):
+        parser.error("--overlap-cpu-replay requires native JobBatch and NPU")
+    if args.device_resident_rollout and (
+            not args.native_job_rollout or not args.device.startswith("npu")):
+        parser.error("--device-resident-rollout requires native JobBatch and NPU")
     train(args)
 
 

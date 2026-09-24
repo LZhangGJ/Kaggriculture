@@ -1,0 +1,11 @@
+# V15Stack 原生移植状态（隔离实验，不可加入 RL 对手池）
+
+- Kaggle slug: `wzhengbiao/kaggriculture-v15stack-submit`；本地权威 Python 文件 `work/new_public_opponents/kaggriculture-v15stack-submit/output/main.py`，SHA-256 `d6565929be5283a5decf00c986359542ee1c106d7819815f8c69ccab35e363dd`。
+- 导出资产与 MetaV4 家族共用 41 条路线；对拍 fixture 必须是 Python `_alt_install(_ALT_MODE)` 后的 tape。`PARITY_FIXTURE_AUDIT.md` 解释旧 fixture 的误判及 29,479 个 tape 动作的字节/动作门。
+- V15 差异已隔离在 `v15_variant`：V2 提前售卖债、R36 40 步未来销售窗口、V4 后期买种预算、V13 订单重排。V2 必须在公共 E335 库存压缩后运行；否则 step633 的 MILK2 被提前售卖债多扣 1，导致 step634 分歧。
+- 2026-09-23 隔离 `native-v9-order` 构建，对 Python 原脚本、冻结 route0 的 seeds `2609500600..603`、双座完整 719 步：`8/8` 动作与终局 exact；冻结 route105 的 seeds `2609500700..703`：`8/8` exact。原始明细在 `v15-v4-e410-4seed.json` 与 `v15-v9-order-4seed.json`。route105 seed702 原先 step697 顺序差异来自 V9 第29天删肥料买单错误地排在 V13 订单搜索之后；Python 是在 V13 之前删除，故 V13 看到的候选集不同。已移到 V13 之前。
+- 当前 V4 智能施肥暂借共用 E410 的同型 yield-path 测试；V4 对 R51 reactive worker 的例外尚未单独核验。因此即使某些 seed 719 步 exact，也不能宣称整个 V15 Python wrapper 已精确移植。V9 种子浮动、V11 溢出、V12 ADV 与 V13 订单搜索仍需各自触发覆盖或逐层审计。
+- 再以 PASS 对手 seed `2609500900..903` 双座验收时发现 seed902 step456 Python `SELL MILK 15`、C++ `SELL MILK 9`。逐层对拍证明差额来自 HD2：Python 对替换奶牛的已确认格子保留 HARVEST credit 并在库存到仓后补卖；共用 Thomas C++ `apply_thomas_herd2` 只做购买/单位命令替换，没有 HD2 credit。已为 V15 单独实现待确认格、已确认格、收获 credit 和库存约束补卖；隔离 `native-herd2-credit` 对 PASS 四 seed 双座 `8/8` 完整 exact。
+- 上述原命令判断已在 `native-herd2-credit2` 重编；PASS seed902 双座 `2/2` 完整 exact。进一步 route9 seed `2609501000..1007` 双座在未固定 Python hash seed 的 harness 中为 `14/16` exact；seed1003 双座 step600 首次出现纯卖单排序差异。追查后发现同一个 Python 原脚本、同一环境 seed/route 在不同 `PYTHONHASHSEED` 下会改变 V13 输入：hash `0/1/2/3/5` 输出 `WOOL,STRAWBERRY,FERTILIZER,EGG`（与 C++ 一致），hash `4` 输出 `WOOL,FERTILIZER,STRAWBERRY,EGG`。V12 `_v12_advance()` 对商品 `set` 仅按价格排序、无等价价格 tie-break，是已找到的可疑机制；尚未逐函数证明。`v15-route9-8seed.json` 记录了随机 hash 进程的原始分歧。今后报告 V15 parity 必须在启动 Python 前固定 `PYTHONHASHSEED`，并明确 C++ 实现对应哪种确定性 tie-break；不能把单一 hash seed exact 误报为所有 Kaggle Python 进程都 exact。
+- `PYTHONHASHSEED=0` 的同一 route9 seed 段重跑为 `16/16` 完整 exact，见 `v15-route9-hash0-8seed.json`。这是固定 Python hash 语义的证据，不等于任意 Python 进程均同序。
+- 所有构建只允许显式 `BUILD_DIR=work/new_public_opponents/kaggriculture-v15stack-submit/...`。不得运行默认 Meta `build.sh` 产物路径；不得编辑 live `.so` 或默认训练入口。V15 未接 JobBatch、未接连续训练池。

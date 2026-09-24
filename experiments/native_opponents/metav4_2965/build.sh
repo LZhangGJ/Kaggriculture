@@ -5,6 +5,7 @@ HERE=$(cd "$(dirname "$0")" && pwd)
 ROOT=$(cd "$HERE/../../.." && pwd)
 PYTHON_BIN=${PYTHON_BIN:-/root/miniforge3/envs/torch-npu/bin/python}
 CXX_BIN=${CXX_BIN:-g++}
+BUILD_DIR=${BUILD_DIR:-$HERE/build}
 read -r -a OPT_FLAGS <<<"${OPT_FLAGS:--O3 -DNDEBUG -march=native}"
 EXT_SUFFIX=$($PYTHON_BIN -c 'import sysconfig; print(sysconfig.get_config_var("EXT_SUFFIX"))')
 FAST_SO=$(find "$ROOT/fast_kaggriculture/python/fast_kaggriculture" \
@@ -14,7 +15,7 @@ if [[ -z "$FAST_SO" ]]; then
   exit 1
 fi
 
-mkdir -p "$HERE/build"
+mkdir -p "$BUILD_DIR"
 read -r -a PY_INCLUDES <<<"$($PYTHON_BIN -m pybind11 --includes)"
 INCLUDES=(
   -I"$ROOT/fast_kaggriculture/src"
@@ -43,6 +44,6 @@ INCLUDES=(
   "$HERE/metav4_2965.cpp" "$HERE/bindings.cpp" \
   -Wl,--no-as-needed "$FAST_SO" \
   -Wl,-rpath,"$(dirname "$FAST_SO")" -fopenmp \
-  -o "$HERE/build/metav4_2965_native$EXT_SUFFIX"
+  -o "$BUILD_DIR/metav4_2965_native$EXT_SUFFIX"
 
-echo "$HERE/build/metav4_2965_native$EXT_SUFFIX"
+echo "$BUILD_DIR/metav4_2965_native$EXT_SUFFIX"

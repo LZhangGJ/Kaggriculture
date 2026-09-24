@@ -1,5 +1,18 @@
 # Kaggriculture Replay Route Switch（干净工程）
 
+## 2026-09-23：逐格 BC 契约勘误（v2 已拒绝）
+
+中盘学习主线仍是自回归逐格 actor，但旧 slot ABI v2 **不是有效教师契约**。它把 preview 前的 greedy
+proposal 当标签；最终执行时，有限作物释放、preview 删除和自动续种会改写这些意图。128 局审计中
+释放决策有 `310/2304` 个状态不同，`755/11072` 个 proposal 被 preview 删除，且同一 slot 元数据下
+资源日历有 `145/1586` 个状态不同。旧 19,328 局 corpus 和 81.2% held-out checkpoint 仅保留作接口
+审计，禁止用于正式 BC/RL。
+
+替代契约是 action-event ABI v3：统一输出 `STOP / NONE_OR_KEEP / RELEASE / 5 crop / 3 animal`，
+标签只从 preview/repair 后的最终 `jobs/actions` 投影；再按这些标签完整重放一次，第二遍才采 347 维
+条件资源，并要求标签固定点、资源逐元素一致、逐格 job-action 与整局 action parity。任一门槛失败都
+不得写 `validation_status=accepted`。score、candidate id、seed、seat 和对手身份仍不进入网络。
+
 ## 2026-09-21 研究口径：只优化真实 warm 部署链
 
 后续性能研究只看 **G275 → 147 维浅树切换 replay 路线 → delay=1 温接管 R1**。
@@ -209,6 +222,8 @@ G275 + 路线浅树 + delay1 温接管 `717/896`（80.02%）**。这是当前部
 | `experiments/` | 官方环境并行 A/B、扫描程序及历史结果 |
 | `docs/` | 架构、数据、运行方法和结果解释 |
 
+数学模型与实现的最新静态勘误见 [`docs/STATIC_MODEL_AUDIT_ZH.md`](docs/STATIC_MODEL_AUDIT_ZH.md)。
+
 ## 快速验证
 
 ```bash
@@ -221,6 +236,8 @@ PYTHONPATH=. /root/miniforge3/envs/torch-npu/bin/python experiments/test_submiss
 结构验证检查 609 replay、245 路线、7 个强对手、24,460,800 局切换数据、资产哈希、R1 接管符号和原生仿真器加载。官方烟测完整运行 719 步并跨过默认 day12 接管点。提交契约测试按两种 observation 视图驱动官方引擎，两个 seat 都必须跑满并完成接管（见交接中的视图保真度记录）。
 
 ## 当前部署语义
+
+- replay 中期资本订单启用因果顺序修复：step≥168 时，若首槽 `BUY_LAND` 会因现金不足失败，而同帧已经计划且真实可执行的 SELL 足以融资，则仅把这些 SELL 移到买地前；不新增销售、不延迟买地、不识别对手。互斥 fresh 16+64+128 seed 七强 FastEnv A/B 的触发子群为 17 个独立 seed（15 正 2 负），64/128 段分别净胜 `+18/+21`、0 个胜转败；两个已知救败 seed 已用官方解释器复核。`REPLAY_CAPITAL_SELL_FIRST=0` 可回退。
 
 - 开局：固定 `G275`，不使用 Nash 混合。
 - 前期：成熟 `TeammateExpandedRouteAgent` 执行 replay 路线；它含杂草修补、市场/现金保护和喂养保护，不是盲目动作磁带。

@@ -35,6 +35,17 @@ struct SearchController {
 	  bool replan_changed=false,clock_replan_changed=false;
 	  Flow initial{},recomputed{};
 	  fastkag::PublicFlowScenario::FlowAudit rival_flow{};
+	  std::vector<int> shop_branch_day15_key;
+#if R2_SHOP_BRANCH_AUDIT
+   std::vector<int> static_tail_key,continuation_first_key;
+   double static_tail_predicted=0,continuation_first_predicted=0;
+   double static_tail_exact_market=0;
+   competitive::ValueBreakdown static_tail_exact_market_parts{};
+   std::array<double,9> static_tail_flow_day{},continuation_first_flow_day{};
+   std::array<double,9> static_tail_flow_total{};
+   std::array<int,9> transition_inventory{},transition_prices{};
+   std::array<int,2> transition_own_assets{},transition_rival_assets{};
+#endif
 	  std::array<int,9>rival_shed{};
 	  competitive::ValueBreakdown tail_parts{},frozen_clock_parts{},carried_parts{},carried_replan_parts{};
 	 };
@@ -82,7 +93,7 @@ struct SearchController {
   return generate_proposals(current,base,o,names);
  }
  void install(const Proposal&p,int day){live=p.policy;restore_day=day+1;}
- double score(const View&o,const Proposal&proposal,int requested_horizon=0,ScoreAudit*audit=nullptr)const{
+ double score(const View&o,const Proposal&proposal,int requested_horizon=0,ScoreAudit*audit=nullptr,int shop_branch=-1)const{
   if(base.scenario<0)return !learned::available?0:learned::score(proposal.features.x,proposal.id==0);
   auto roll=proposal.policy;
 #if R2_SCENARIO_CARRY_RIVAL
@@ -95,6 +106,9 @@ struct SearchController {
 #else
     nullptr
 #endif
+#if R2_SHOP_BRANCH_AUDIT
+    ,shop_branch
+#endif
 	  );
 	  int horizon=requested_horizon?std::clamp(requested_horizon,1,std::max(1,30-o.day)):std::clamp(int(base.scenario),1,5),stop=std::min(719,o.step+24*horizon);Settings common=base;common.scenario=0;
 	  double consistent=o.own.money-base.competition*o.opponent.money;
@@ -102,9 +116,28 @@ struct SearchController {
 	#if R2_SCENARIO_FIXED_VALUE_CLOCK
 	  roll.model.use_value_basis=true;roll.model.value_basis={o.day,o.own.money};
 	#endif
-	  while(!world.done()&&world.view().step<stop){auto v=world.view();if(v.day!=o.day)roll.configure(common);double own0=world.own_cash(),rival0=world.rival_cash();auto act=roll.act(v);world.advance(act);consistent+=((world.own_cash()-own0)-base.competition*(world.rival_cash()-rival0))/std::pow(beta,v.day-o.day);}
+	  while(!world.done()&&world.view().step<stop){auto v=world.view();if(v.day!=o.day)roll.configure(common);double own0=world.own_cash(),rival0=world.rival_cash();auto act=roll.act(v);
+#if R2_SHOP_BRANCH_AUDIT
+   if(audit&&v.day==o.day+1&&v.hour==0){
+    audit->continuation_first_key=proposal_key(roll);
+    audit->continuation_first_predicted=roll.predicted;
+    audit->continuation_first_flow_day=roll.portfolio.f[v.day];
+   }
+   if(audit&&shop_branch>=0&&v.day==(o.day/3+1)*3&&v.hour==0){
+    if(v.shops.size()!=o.shops.size()+1||v.shops.back()!=shop_branch)
+     throw std::runtime_error("shop branch not visible before replanning");
+    audit->shop_branch_day15_key=proposal_key(roll);
+   }
+#endif
+   world.advance(act);consistent+=((world.own_cash()-own0)-base.competition*(world.rival_cash()-rival0))/std::pow(beta,v.day-o.day);}
 	  double result=world.own_cash()-base.competition*world.rival_cash();
-	  if(audit){audit->rollout_own_cash=world.own_cash();audit->rollout_rival_cash=world.rival_cash();audit->rollout_objective=result;audit->rival_flow=world.audit();audit->rival_shed=world.rival_shed();}
+	  if(audit){audit->rollout_own_cash=world.own_cash();audit->rollout_rival_cash=world.rival_cash();audit->rollout_objective=result;audit->rival_flow=world.audit();audit->rival_shed=world.rival_shed();
+#if R2_SHOP_BRANCH_AUDIT
+   auto next=world.view();audit->transition_inventory=next.market.inventory;audit->transition_prices=next.market.prices;
+   for(const auto&t:next.own.tiles){audit->transition_own_assets[0]+=plant(t);audit->transition_own_assets[1]+=animal(t);}
+   for(const auto&t:next.opponent.tiles){audit->transition_rival_assets[0]+=plant(t);audit->transition_rival_assets[1]+=animal(t);}
+#endif
+  }
   if(!world.done()){
 	   auto v=world.view();Controller tail=live;tail.configure(common);tail.book=roll.book;tail.joint=roll.joint;
 #if R2_SALE_CLOCK_MODE >= 2
@@ -114,6 +147,13 @@ struct SearchController {
    tail.model.use_rival_forecast=true;tail.model.rival_forecast=proposal.policy.model.rival;
 #endif
    tail.plan(v);
+#if R2_SHOP_BRANCH_AUDIT
+   if(audit){audit->static_tail_key=proposal_key(tail);audit->static_tail_predicted=tail.predicted;
+    audit->static_tail_flow_day=tail.portfolio.f[v.day];
+    for(int d=v.day;d<30;d++)for(int i=0;i<9;i++)audit->static_tail_flow_total[i]+=tail.portfolio.f[d][i];
+    audit->static_tail_exact_market=tail.model.value(v,tail.portfolio,nullptr,-1,
+       &audit->static_tail_exact_market_parts,nullptr,true);}
+#endif
    if(audit){
 	    audit->tail=tail.model.value(v,tail.portfolio,nullptr,-1,&audit->tail_parts);audit->initial=proposal.policy.model.rival;audit->recomputed=tail.model.rival;
 	    competitive::ValueBasis basis{o.day,o.own.money};

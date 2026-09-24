@@ -32,6 +32,9 @@ struct Config {
 struct Asset {Flow f{};Curve labor{},fixed{};int end=30,kind=-1;double first_cost=0;};
 struct ValueBreakdown {
  double fixed=0,own_trade=0,wages=0,actions=0,rival_penalty=0,liquidity_penalty=0,total=0;
+#if R2_SHOP_BRANCH_AUDIT
+ std::array<double,9> own_trade_by_item{},rival_penalty_by_item{};
+#endif
 };
 struct ValueBasis {int day;double money;};
 inline void add(Asset&a,const Asset&b,double scale=1.){for(int d=0;d<30;d++){for(int i=0;i<9;i++)a.f[d][i]+=scale*b.f[d][i];a.labor[d]+=scale*b.labor[d];a.fixed[d]+=scale*b.fixed[d];}}
@@ -159,8 +162,18 @@ struct Planner {
   exec_carry[i][MAXB]=0.;   // nothing may be carried past the end of the game
   return pl.stock;
  }
- double value(const View&o,const Asset&a,Flow*prices=nullptr,int changed=-1,ValueBreakdown*out=nullptr,const ValueBasis*basis=nullptr)const{
+ double value(const View&o,const Asset&a,Flow*prices=nullptr,int changed=-1,ValueBreakdown*out=nullptr,const ValueBasis*basis=nullptr
+#if R2_SHOP_BRANCH_AUDIT
+ ,bool exact_market=false
+#endif
+ )const{
   std::array<double,9>inv{};for(int i=0;i<9;i++)inv[i]=o.market.inventory[i];double val=0.,balance=o.own.money,liquidity=0;
+  auto exchange=[&](int i,double&stock,double quantity){
+#if R2_SHOP_BRANCH_AUDIT
+   if(exact_market)return ConditionalMarket::execute(i,stock,quantity);
+#endif
+   return trade(i,stock,quantity);
+  };
   // Faithful integration: the greedy changed exactly one product (or none, for the base), so solve
   // the DP for THAT product with ITS production and sell on the resulting schedule -- through
   // trade(), so pricing and the inventory advance (own supply impact) are the released ones. The
@@ -172,6 +185,9 @@ struct Planner {
   }
   for(int d=day;d<30;d++){
    double own_trade=0,enemy=0;
+#if R2_SHOP_BRANCH_AUDIT
+   std::array<double,9> own_by_item{},enemy_by_item{};
+#endif
    for(int i=0;i<9;i++){
     inv[i]-=dem[d][i]*.5;
 #if R2_SALE_CLOCK_MODE >= 2
@@ -179,11 +195,24 @@ struct Planner {
 #else
     double r=cfg.supply*rival[d][i]*.5,late=r;
 #endif
-    enemy+=trade(i,inv[i],r);
+#if R2_SHOP_BRANCH_AUDIT
+    double enemy_early=exchange(i,inv[i],r);
+    enemy+=enemy_early;
+#else
+    enemy+=exchange(i,inv[i],r);
+#endif
     const bool own_sched=cfg.sale_dp>0&&i==changed&&changed>=0;
-    if(own_sched) own_trade+=trade(i,inv[i],live_q[i][d]);
-    else own_trade+=trade(i,inv[i],a.f[d][i]);
-    enemy+=trade(i,inv[i],late);
+#if R2_SHOP_BRANCH_AUDIT
+    double own_item=own_sched?exchange(i,inv[i],live_q[i][d]):exchange(i,inv[i],a.f[d][i]);
+    own_trade+=own_item;
+    double enemy_late=exchange(i,inv[i],late);
+    enemy+=enemy_late;
+    own_by_item[i]=own_item;enemy_by_item[i]=enemy_early+enemy_late;
+#else
+    if(own_sched) own_trade+=exchange(i,inv[i],live_q[i][d]);
+    else own_trade+=exchange(i,inv[i],a.f[d][i]);
+    enemy+=exchange(i,inv[i],late);
+#endif
     inv[i]-=dem[d][i]*.5;if(prices)(*prices)[d][i]=price(i,inv[i]);
    }
    double wage=wages(a.labor[d]),action=cfg.action_cost*a.labor[d];
@@ -194,6 +223,12 @@ struct Planner {
    double discount=std::pow(1+cfg.discount*std::max(0.,1-origin_money/20000.),d-origin);
    val+=(cash-cfg.competition*enemy)/discount;
    if(out){out->fixed+=a.fixed[d]/discount;out->own_trade+=own_trade/discount;out->wages-=wage/discount;out->actions-=action/discount;out->rival_penalty-=cfg.competition*enemy/discount;}
+#if R2_SHOP_BRANCH_AUDIT
+   if(out)for(int i=0;i<9;i++){
+    out->own_trade_by_item[i]+=own_by_item[i]/discount;
+    out->rival_penalty_by_item[i]-=cfg.competition*enemy_by_item[i]/discount;
+   }
+#endif
   }
   double result=val-cfg.risk*liquidity;
   if(out){out->liquidity_penalty=-cfg.risk*liquidity;out->total=result;}

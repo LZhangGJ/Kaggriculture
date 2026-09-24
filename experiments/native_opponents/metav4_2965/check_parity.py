@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import importlib.util
 import json
@@ -28,8 +29,8 @@ def load_path(name: str, path: Path):
     return module
 
 
-def native_module():
-    candidates = sorted((HERE / "build").glob("metav4_2965_native*.so"))
+def native_module(build_dir: Path):
+    candidates = sorted(build_dir.glob("metav4_2965_native*.so"))
     if len(candidates) != 1:
         raise RuntimeError("run build.sh first; expected exactly one native module")
     return load_path("metav4_2965_native", candidates[0]), candidates[0]
@@ -51,8 +52,16 @@ def normalize(action: dict) -> dict:
     }
 
 
-def python_trace(seed: int, seat: int, steps: int, rival_route: int | None):
-    module = load_path(f"metav4_2965_ref_{seed}_{seat}", SOURCE)
+def python_trace(seed: int, seat: int, steps: int, rival_route: int | None,
+                 source: Path):
+    module = load_path(f"metav4_2965_ref_{seed}_{seat}", source)
+    # The asset generator explicitly installs the lazy opening before writing
+    # its route table. Freeze the Python rival tape at that same post-install
+    # point; import-time routes are not the exported C++ fixture.
+    if rival_route is not None:
+        module._alt_install(module._ALT_MODE)
+    rival_tape = (copy.deepcopy(module._IMPL.chassis.routes[rival_route])
+                  if rival_route is not None else None)
     env = FastEnv(Config(), seed)
     observations = list(env.reset(seed))
     trace = []
@@ -64,8 +73,8 @@ def python_trace(seed: int, seat: int, steps: int, rival_route: int | None):
         trace.append(action)
         joint = [PASS, PASS]
         joint[seat] = action
-        if rival_route is not None:
-            joint[1 - seat] = module._IMPL.chassis.routes[rival_route][step]
+        if rival_tape is not None:
+            joint[1 - seat] = rival_tape[step]
         observations = list(env.step(joint))
     native = module._IMPL.chassis.players.get(seat, {})
     return trace, int(native.get("route", 0))
@@ -88,21 +97,30 @@ def main() -> None:
     parser.add_argument("--rival-route", type=int,
                         help="drive the other seat with this raw replay route")
     parser.add_argument("--output", type=Path, default=HERE / "parity_report.json")
+    parser.add_argument("--source", type=Path, default=SOURCE)
+    parser.add_argument("--assets", type=Path, default=ASSETS)
+    parser.add_argument("--native-build", type=Path, default=HERE / "build")
+    parser.add_argument("--soil-variant", action="store_true")
+    parser.add_argument("--v57-variant", action="store_true")
+    parser.add_argument("--v15-variant", action="store_true")
     args = parser.parse_args()
     if args.seed_count < 1 or not 1 <= args.steps <= 719:
         parser.error("seed-count must be positive and steps in [1,719]")
 
-    native, native_path = native_module()
+    native, native_path = native_module(args.native_build)
     seats = (args.seat,) if args.seat is not None else (0, 1)
     runs = []
     for seed in range(args.seed, args.seed + args.seed_count):
         for seat in seats:
             expected, expected_route = python_trace(
-                seed, seat, args.steps, args.rival_route)
-            result = (native.play(str(ASSETS), seed, seat, args.steps)
+                seed, seat, args.steps, args.rival_route, args.source)
+            result = (native.play(str(args.assets), seed, seat, args.steps,
+                                  args.soil_variant, args.v57_variant,
+                                  args.v15_variant)
                       if args.rival_route is None else
-                      native.play_vs_route(str(ASSETS), seed, seat, args.steps,
-                                           args.rival_route))
+                      native.play_vs_route(str(args.assets), seed, seat, args.steps,
+                                           args.rival_route, args.soil_variant,
+                                           args.v57_variant, args.v15_variant))
             first = None
             for step, (left, right) in enumerate(zip(expected, result["trace"])):
                 detail = mismatch(left, right)
@@ -128,11 +146,11 @@ def main() -> None:
 
     report = {
         "schema": "metav4-2965-native-parity-v1",
-        "source": str(SOURCE.relative_to(ROOT)),
-        "source_sha256": hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
-        "native_build": str(native_path.relative_to(ROOT)),
+        "source": str(args.source.resolve().relative_to(ROOT)),
+        "source_sha256": hashlib.sha256(args.source.read_bytes()).hexdigest(),
+        "native_build": str(native_path.resolve().relative_to(ROOT)),
         "native_build_sha256": hashlib.sha256(native_path.read_bytes()).hexdigest(),
-        "asset_sha256": hashlib.sha256(ASSETS.read_bytes()).hexdigest(),
+        "asset_sha256": hashlib.sha256(args.assets.read_bytes()).hexdigest(),
         "seed_start": args.seed,
         "seed_count": args.seed_count,
         "steps": args.steps,

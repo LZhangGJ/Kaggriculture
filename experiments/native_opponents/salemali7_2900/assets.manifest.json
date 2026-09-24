@@ -1,0 +1,8 @@
+{
+  "schema": "salemali7-2900-native-assets-v1",
+  "source": "opponents/salemali7_2900/main.py",
+  "source_sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9",
+  "asset_sha256": "e4310fae37ecf0d7d4574c90a9f7ffb0a3b4561611298fff10239819d2e3d0c3",
+  "bytes": 45184,
+  "frames": 720
+}

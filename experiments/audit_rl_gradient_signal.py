@@ -20,7 +20,7 @@ import torch
 from experiments.train_midgame_autofill_v3 import build_model
 from experiments.train_student_action_event_rl_v3 import (
     _batch_terms, _day_bundle_objective, _day_state_crossfit_advantages,
-    _load_native_rollout, _restore_native_games,
+    _load_native_rollout, _paired_seed_loo_advantages, _restore_native_games,
 )
 
 
@@ -42,11 +42,19 @@ def audit(args: argparse.Namespace) -> dict:
     games = _restore_native_games(
         arrays, game_metadata, float(reward["margin_weight"]),
         float(reward["margin_scale"]))
-    critic, _ = _day_state_crossfit_advantages(
-        games, arrays, checkpoint, SimpleNamespace(
-            margin_weight=float(reward["margin_weight"]),
-            margin_scale=float(reward["margin_scale"]),
-            day_state_critic_workers=args.critic_workers))
+    critic = None
+    if args.baseline == "crossfit":
+        critic, _ = _day_state_crossfit_advantages(
+            games, arrays, checkpoint, SimpleNamespace(
+                margin_weight=float(reward["margin_weight"]),
+                margin_scale=float(reward["margin_scale"]),
+                day_state_critic_workers=args.critic_workers))
+    else:
+        game_rewards = np.asarray([game["reward"] for game in games], dtype=np.float32)
+        game_advantages = _paired_seed_loo_advantages(games, game_rewards)
+        for game, advantage in zip(games, game_advantages):
+            for day in game["days"]:
+                day["day_state_advantage"] = float(advantage)
     if args.opponent is not None:
         games = [game for game in games if game["opponent"] == args.opponent]
 
@@ -60,7 +68,8 @@ def audit(args: argparse.Namespace) -> dict:
         checkpoint["model_dimensions"]["causal_context"],
         checkpoint["model_dimensions"]["packed_observation"],
         checkpoint["model_dimensions"]["event_resources"],
-        checkpoint["model_scale"])
+        checkpoint["model_scale"],
+        shop_action_head=checkpoint.get("shop_action_head_semantics") == 1)
     model.load_state_dict(checkpoint["model"])
     model.train()
     selected = [game for seed in chosen for game in by_seed[seed]]
@@ -76,6 +85,7 @@ def audit(args: argparse.Namespace) -> dict:
         blocks = [[game for seed in seed_block for game in by_seed[int(seed)]]
                   for seed_block in np.array_split(np.asarray(chosen), args.blocks)]
     gradients = []
+    shop_gradients = []
     if args.device.startswith("npu"):
         import torch_npu  # noqa: F401
         torch.npu.set_device(args.device)
@@ -138,17 +148,39 @@ def audit(args: argparse.Namespace) -> dict:
         if not np.all(np.isfinite(gradient)):
             raise RuntimeError("non-finite policy gradient")
         gradients.append(gradient)
+        if checkpoint.get("shop_resource_semantics") == 1:
+            shop_gradient = dict(model.named_parameters())[
+                "resource.weight"].grad[:, 374:383].detach().flatten().cpu().numpy().copy()
+            shop_gradients.append(shop_gradient)
     values = np.stack(gradients).astype(np.float64)
     if args.block_gradients is not None:
         if args.block_gradients.exists():
             raise FileExistsError(args.block_gradients)
         np.savez_compressed(args.block_gradients,
-                            gradients=values.astype(np.float32))
+                            gradients=values.astype(np.float32),
+                            shop_resource_gradients=np.asarray(
+                                shop_gradients, dtype=np.float32))
     norms = np.linalg.norm(values, axis=1)
     mean = values.mean(axis=0)
     noise = float(np.sqrt(np.mean(np.sum((values - mean) ** 2, axis=1))))
     cosine = values @ values.T / np.outer(norms, norms)
     pairs = cosine[np.triu_indices(args.blocks, 1)]
+    shop_signal = None
+    if shop_gradients:
+        shop_values = np.stack(shop_gradients).astype(np.float64)
+        shop_norms = np.linalg.norm(shop_values, axis=1)
+        shop_mean = shop_values.mean(axis=0)
+        shop_noise = float(np.sqrt(np.mean(np.sum(
+            (shop_values - shop_mean) ** 2, axis=1))))
+        shop_cosine = shop_values @ shop_values.T / np.outer(shop_norms, shop_norms)
+        shop_signal = {
+            "mean_pairwise_cosine": float(shop_cosine[np.triu_indices(args.blocks, 1)].mean()),
+            "full_batch_snr_proxy": (float(args.blocks ** .5 *
+                                           np.linalg.norm(shop_mean) / shop_noise)
+                                     if shop_noise else None),
+            "mean_gradient_norm": float(np.linalg.norm(shop_mean)),
+            "block_noise_rms": shop_noise,
+        }
     return {
         "scope": "read_only_frozen_policy_seed_block_gradient",
         "checkpoint_sha256": sha256(args.checkpoint),
@@ -156,6 +188,8 @@ def audit(args: argparse.Namespace) -> dict:
         "step": args.step,
         "grouping": args.grouping,
         "component": args.component,
+        "baseline": args.baseline,
+        "shop_resource_gradient": shop_signal,
         "opponent": args.opponent,
         "device": args.device,
         "safe_hidden_index_copy": (args.safe_hidden_index_copy
@@ -176,7 +210,7 @@ def audit(args: argparse.Namespace) -> dict:
         "full_batch_snr_proxy": (
             float(np.sqrt(args.blocks) * np.linalg.norm(mean) / noise)
             if noise else None),
-        "critic_variance_ratio": critic["variance_ratio"],
+        "critic_variance_ratio": (critic["variance_ratio"] if critic else None),
     }
 
 
@@ -193,6 +227,8 @@ def main() -> None:
     parser.add_argument("--policy-seed", type=int, default=0)
     parser.add_argument("--component", choices=("policy", "entropy", "full"),
                         default="policy")
+    parser.add_argument("--baseline", choices=("crossfit", "paired_seed"),
+                        default="crossfit")
     parser.add_argument("--opponent")
     parser.add_argument("--block-gradients", type=Path)
     parser.add_argument("--threads", type=int, default=4)

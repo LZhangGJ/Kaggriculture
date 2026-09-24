@@ -11,6 +11,7 @@ OPPONENT_NAMES = {
     1: "thomas_2945_cpp", 2: "metav4_2965", 3: "replay_clean",
     4: "salemali7_2900",
     5: "fieldcraft_2887",
+    6: "soil_current",
 }
 
 

@@ -1,0 +1,14 @@
+{
+  "agents": [
+    {"slug": "fieldcraft_2887", "source_family": "fieldcraft", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-2887-score-fieldcraft-agent/output/extracted/main.py"},
+    {"slug": "night_harvest", "source_family": "night-harvest", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-night-harvest/output/main.py"},
+    {"slug": "market_smart_v24", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/market-smart-farming-kaggriculture/output/main.py"},
+    {"slug": "ahmed_v56", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-v56-smarter-seeds-and-fertilizer/output/main.py"},
+    {"slug": "thomas_metav4_v13", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/the-metav4-farm-submission-v13/output/main.py"},
+    {"slug": "master_hybrid_2965", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/the-2965-master-hybrid-engine/output/main.py"},
+    {"slug": "historical_lb_2800_rescue", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-7-turn-rescue-historical-lb-2800/output/extracted/main.py"},
+    {"slug": "more_wheat_smarter_sales", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-more-wheat-smarter-sales/output/extracted/main.py"},
+    {"slug": "farmer_john_idle_seller_v57", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/farmer-john-and-the-idle-seller/output/v57_agent/main.py"},
+    {"slug": "soil_remembers_rain", "source_family": "ahmed-v31-descendant", "path": "/root/kaggriculture-replay-switch-clean-v1/work/new_public_opponents/kaggriculture-frontier-the-soil-remembers-rain/output/main.py"}
+  ]
+}

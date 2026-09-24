@@ -10,7 +10,7 @@ decision was made on roughly half the sample it appeared to have.
 This script reports, per opponent:
   * wins / games                (what run_strong_ab reports)
   * independent seed units      (seeds, counting a both-seat pair as one unit)
-  * win rate with a Wilson 95% CI over the SEED-LEVEL units
+  * win rate with a seed-clustered 95% mean CI
   * the number of additional seeds that must flip to reach the target win rate
 
 Usage:  eval_seed_paired.py <result.json> [--target 0.80]
@@ -20,14 +20,20 @@ import argparse, json, math, sys
 from collections import defaultdict
 
 
-def wilson(k, n, z=1.96):
-    if n == 0:
+def clustered_mean_ci(values, z=1.96):
+    """CI for seed-level outcomes in {0, .5, 1}; they are not binomial counts."""
+    n = len(values)
+    if not n:
         return (0.0, 0.0)
-    p = k / n
-    d = 1 + z * z / n
-    c = p + z * z / (2 * n)
-    r = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))
-    return ((c - r) / d, (c + r) / d)
+    mean = sum(values) / n
+    if n == 1:
+        return (mean, mean)
+    variance = sum((value - mean) ** 2 for value in values) / (n - 1)
+    # Second-order approximation to the two-sided Student-t 97.5% quantile.
+    df = n - 1
+    critical = z + (z ** 3 + z) / (4 * df) + (5 * z ** 5 + 16 * z ** 3 + 3 * z) / (96 * df ** 2)
+    radius = critical * math.sqrt(variance / n)
+    return (max(0.0, mean - radius), min(1.0, mean + radius))
 
 
 def seed_units(rows, label):
@@ -83,7 +89,7 @@ def main():
         u = units[bot]
         k = sum(u)
         m = len(u)
-        lo, hi = wilson(k, m)
+        lo, hi = clustered_mean_ci(u)
         need = max(0, math.ceil(a.target * m - k))
         total_need += need
         ok = "" if k / m >= a.target else "  <-- below"
@@ -91,8 +97,8 @@ def main():
               f"[{100*lo:5.1f},{100*hi:5.1f}] | {100*a.target:6.1f}% {need:6d}{ok}")
     print()
     print(f"seeds that must flip to reach {100*a.target:.0f}% on every opponent: {total_need}")
-    print("NOTE: judge on the paired column and its CI. The raw column double-counts"
-          " seats and its error bars are ~1.4x too tight.")
+    print("NOTE: the CI treats each both-seat seed pair as one cluster. Fractional 0.5"
+          " outcomes are bounded means, not Bernoulli successes, so Wilson is not used.")
 
 
 if __name__ == "__main__":

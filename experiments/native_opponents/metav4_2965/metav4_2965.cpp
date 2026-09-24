@@ -9,8 +9,10 @@
 #include <algorithm>
 #include <array>
 #include <cmath>
+#include <cstdio>
 #include <cstdint>
 #include <fstream>
+#include <functional>
 #include <limits>
 #include <memory>
 #include <mutex>
@@ -318,6 +320,11 @@ struct Opponent::Impl {
     bool decided{};
     fastkag::Item species{fastkag::Item::NONE};
   };
+  struct V9CarrotState {
+    int last_step{-1};
+    bool swapped{};
+    std::vector<std::pair<fastkag::Position, int>> tiles;
+  };
   struct CattleSite {
     fastkag::Position site{};
     int day{-1};
@@ -346,17 +353,40 @@ struct Opponent::Impl {
     Or2State or2;
     InputState input;
     V9HerdState v9_herd;
+    V9CarrotState v9_carrot;
     CattleCreditState cattle_credit;
     std::vector<std::vector<WeedPending>> weed_pending;
     std::array<std::array<int, fastkag::N_PRODUCTS>, 720> racepx_debts{};
     std::array<std::array<int, fastkag::N_PRODUCTS>, 720> sale_debts{};
+    std::vector<bool> v57_position_matches;
+    std::array<int, fastkag::N_ITEMS> v15_debt_quantity{};
+    std::array<int, fastkag::N_ITEMS> v15_debt_expires{};
+    std::vector<CattleSite> v15_herd2_pending;
+    std::vector<CattleSite> v15_herd2_sites;
+    int v15_herd2_credit{};
   };
 
-  explicit Impl(const std::string& path)
+  explicit Impl(const std::string& path, bool soil = false,
+                bool v57 = false, bool v15 = false)
       : shared(shared_assets(path)), assets(shared->assets),
-        executor(shared->executor) {}
+        executor(shared->executor), soil_variant(soil), v57_variant(v57),
+        v15_variant(v15) {}
 
   void reset() { seats = {}; }
+
+#ifdef V15_TRACE
+  static void trace_v15(int step, const char* stage,
+                        const fastkag::PlayerAction& action) {
+    if (step != 290 && step != 361 && step != 368 &&
+        step != 456 && step != 600 && step != 632 && step != 633 &&
+        step != 634 && step != 697) return;
+    std::fprintf(stderr, "v15 step=%d %s:", step, stage);
+    for (const auto& order : action.market)
+      std::fprintf(stderr, " %d/%d/%d", int(order.op), int(order.item),
+                   order.quantity);
+    std::fprintf(stderr, "\n");
+  }
+#endif
 
   fastkag::PlayerAction fixture_route_action(int route_id, int step) const {
     const auto& tape = assets.library.routes[slot_for(route_id)];
@@ -1936,10 +1966,9 @@ struct Opponent::Impl {
                             fastkag::PlayerAction& action, SeatState& state) {
     const int step = env.step_count();
     if (step < 192 || step >= 696) return;
-    // Final EXP389 item horizon.  Its public-history ladder starts at 41 and can
-    // only rise after a detected rival race; the PASS parity fixture remains
-    // at this canonical floor.
-    constexpr int horizon = 41;
+    // Meta/V57 override V9's default to 41; V15 retains the original 40.
+    // A detected public sale race can raise this horizon beyond its floor.
+    const int horizon = v15_variant ? 40 : 41;
     const int end = std::min(695, step + horizon);
     if (end <= step) return;
     const auto& private_state = env.privates()[player];
@@ -3327,6 +3356,97 @@ struct Opponent::Impl {
           {fastkag::Op::SELL, fastkag::Item::WHEAT, quantity});
   }
 
+  static void apply_v9_carrot(
+      const fastkag::Simulator& env, int player,
+      fastkag::PlayerAction& action, V9CarrotState& state) {
+    const int step = env.step_count(), day = env.day();
+    if (step == 0 || step <= state.last_step) state = {};
+    state.last_step = step;
+    const auto& private_state = env.privates()[player];
+    const auto& farm = env.farms()[player];
+    const auto positions = fastkag::positions(env, player);
+    const int wheat = int(fastkag::Item::WHEAT);
+    const int carrot = int(fastkag::Item::CARROT);
+    const int wheat_price = env.market().prices[wheat];
+    const int carrot_price = env.market().prices[carrot];
+    const double ratio = double(carrot_price) / std::max(1, wheat_price);
+    for (std::size_t actor = 0; actor < action.units.size() &&
+                                actor < positions.size(); ++actor) {
+      if (action.units[actor].op != fastkag::Op::WATER) continue;
+      const auto position = positions[actor];
+      const auto found = std::find_if(state.tiles.begin(), state.tiles.end(),
+          [&](const auto& row) {
+            return row.first.x == position.x && row.first.y == position.y &&
+                   row.second == day - 3;
+          });
+      if (found == state.tiles.end()) continue;
+      const auto& plant = tile(env, player, position);
+      if (plant.kind == fastkag::TileKind::PLANT &&
+          plant.crop == fastkag::Item::CARROT &&
+          plant.planted_day == day - 3 && plant.yield_units > 0)
+        action.units[actor] = {fastkag::Op::HARVEST};
+    }
+    int wheat_held = private_state.shed[wheat];
+    for (const auto& inventory : private_state.inventories)
+      wheat_held += inventory[wheat];
+    const bool boom = ratio >= 3.5;
+    const int reserve = boom ? 10 : 40;
+    if (boom && day >= 10 && day <= 23 && wheat_held < 40 &&
+        action.market.size() < 10 &&
+        std::none_of(action.market.begin(), action.market.end(),
+            [](const auto& order) {
+              return same(order, fastkag::Op::BUY_PRODUCT,
+                          fastkag::Item::WHEAT);
+            })) {
+      const int budget = int(farm.money) - 1500;
+      const int quantity = std::min(40 - wheat_held,
+          budget / std::max(1, wheat_price + 5));
+      if (quantity > 0)
+        action.market.push_back({fastkag::Op::BUY_PRODUCT,
+                                 fastkag::Item::WHEAT, quantity});
+    }
+    if (day >= 10 && day <= 23 && wheat_held >= reserve && ratio >= 1.8) {
+      int carrot_seeds = private_state.seeds[carrot];
+      for (const auto& command : action.units)
+        if (same(command, fastkag::Op::PLANT, fastkag::Item::CARROT))
+          --carrot_seeds;
+      for (std::size_t actor = 0; actor < action.units.size(); ++actor) {
+        auto& command = action.units[actor];
+        if (!same(command, fastkag::Op::PLANT, fastkag::Item::WHEAT) ||
+            carrot_seeds <= 0) continue;
+        command.item = fastkag::Item::CARROT;
+        --carrot_seeds;
+        state.swapped = true;
+        if (actor < positions.size()) {
+          const auto position = positions[actor];
+          const auto found = std::find_if(state.tiles.begin(), state.tiles.end(),
+              [&](const auto& row) {
+                return row.first.x == position.x && row.first.y == position.y;
+              });
+          if (found == state.tiles.end())
+            state.tiles.push_back({position, day});
+          else found->second = day;
+        }
+      }
+      for (auto& order : action.market)
+        if (same(order, fastkag::Op::BUY_SEED, fastkag::Item::WHEAT)) {
+          order.item = fastkag::Item::CARROT;
+          state.swapped = true;
+        }
+    }
+    if (state.swapped && day < 24 && action.market.size() < 10 &&
+        carrot_price >= 2) {
+      const int stock = python_projected_shed(env, player, action)[carrot];
+      int selling = 0;
+      for (const auto& order : action.market)
+        if (same(order, fastkag::Op::SELL, fastkag::Item::CARROT))
+          selling += order.quantity;
+      if (stock > selling)
+        action.market.insert(action.market.begin(),
+            {fastkag::Op::SELL, fastkag::Item::CARROT, stock - selling});
+    }
+  }
+
   static void apply_v9_herd(
       const fastkag::Simulator& env, int player,
       const std::vector<fastkag::PlayerAction>& tape,
@@ -3591,6 +3711,236 @@ struct Opponent::Impl {
     }
   }
 
+  static bool v57_clone_gate(const fastkag::Simulator& env, int player,
+                             SeatState& state) {
+    const int step = env.step_count();
+    if (step < 216) return false;
+    const auto& own = env.farms()[player];
+    const auto& rival = env.farms()[1 - player];
+    if (step < 696 && !own.hands.empty()) {
+      bool equal = own.hands.size() == rival.hands.size() &&
+                   own.farmer.x == rival.farmer.x &&
+                   own.farmer.y == rival.farmer.y;
+      if (equal) for (std::size_t i = 0; i < own.hands.size(); ++i)
+        equal &= own.hands[i].x == rival.hands[i].x &&
+                 own.hands[i].y == rival.hands[i].y;
+      state.v57_position_matches.push_back(equal);
+      if (state.v57_position_matches.size() > 6)
+        state.v57_position_matches.erase(state.v57_position_matches.begin());
+    }
+    if (state.v57_position_matches.size() < 4 ||
+        std::count(state.v57_position_matches.begin(),
+                   state.v57_position_matches.end(), true) < 4 ||
+        own.unlocked_mask != rival.unlocked_mask)
+      return false;
+    int total = 0, matching = 0;
+    for (std::size_t i = 0; i < own.tiles.size(); ++i) {
+      const auto& a = own.tiles[i];
+      const auto& b = rival.tiles[i];
+      const bool a_occupied = a.crop != fastkag::Item::NONE ||
+                              a.animal != fastkag::Item::NONE;
+      const bool b_occupied = b.crop != fastkag::Item::NONE ||
+                              b.animal != fastkag::Item::NONE;
+      if (!a_occupied && !b_occupied) continue;
+      ++total;
+      matching += a.crop == b.crop && a.animal == b.animal;
+    }
+    return total >= 8 && double(matching) / total >= 0.95;
+  }
+
+  static double v15_tile_similarity(const fastkag::Simulator& env,
+                                     int player) {
+    const auto& own = env.farms()[player];
+    const auto& rival = env.farms()[1 - player];
+    if (own.unlocked_mask != rival.unlocked_mask) return 0.0;
+    int total = 0, matching = 0;
+    for (std::size_t i = 0; i < own.tiles.size(); ++i) {
+      const auto& a = own.tiles[i];
+      const auto& b = rival.tiles[i];
+      const bool occupied = a.crop != fastkag::Item::NONE ||
+                            a.animal != fastkag::Item::NONE ||
+                            b.crop != fastkag::Item::NONE ||
+                            b.animal != fastkag::Item::NONE;
+      if (!occupied) continue;
+      ++total;
+      matching += a.crop == b.crop && a.animal == b.animal;
+    }
+    return total >= 8 ? double(matching) / total : 0.0;
+  }
+
+  void v15_clone_lead(const fastkag::Simulator& env, int player,
+                      const std::vector<fastkag::PlayerAction>& tape,
+                      SeatState& state, fastkag::PlayerAction& action) const {
+    const int step = env.step_count();
+    for (auto& order : action.market) {
+      const int item = int(order.item);
+      if (order.op != fastkag::Op::SELL || item < 0 ||
+          item >= fastkag::N_ITEMS || state.v15_debt_quantity[item] <= 0)
+        continue;
+      if (step <= state.v15_debt_expires[item]) {
+        const int removed = std::min(std::max(0, order.quantity),
+                                     state.v15_debt_quantity[item]);
+        state.v15_debt_quantity[item] -= removed;
+        order.quantity -= removed;
+      }
+      if (state.v15_debt_quantity[item] <= 0)
+        state.v15_debt_quantity[item] = 0;
+      if (order.quantity <= 0) order = {};
+    }
+    for (int item = 0; item < fastkag::N_ITEMS; ++item)
+      if (step > state.v15_debt_expires[item])
+        state.v15_debt_quantity[item] = 0;
+    if (step < 96 || step >= 690 || action.market.size() >= 10 ||
+        v15_tile_similarity(env, player) < 0.98)
+      return;
+    std::array<int, fastkag::N_ITEMS> current_sells{};
+    for (const auto& order : action.market)
+      if (order.op == fastkag::Op::SELL && int(order.item) >= 0)
+        current_sells[int(order.item)] += std::max(0, order.quantity);
+    const auto& shed = env.privates()[player].shed;
+    struct Candidate { int price, target, item, quantity; };
+    std::vector<Candidate> candidates;
+    const auto premium = [](int item) {
+      return item == int(fastkag::Item::STRAWBERRY) ||
+             item == int(fastkag::Item::MELON) ||
+             item == int(fastkag::Item::MILK) ||
+             item == int(fastkag::Item::WOOL);
+    };
+    for (int target = step + 2; target < std::min(step + 4, 719);
+         ++target) {
+      if (step / 4 != target / 4) continue;
+      const auto& future_tape = target >= 648
+          ? assets.library.routes[slot_for(2)] : tape;
+      if (target >= int(future_tape.size())) continue;
+      for (const auto& order : future_tape[target].market) {
+        const int item = int(order.item);
+        if (order.op != fastkag::Op::SELL || !premium(item) ||
+            order.quantity <= 0 || state.v15_debt_quantity[item] > 0 ||
+            current_sells[item] > 0)
+          continue;
+        const int available = std::max(0, shed[item] - current_sells[item]);
+        const int quantity = std::min({5, order.quantity, available});
+        if (quantity > 0)
+          candidates.push_back({env.market().prices[item], target,
+                                item, quantity});
+      }
+    }
+    if (candidates.empty()) return;
+    const auto best = std::max_element(candidates.begin(), candidates.end(),
+        [](const Candidate& a, const Candidate& b) {
+          return std::make_tuple(a.price, a.target,
+                                 std::string_view(fastkag::item_name(a.item)),
+                                 a.quantity) <
+                 std::make_tuple(b.price, b.target,
+                                 std::string_view(fastkag::item_name(b.item)),
+                                 b.quantity);
+        });
+    action.market.push_back({fastkag::Op::SELL,
+                             fastkag::Item(best->item), best->quantity});
+    state.v15_debt_quantity[best->item] = best->quantity;
+    state.v15_debt_expires[best->item] = best->target;
+  }
+
+  void v15_seed_budget(const fastkag::Simulator& env, int player,
+                       const std::vector<fastkag::PlayerAction>& tape,
+                       fastkag::PlayerAction& action) const {
+    const int step = env.step_count();
+    if (step < 624) return;
+    for (const auto crop : {fastkag::Item::WHEAT, fastkag::Item::CARROT}) {
+      const int item = int(crop);
+      int planting = 0;
+      for (const auto& unit : action.units)
+        planting += unit.op == fastkag::Op::PLANT && unit.item == crop;
+      int available = std::max(0, env.privates()[player].seeds[item] - planting);
+      int remaining = 0;
+      for (int future = step + 1; future < 719; ++future) {
+        const auto& future_tape = future >= 648
+            ? assets.library.routes[slot_for(2)] : tape;
+        for (const auto& unit : future_tape[future].units)
+          remaining += unit.op == fastkag::Op::PLANT && unit.item == crop;
+      }
+      for (auto& order : action.market) {
+        if (order.op != fastkag::Op::BUY_SEED || order.item != crop) continue;
+        const int keep = std::min(std::max(0, order.quantity),
+                                  std::max(0, remaining - available));
+        available += keep;
+        if (keep == 0) order = {};
+        else order.quantity = keep;
+      }
+    }
+  }
+
+  static void v57_cxd_reorder(const fastkag::Simulator& env, int player,
+                              fastkag::PlayerAction& action,
+                              bool preserve_fixed_positions = true) {
+    auto& orders = action.market;
+    if (orders.size() < 2) return;
+    std::array<bool, fastkag::N_ITEMS> bought{};
+    for (const auto& order : orders)
+      if (order.op == fastkag::Op::BUY_PRODUCT && int(order.item) >= 0)
+        bought[int(order.item)] = true;
+    std::vector<int> slots, fixed_positions;
+    std::vector<fastkag::Action> sells, fixed;
+    const auto fixed_op = [](fastkag::Op op) {
+      return op == fastkag::Op::HIRE || op == fastkag::Op::BUY_SEED ||
+             op == fastkag::Op::BUY_ANIMAL || op == fastkag::Op::BUY_LAND;
+    };
+    for (int i = 0; i < int(orders.size()); ++i) {
+      const auto& order = orders[i];
+      if (fixed_op(order.op)) {
+        slots.push_back(i); fixed_positions.push_back(i); fixed.push_back(order);
+      } else if (order.op == fastkag::Op::SELL &&
+                 int(order.item) >= 0 && !bought[int(order.item)]) {
+        slots.push_back(i); sells.push_back(order);
+      }
+    }
+    if (sells.empty() || slots.size() < 2) return;
+    const auto opponent = orders;
+    const auto stock = python_projected_shed(env, player, action);
+    double best = v44_margin(orders, opponent, env.market(), stock);
+    std::vector<fastkag::Action> accepted;
+    std::vector<int> positions(sells.size());
+    std::vector<bool> used(slots.size());
+    int evals = 0;
+    std::function<void(int)> visit = [&](int depth) {
+      if (evals >= 800) return;
+      if (depth < int(sells.size())) {
+        for (int i = 0; i < int(slots.size()); ++i) {
+          if (used[i]) continue;
+          used[i] = true; positions[depth] = slots[i];
+          visit(depth + 1);
+          used[i] = false;
+          if (evals >= 800) break;
+        }
+        return;
+      }
+      auto candidate = orders;
+      std::vector<int> remaining;
+      for (int slot : slots)
+        if (std::find(positions.begin(), positions.end(), slot) == positions.end())
+          remaining.push_back(slot);
+      if (preserve_fixed_positions)
+        for (int i = 0; i < int(fixed.size()); ++i)
+          if (remaining[i] < fixed_positions[i]) return;
+      for (int i = 0; i < int(sells.size()); ++i)
+        candidate[positions[i]] = sells[i];
+      for (int i = 0; i < int(fixed.size()); ++i)
+        candidate[remaining[i]] = fixed[i];
+      const auto same_order = [](const fastkag::Action& a,
+                                 const fastkag::Action& b) {
+        return a.op == b.op && a.item == b.item &&
+               a.quantity == b.quantity;
+      };
+      if (std::equal(candidate.begin(), candidate.end(),
+                     orders.begin(), same_order)) return;
+      ++evals;
+      const double value = v44_margin(candidate, opponent, env.market(), stock);
+      if (value > best + 0.5) { best = value; accepted = std::move(candidate); }
+    };
+    visit(0);
+    if (!accepted.empty()) orders = std::move(accepted);
+  }
+
   static void e335_compact(const fastkag::Simulator& env, int player,
                            fastkag::PlayerAction& action) {
     if (env.step_count() < 144 || action.market.size() < 2) return;
@@ -3696,7 +4046,8 @@ struct Opponent::Impl {
     struct Planned { int step, item, quantity; };
     std::vector<Planned> plan;
     std::optional<fastkag::Action> first;
-    for (int offset = 1; offset <= 3 && step + offset <= 718; ++offset) {
+    for (int offset = 1; offset <= (soil_variant ? 4 : 3) &&
+                         step + offset <= 718; ++offset) {
       const int future = step + offset;
       const auto& tape = future >= 648
           ? assets.library.routes[slot_for(2)] : current_tape;
@@ -4081,8 +4432,6 @@ struct Opponent::Impl {
     }
     fastkag::apply_thomas_wheat_replenishment_trim(
         env, player, tape, action);
-    fastkag::apply_thomas_supply_guard(env, player, tape, action);
-    fastkag::apply_thomas_courier(env, player, tape, action, state);
     sales_first();
   }
 
@@ -4095,15 +4444,74 @@ struct Opponent::Impl {
     sell_capharv_credit(env, player, action, state);
   }
 
-  static void apply_herd_outer(
+  void apply_herd_outer(
       const fastkag::Simulator& env, int player,
       const std::vector<fastkag::PlayerAction>& tape,
       fastkag::PlayerAction& action,
-      fastkag::ThomasPrefixMarketState& state) {
-    fastkag::apply_thomas_herd2(env, player, tape, action, state);
-    fastkag::apply_thomas_cowswap(env, player, tape, action, state);
-    fastkag::observe_thomas_cowswap_harvest(env, player, action, state);
-    merge_cowswap_credit(env, player, action, state);
+      SeatState& state) const {
+    auto& prefix = state.prefix;
+    const auto before_herd = v15_variant ? action.units
+                                        : std::vector<fastkag::Action>{};
+    fastkag::apply_thomas_herd2(env, player, tape, action, prefix);
+    if (v15_variant && prefix.herd2_mode != fastkag::Item::NONE) {
+      const auto mode = prefix.herd2_mode;
+      auto& pending = state.v15_herd2_pending;
+      for (auto it = pending.begin(); it != pending.end();) {
+        const auto& value = tile(env, player, it->site);
+        if (value.animal == mode && value.placed_day == it->day) {
+          state.v15_herd2_sites.push_back(*it);
+          it = pending.erase(it);
+        } else if (env.day() > it->day + 1) {
+          it = pending.erase(it);
+        } else ++it;
+      }
+      const auto positions = fastkag::positions(env, player);
+      for (std::size_t actor = 0;
+           actor < action.units.size() && actor < positions.size(); ++actor) {
+        const auto& unit = action.units[actor];
+        const auto pos = positions[actor];
+        if (unit.op == fastkag::Op::PLACE && unit.item == mode &&
+            actor < before_herd.size() &&
+            before_herd[actor].op == fastkag::Op::PLACE &&
+            before_herd[actor].item == fastkag::Item::GOOSE)
+          pending.push_back({pos, env.day()});
+        if (unit.op != fastkag::Op::HARVEST) continue;
+        const auto& value = tile(env, player, pos);
+        if (value.animal != mode) continue;
+        if (std::any_of(state.v15_herd2_sites.begin(),
+                        state.v15_herd2_sites.end(),
+                        [&](const CattleSite& site) {
+                          return site.site.x == pos.x && site.site.y == pos.y;
+                        }))
+          state.v15_herd2_credit += std::max(0, int(value.yield_units));
+      }
+      if (state.v15_herd2_credit > 0) {
+        const auto product = fastkag::Item(
+            fastkag::thomas_herd_spec(mode).product);
+        const auto stock = python_projected_shed(env, player, action);
+        const int extra = std::min(state.v15_herd2_credit,
+            std::max(0, stock[int(product)] - sale_quantity(action, product)));
+        if (extra > 0) {
+          auto sale = std::find_if(action.market.begin(), action.market.end(),
+              [&](const auto& order) {
+                return same(order, fastkag::Op::SELL, product);
+              });
+          bool accepted = false;
+          if (sale != action.market.end()) {
+            sale->quantity += extra;
+            accepted = true;
+          } else if (action.market.size() < 10) {
+            action.market.insert(action.market.begin(),
+                                 {fastkag::Op::SELL, product, extra});
+            accepted = true;
+          }
+          if (accepted) state.v15_herd2_credit -= extra;
+        }
+      }
+    }
+    fastkag::apply_thomas_cowswap(env, player, tape, action, prefix);
+    fastkag::observe_thomas_cowswap_harvest(env, player, action, prefix);
+    merge_cowswap_credit(env, player, action, prefix);
   }
 
   struct CropVisit { int step, actor; fastkag::Op op; };
@@ -4517,8 +4925,84 @@ struct Opponent::Impl {
     }
   }
 
+  static void soil_queue_compact(const fastkag::Simulator& env, int player,
+                                 fastkag::PlayerAction& action) {
+    if (action.market.size() < 2) return;
+    auto stock = python_projected_shed(env, player, action);
+    std::array<bool, fastkag::N_ITEMS> unknown{};
+    const bool all_land = (env.farms()[player].unlocked_mask & 15) == 15;
+    std::vector<fastkag::Action> compact;
+    compact.reserve(action.market.size());
+    for (const auto& order : action.market) {
+      if (order.op == fastkag::Op::PASS || order.quantity == 0) continue;
+      if (order.op == fastkag::Op::BUY_LAND && all_land) continue;
+      const int item = int(order.item);
+      if (item >= 0 && item < fastkag::N_ITEMS) {
+        if (order.op == fastkag::Op::SELL && !unknown[item]) {
+          const int sold = std::min(std::max(0, order.quantity),
+                                    std::max(0, stock[item]));
+          if (sold == 0) continue;
+          stock[item] -= sold;
+        } else if (order.op == fastkag::Op::BUY_PRODUCT ||
+                   order.op == fastkag::Op::BUY_ANIMAL) {
+          unknown[item] = true;
+        }
+      }
+      compact.push_back(order);
+    }
+    action.market = std::move(compact);
+  }
+
+  void soil_seed_cap(const fastkag::Simulator& env, int player,
+                     const std::vector<fastkag::PlayerAction>& tape,
+                     const SeatState& state,
+                     fastkag::PlayerAction& action) const {
+    const int step = env.step_count();
+    if (step < 624) return;
+    const auto grain_seed = [](const fastkag::Action& order) {
+      return order.op == fastkag::Op::BUY_SEED &&
+          (order.item == fastkag::Item::WHEAT ||
+           order.item == fastkag::Item::CARROT);
+    };
+    if (!std::any_of(action.market.begin(), action.market.end(), grain_seed))
+      return;
+    int remaining = 0;
+    for (int future = step + 1; future < 719; ++future) {
+      const auto& route = future >= 648
+          ? assets.library.routes[slot_for(2)] : tape;
+      for (const auto& command : route[future].units)
+        remaining += command.op == fastkag::Op::PLANT &&
+            (command.item == fastkag::Item::WHEAT ||
+             command.item == fastkag::Item::CARROT);
+    }
+    for (const auto& queue : state.weed_pending)
+      for (const auto& pending : queue)
+        remaining += pending.action.op == fastkag::Op::PLANT &&
+            (pending.action.item == fastkag::Item::WHEAT ||
+             pending.action.item == fastkag::Item::CARROT);
+    std::array<int, fastkag::N_ITEMS> available{};
+    for (const auto item : {fastkag::Item::WHEAT, fastkag::Item::CARROT}) {
+      const int raw = int(item);
+      const int planting = std::count_if(action.units.begin(), action.units.end(),
+          [item](const auto& command) {
+            return same(command, fastkag::Op::PLANT, item);
+          });
+      available[raw] = std::max(0, env.privates()[player].seeds[raw] - planting);
+    }
+    for (auto& order : action.market) {
+      if (!grain_seed(order)) continue;
+      const int raw = int(order.item);
+      const int keep = std::min(std::max(0, order.quantity),
+                                std::max(0, remaining - available[raw]));
+      available[raw] += keep;
+      if (keep == 0) order = {};
+      else order.quantity = keep;
+    }
+  }
+
   void final_overlays(const fastkag::Simulator& env, int player,
                       const std::vector<fastkag::PlayerAction>& tape,
+                      SeatState& state,
                       fastkag::PlayerAction& action) {
     const int step = env.step_count();
     // HybridOpening: v9 rewrites the wheat round-trip, then the final opening
@@ -4557,11 +5041,14 @@ struct Opponent::Impl {
               {fastkag::Op::SELL, fastkag::Item::WHEAT, amount});
       }
     }
-    if (step == 91 && env.market().prices[int(fastkag::Item::WHEAT)] < 31)
+    if (!v15_variant && step == 91 &&
+        env.market().prices[int(fastkag::Item::WHEAT)] < 31)
       action.market.erase(std::remove_if(action.market.begin(), action.market.end(),
           [](const fastkag::Action& order) {
             return same(order, fastkag::Op::SELL, fastkag::Item::WHEAT);
           }), action.market.end());
+
+    if (soil_variant) soil_seed_cap(env, player, tape, state, action);
 
     // R127 rejects last-hour planting requests unless the post-unit state has
     // the newly planted crop watered on the same turn.
@@ -4574,18 +5061,33 @@ struct Opponent::Impl {
     // external market indices with explicit empty slots.
     e335_compact(env, player, action);
 
-    // E410 removes fertilizer uses that cannot improve the crop's planned
-    // harvest under the future route visit schedule.
+    // E335 belongs to the common base; V15's V2 must see its capped sale
+    // quantities before consuming earlier-sale debts.
+    if (v15_variant) v15_clone_lead(env, player, tape, state, action);
+    if (v15_variant) v15_seed_budget(env, player, tape, action);
+
+    // V15's V4 shares the local yield-path test with E410.  Its separate
+    // reactive-worker exemption still needs independent parity coverage.
     apply_e410(env, player, tape, action);
+    // V15's V9 cleanup is inside V12/V13, so V13 must score the order book
+    // after the day-29 fertilizer buy has been removed.
+    if (v15_variant && step >= 696 && step <= 719)
+      action.market.erase(std::remove_if(action.market.begin(), action.market.end(),
+          [](const fastkag::Action& order) {
+            return same(order, fastkag::Op::BUY_PRODUCT,
+                        fastkag::Item::FERTILIZER);
+          }), action.market.end());
+    if (v57_variant && v57_clone_gate(env, player, state))
+      v57_cxd_reorder(env, player, action);
 
     // ADV pulls already-held cash products at most three tape turns forward;
     // the shipped build does not book these pulls into R36's debt ledger.
-    adv_apply(env, player, tape, action);
+    if (!v57_variant) adv_apply(env, player, tape, action);
 
     // ADV's final stable partition: unrelated cash sales, then product buys
     // plus same-product sales in their original order, then all other orders.
     // This is stronger than the shared Thomas prefix's sales-only bubbling.
-    if (step >= 144 && action.market.size() >= 2) {
+    if (!v57_variant && step >= 144 && action.market.size() >= 2) {
       std::vector<fastkag::Action> filtered;
       filtered.reserve(action.market.size());
       for (const auto& order : action.market)
@@ -4622,11 +5124,23 @@ struct Opponent::Impl {
         action.market = std::move(front);
     }
 
+    // V15's V13 search uses the same lockstep scorer as CXD but deliberately
+    // allows a fixed-price order to move earlier; V57's EXP437 forbids that.
+    if (v15_variant) {
+#ifdef V15_TRACE
+      trace_v15(step, "pre-v13", action);
+#endif
+      v57_cxd_reorder(env, player, action, false);
+#ifdef V15_TRACE
+      trace_v15(step, "post-v13", action);
+#endif
+    }
+
     // IG final queue closure: an unavailable cash-product sale becomes an
     // explicit no-op slot, then later executable cash sales are pulled left
     // into those holes.  Keeping the holes is important for simultaneous
     // market-list priority against a non-PASS opponent.
-    if (action.market.size() >= 2) {
+    if (!v57_variant && !v15_variant && action.market.size() >= 2) {
       auto remaining = python_projected_shed(env, player, action);
       const auto cash = [](int item) {
         return item >= int(fastkag::Item::CARROT) &&
@@ -4713,7 +5227,8 @@ struct Opponent::Impl {
       }
       const int carrot_shortage = std::max(0, need_carrot - carrot_left);
       int allow_wheat = std::max(
-          0, std::min(wheat_ahead, need_wheat + carrot_shortage + 2) -
+          0, std::min(wheat_ahead, need_wheat + carrot_shortage +
+                      (soil_variant ? 0 : 2)) -
                  wheat_left);
       std::vector<fastkag::Action> final;
       final.reserve(carrot_trimmed.size());
@@ -4731,12 +5246,17 @@ struct Opponent::Impl {
     }
 
     // Final public knockout layer.
-    if (step >= 696 && step <= 719)
+    if (!v15_variant && step >= 696 && step <= 719)
       action.market.erase(std::remove_if(action.market.begin(), action.market.end(),
           [](const fastkag::Action& order) {
             return same(order, fastkag::Op::BUY_PRODUCT,
                         fastkag::Item::FERTILIZER);
           }), action.market.end());
+
+    if (soil_variant) {
+      soil_queue_compact(env, player, action);
+      v44_reorder(env, player, action);
+    }
   }
 
   // The SHOP wrapper replaces the complete action on the final playable
@@ -4894,6 +5414,14 @@ struct Opponent::Impl {
     if (step >= 288) v224_sales_first(result);
     reserve_future_sales(
         env, player, assets.library.routes[slot], result, state);
+#ifdef V15_TRACE
+    if (v15_variant) {
+      trace_v15(step, "r36", result);
+      if (step == 361 || step == 368)
+        std::fprintf(stderr, "v15 step=%d debt384egg=%d\n", step,
+                     state.sale_debts[384][int(fastkag::Item::EGG)]);
+    }
+#endif
     // R36's outer wrapper immediately applies the second v224 pass and then
     // R37.  Both precede R97 and the other family overlays below.  In
     // particular R97 may deliberately turn a WHEAT sale into a zero-quantity
@@ -4913,6 +5441,9 @@ struct Opponent::Impl {
         : empty_predictors;
     apply_family_prefix(
         env, player, assets.library.routes[slot], result, state.prefix);
+#ifdef V15_TRACE
+    if (v15_variant) trace_v15(step, "prefix", result);
+#endif
     // The shared Thomas overlay has an unconditional drop-credit fertilizer
     // sale.  2965's later RACEGATE forbids only the overlay-added quantity
     // while the fertilizer book is at/below its $100 base; tape-native sales
@@ -4927,6 +5458,15 @@ struct Opponent::Impl {
         env, player, assets.library.routes[slot], result);
     apply_r85_feed(env, player, assets.library.routes[slot], result);
     apply_r85_fertilizer(env, player, result, state);
+    // R97's supply guard is outside V233 and R85 in the Python wrapper.
+    // Its wheat top-up must see V233's same-tick purchase before deciding.
+    fastkag::apply_thomas_supply_guard(
+        env, player, assets.library.routes[slot], result);
+    // The MetaV4 wrapper runs courier after the sheep/warehouse/input layers.
+    // Running it in the shared prefix misses their same-tick worker cargo.
+    fastkag::apply_thomas_courier(
+        env, player, assets.library.routes[slot], result, state.prefix);
+    apply_v9_carrot(env, player, result, state.v9_carrot);
     apply_v9_herd(
         env, player, assets.library.routes[slot], result, state.v9_herd);
     apply_v9_fertilizer(env, player, assets.library.routes[slot], result);
@@ -4936,7 +5476,11 @@ struct Opponent::Impl {
     fastkag::apply_thomas_predict(
         env, player, assets.library.routes[slot], predictors, result,
         state.prefix);
+    // This is the common early OVERFLOW wrapper, not Meta's later R148.
     apply_overflow(env, player, result);
+#ifdef V15_TRACE
+    if (v15_variant) trace_v15(step, "overflow", result);
+#endif
     // These four wrappers are ordered exactly as in the public Python stack:
     // CARROT2 -> ORDERPRI2 -> CAPHARV -> SHEDROOM -> HERD2/COWSWAP.
     apply_carrot2(
@@ -4946,8 +5490,14 @@ struct Opponent::Impl {
         env, player, assets.library.routes[slot], result, state.prefix);
     apply_shedroom(env, player, assets.library.routes[slot], result);
     apply_herd_outer(
-        env, player, assets.library.routes[slot], result, state.prefix);
-    final_overlays(env, player, assets.library.routes[slot], result);
+        env, player, assets.library.routes[slot], result, state);
+#ifdef V15_TRACE
+    if (v15_variant) trace_v15(step, "pre-final", result);
+#endif
+    final_overlays(env, player, assets.library.routes[slot], state, result);
+#ifdef V15_TRACE
+    if (v15_variant) trace_v15(step, "final", result);
+#endif
     state.last_step = step;
     return result;
   }
@@ -4955,11 +5505,16 @@ struct Opponent::Impl {
   std::shared_ptr<const SharedAssets> shared;
   const Assets& assets;
   const fastkag::NativeTeammateExecutor& executor;
+  bool soil_variant{};
+  bool v57_variant{};
+  bool v15_variant{};
   std::array<SeatState, 2> seats{};
 };
 
-Opponent::Opponent(const std::string& asset_path)
-    : impl_(std::make_unique<Impl>(asset_path)) {}
+Opponent::Opponent(const std::string& asset_path, bool soil_variant,
+                   bool v57_variant, bool v15_variant)
+    : impl_(std::make_unique<Impl>(asset_path, soil_variant, v57_variant,
+                                   v15_variant)) {}
 Opponent::~Opponent() = default;
 Opponent::Opponent(Opponent&&) noexcept = default;
 Opponent& Opponent::operator=(Opponent&&) noexcept = default;

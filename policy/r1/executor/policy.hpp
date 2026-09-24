@@ -84,6 +84,7 @@ struct Params {
  // off unless their own mechanism and multi-seed acceptance gates pass.
  bool shared_task_atoms_v2=false;
  bool stepwise_recoordination=false;
+ bool student_preserve_weed_plant=false;
  bool preparation_pipeline_v2=false;
  bool schedule_value_compare=false;
  bool preparation_spawn_guard=false;
@@ -950,7 +951,15 @@ class Controller {
    groups.back().actions.push_back(old.a[k]);
   }
   Plan out;int pos=cell(unit?o.own.hands.at(unit-1):o.own.farmer);bool projected_cargo=sum(o.priv.inventories.at(unit))>0;
-  for(auto&g:groups){size_t first_needed=0;while(first_needed<g.actions.size()){
+  for(auto&g:groups){
+   if(p.student_preserve_weed_plant&&o.own.tiles[g.pos].kind==TileKind::WEED){
+    auto planting=std::find_if(g.actions.begin(),g.actions.end(),[](const Action&a){return a.op==Op::PLANT;});
+    if(planting!=g.actions.end()){
+     g.actions.erase(g.actions.begin(),planting);
+     g.actions.insert(g.actions.begin(),action(Op::DIG));
+    }
+   }
+   size_t first_needed=0;while(first_needed<g.actions.size()){
     const auto&a=g.actions[first_needed];bool needed=a.op==Op::DROP?projected_cargo:semantic_needed(o,unit,a,g.pos);if(needed)break;first_needed++;stale++;
    }
    if(first_needed==g.actions.size())continue;

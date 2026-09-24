@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.18)
+project(student_actor_torchscript LANGUAGES CXX)
+find_package(Torch REQUIRED)
+add_executable(student_actor_runner runner.cpp)
+target_link_libraries(student_actor_runner PRIVATE "${TORCH_LIBRARIES}")
+target_compile_features(student_actor_runner PRIVATE cxx_std_17)
+get_filename_component(TORCH_SITE_PACKAGES "${TORCH_INSTALL_PREFIX}" DIRECTORY)
+set(TORCH_WHEEL_LIBS "${TORCH_SITE_PACKAGES}/torch.libs")
+if(EXISTS "${TORCH_WHEEL_LIBS}")
+  target_link_options(student_actor_runner PRIVATE
+    "-Wl,-rpath-link,${TORCH_WHEEL_LIBS}" "-Wl,-rpath,${TORCH_WHEEL_LIBS}")
+endif()

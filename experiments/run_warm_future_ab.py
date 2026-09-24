@@ -97,11 +97,15 @@ def main():
         parser.error("--baseline, --candidate, --output, --start and --future-start are required")
     if min(args.seeds, args.future_replicas, args.workers) < 1 or args.output.exists():
         parser.error("positive sizes are required and --output must not exist")
+    trajectory_dir = args.output.with_name(f"{args.output.stem}-trajectories").resolve()
+    if trajectory_dir.exists():
+        parser.error("trajectory output directory must not exist")
     names = [name for name in args.opponents.split(",") if name]
     if not names or len(names) != len(set(names)) or any(name not in BOTS for name in names):
         parser.error("invalid --opponents")
     tasks = [
-        (label, str(path), None, "0", bot, BOTS[bot], seed, seat, "fast", future_seed)
+        (label, str(path), None, "0", bot, BOTS[bot], seed, seat, "fast",
+         str(trajectory_dir), future_seed)
         for label, path in (("baseline", args.baseline), ("candidate", args.candidate))
         for bot in names for seed in range(args.start, args.start + args.seeds)
         for seat in (0, 1)
@@ -117,7 +121,9 @@ def main():
         "seed_range": [args.start, args.start + args.seeds],
         "future_seed_range": [args.future_start, args.future_start + args.future_replicas],
         "both_seats": True, "policies": {"baseline": str(args.baseline), "candidate": str(args.candidate)},
-        "opponents": {name: BOTS[name] for name in names}, "paired": summarize(rows, names), "rows": rows,
+        "trajectory_format": "kaggriculture-bc-v1", "trajectory_dir": str(trajectory_dir),
+        "diagnostic": True, "opponents": {name: BOTS[name] for name in names},
+        "paired": summarize(rows, names), "rows": rows,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2) + "\n")

@@ -8,6 +8,7 @@
 #include "../native_opponents/thomas_2945_cpp/thomas_2945.hpp"
 #include "../native_student_v3/actor.hpp"
 #include "../native_student_v3/tokenizer.hpp"
+#include "economic_features_v1.hpp"
 
 #include <pybind11/numpy.h>
 #include <pybind11/stl.h>
@@ -524,6 +525,7 @@ struct Result {
   std::unique_ptr<fastkag::Simulator> env;
   std::unique_ptr<thomas_2945::Opponent> thomas;
   std::unique_ptr<metav4_2965::Opponent> meta;
+  std::unique_ptr<metav4_2965::Opponent> soil;
   std::unique_ptr<salemali7_2900::Opponent> salemali;
   std::unique_ptr<fieldcraft_2887::Opponent> fieldcraft;
   fastkag::NativeAgentState opening_state;
@@ -536,6 +538,10 @@ struct Result {
   std::uint64_t actor_hash{1469598103934665603ull};
   std::uint64_t actor_seed{};
   std::uint64_t actor_counter{};
+  std::uint64_t branch_prefix_action_hash{};
+  int forced_cell{-1};
+  int forced_from{-1};
+  int forced_to{-1};
   std::vector<ActorEvent> actor_trace;
   std::vector<ActorDayCapture> actor_day_captures;
   std::uint64_t prefix_action_hash{1469598103934665603ull};
@@ -560,6 +566,8 @@ struct ActorCallbackState {
   Result& result;
   int step;
   bool capture;
+  bool greedy;
+  bool force_alternative;
   ActorDayCapture* day_capture;
   std::vector<float> hidden;
   std::vector<float> resources;
@@ -567,6 +575,7 @@ struct ActorCallbackState {
   std::vector<float> next_hidden;
   std::uint32_t previous;
   int events{};
+  bool forced{};
 
   static int release(void* state, int32_t cell, int32_t suggested,
                      int32_t mask, const double* resources,
@@ -591,16 +600,40 @@ struct ActorCallbackState {
     if (cell < 0 || cell >= int(dimensions.cells) || suggested < 0 ||
         suggested >= int(dimensions.classes) || !mask ||
         (std::uint32_t(mask) >> dimensions.classes) ||
-        !(mask & (1 << suggested)) || width != dimensions.resources ||
+        !(mask & (1 << suggested)) ||
+        width != economic_v1::kOldResource ||
+        (dimensions.resources != economic_v1::kOldResource &&
+         dimensions.resources != economic_v1::kOldResource +
+                                 economic_v1::kResourceExtra &&
+         dimensions.resources != economic_v1::kOldResource +
+                                 economic_v1::kResourceExtra +
+                                 economic_v1::kShopResourceExtra) ||
         !values || !valid_stage_mask)
       throw std::runtime_error("invalid native actor callback event");
     for (std::size_t i = 0; i < width; ++i)
       resources[i] = static_cast<float>(values[i]);
+    if (dimensions.resources > width)
+      economic_v1::prefix_flow(values, step / 24, resources.data() + width);
+    if (dimensions.resources > width + economic_v1::kResourceExtra)
+      economic_v1::shop_rate(*result.env,
+          resources.data() + width + economic_v1::kResourceExtra);
     actor.step(hidden.data(), resources.data(), cell, stage, previous,
                std::uint32_t(mask), logits.data(), next_hidden.data());
     const std::uint64_t counter = result.actor_counter++;
-    const auto distribution = actor.sample_policy(
-        logits.data(), std::uint32_t(mask), result.actor_seed, counter);
+    auto distribution = actor.sample_policy(
+        logits.data(), std::uint32_t(mask), result.actor_seed, counter,
+        greedy ? -1.0f : 1.0f);
+    if (force_alternative && !forced && stage == 1 &&
+        (mask & (mask - 1))) {
+      const int original = distribution.action;
+      distribution.action = actor.sample_policy(
+          logits.data(), std::uint32_t(mask) & ~(1u << original),
+          result.actor_seed, counter, -1.0f).action;
+      result.forced_cell = cell;
+      result.forced_from = original;
+      result.forced_to = distribution.action;
+      forced = true;
+    }
     if (!(mask & (1 << distribution.action)))
       throw std::runtime_error("native actor sampled illegal action");
     hash_actor_int(result.actor_hash, step);
@@ -613,7 +646,7 @@ struct ActorCallbackState {
           step, counter, stage, cell, suggested, std::uint32_t(mask),
           distribution.action, distribution.log_probability,
           distribution.entropy, {}});
-      std::vector<float> normalized(width);
+      std::vector<float> normalized(dimensions.resources);
       actor.normalize_resources(this->resources.data(), normalized.data());
       day_capture->events.push_back({
           step, counter, stage, cell, suggested, std::uint32_t(mask),
@@ -868,10 +901,12 @@ class PrefixBatch {
               const std::string& thomas_asset,
               const std::string& meta_asset,
               const std::string& salemali_asset,
-              const std::string& fieldcraft_asset)
+              const std::string& fieldcraft_asset,
+              const std::string& soil_asset)
       : runtime_(std::make_shared<Runtime>(library_path)), replay_(&replay),
         thomas_asset_(thomas_asset), meta_asset_(meta_asset),
         salemali_asset_(salemali_asset), fieldcraft_asset_(fieldcraft_asset),
+        soil_asset_(soil_asset),
         arbitrary_jobs_(true), per_job_actor_seeds_(true) {
     const std::size_t count = seeds.size();
     if (!count || count > 2048 || seats.size() != count ||
@@ -893,14 +928,16 @@ class PrefixBatch {
       const bool replay_opponent = opponents[i] == 3;
       const bool public_opponent =
           opponents[i] == 1 || opponents[i] == 2 || opponents[i] == 4 ||
-          opponents[i] == 5;
+          opponents[i] == 5 || opponents[i] == 6;
+      if (opponents[i] == 6 && soil_asset_.empty())
+        throw std::invalid_argument("Soil current requires soil_asset");
       if (seats[i] < 0 || seats[i] > 1 ||
           (!public_opponent && !replay_opponent) ||
           (replay_opponent
                ? routes[i] < 0 || routes[i] >= replay.route_count()
                : routes[i] != -1))
         throw std::invalid_argument(
-            "JobBatch needs Thomas/Meta/Salemali/Fieldcraft route=-1 or replay route");
+            "JobBatch needs a public C++ opponent route=-1 or replay route");
       Result result;
       result.cache.path = "job[" + std::to_string(i) + "]";
       result.cache.seed = seeds[i];
@@ -1095,7 +1132,7 @@ class PrefixBatch {
       prepare_actor_state(result);
       const auto canonical = pack_observation(
           *result.env, result.cache.seat, true);
-      if (canonical.size() > dimensions.observation)
+      if (canonical.size() > economic_v1::kOldObservation)
         throw std::runtime_error("canonical observation exceeds actor capacity");
       const auto tokens = student_v3::tokenize(
           *result.env, result.cache.seat, dimensions.token_capacity);
@@ -1105,6 +1142,12 @@ class PrefixBatch {
         context[i] = static_cast<float>(result.context[i]);
       for (std::size_t i = 0; i < canonical.size(); ++i)
         observation[i] = static_cast<float>(canonical[i]);
+      if (dimensions.observation > economic_v1::kOldObservation) {
+        const auto extra = economic_v1::observation(
+            *result.env, result.cache.seat);
+        std::copy(extra.begin(), extra.end(),
+                  observation.begin() + economic_v1::kOldObservation);
+      }
       std::vector<float> state(dimensions.hidden);
       actor_->initial_hidden(
           context.data(), observation.data(), float(canonical.size()),
@@ -1133,10 +1176,26 @@ class PrefixBatch {
 
   py::dict run_native_actor_suffix(const std::string& weights_path,
                                    std::uint64_t policy_seed, int threads,
-                                   std::size_t stack_bytes, bool capture) {
+                                   std::size_t stack_bytes, bool capture,
+                                   bool greedy = false,
+                                   bool capture_action_traces = true,
+                                   int branch_step = -1,
+                                   std::uint64_t branch_salt = 0,
+                                   bool branch_force_alternative = false,
+                                   std::uint64_t branch_future_seed = 0) {
     require_complete();
     if (current_step() != 288)
       throw std::logic_error("native actor suffix must start at step 288");
+    if (branch_step != -1 &&
+        (branch_step < 288 || branch_step > 672 || branch_step % 24 || greedy))
+      throw std::invalid_argument("sampled branch requires a student day");
+    if (branch_step == -1 && (branch_salt || branch_future_seed))
+      throw std::invalid_argument("branch RNG change requires a branch day");
+    if (branch_force_alternative &&
+        (branch_step == -1 || branch_salt || capture))
+      throw std::invalid_argument("forced branch is diagnostic-only and needs a day");
+    actor_greedy_ = greedy;
+    actor_force_alt_step_ = branch_force_alternative ? branch_step : -1;
     configure_actor(weights_path, policy_seed);
     const auto started = std::chrono::steady_clock::now();
     double plan_seconds = 0.0, environment_seconds = 0.0;
@@ -1145,17 +1204,28 @@ class PrefixBatch {
     for (int step = 288; step <= 672; step += 24) {
       if (current_step() != step)
         throw std::runtime_error("native actor suffix clock drift");
+      if (step == branch_step && branch_future_seed)
+        for (auto& result : results_)
+          result.env->reseed_future(branch_future_seed);
+      if (step == branch_step)
+        for (auto& result : results_) {
+          result.branch_prefix_action_hash = result.action_hash;
+          result.actor_seed ^= branch_salt;
+        }
       const auto metric = plan_actor_day(threads, stack_bytes, capture);
+      if (step == branch_step)
+        for (auto& result : results_) result.actor_seed ^= branch_salt;
       plan_seconds += metric.seconds;
       events += metric.events;
       days.append(actor_day_dict(metric));
       const auto advance_started = std::chrono::steady_clock::now();
-      advance_to(step + 24, threads, stack_bytes, capture);
+      advance_to(step + 24, threads, stack_bytes,
+                 capture && capture_action_traces);
       environment_seconds += std::chrono::duration<double>(
           std::chrono::steady_clock::now() - advance_started).count();
     }
     const auto tail_started = std::chrono::steady_clock::now();
-    advance_to(719, threads, stack_bytes, capture);
+    advance_to(719, threads, stack_bytes, capture && capture_action_traces);
     environment_seconds += std::chrono::duration<double>(
         std::chrono::steady_clock::now() - tail_started).count();
     const double seconds = std::chrono::duration<double>(
@@ -1344,6 +1414,7 @@ class PrefixBatch {
                         result.cache.opponent == 2 ? "meta" :
                         result.cache.opponent == 4 ? "salemali7" :
                         result.cache.opponent == 5 ? "fieldcraft" :
+                        result.cache.opponent == 6 ? "soil_current" :
                         "replay_clean";
       row["route"] = result.cache.route;
       row["validated_steps"] = result.validated_steps;
@@ -1361,6 +1432,10 @@ class PrefixBatch {
       row["actor_events"] = py::int_(result.actor_counter);
       row["actor_seed"] = py::int_(result.actor_seed);
       row["actor_hash"] = py::int_(result.actor_hash);
+      row["branch_prefix_action_hash"] = py::int_(result.branch_prefix_action_hash);
+      row["forced_cell"] = result.forced_cell;
+      row["forced_from"] = result.forced_from;
+      row["forced_to"] = result.forced_to;
       row["policy_seed"] = py::int_(result.cache.policy_seed);
       row["prefix_action_hash"] = py::int_(result.prefix_action_hash);
       row["opening_route"] = result.opening_route;
@@ -1385,7 +1460,15 @@ class PrefixBatch {
     auto actor = std::make_shared<student_v3::Actor>(
         student_v3::Actor::load(weights_path));
     const auto& dimensions = actor->dimensions();
-    if (dimensions.context != kContextWidth || dimensions.resources != 347 ||
+    const bool original = dimensions.observation == economic_v1::kOldObservation &&
+        dimensions.resources == economic_v1::kOldResource;
+    const bool economic = dimensions.observation ==
+            economic_v1::kOldObservation + economic_v1::kObservationExtra &&
+        (dimensions.resources ==
+            economic_v1::kOldResource + economic_v1::kResourceExtra ||
+         dimensions.resources == economic_v1::kOldResource +
+            economic_v1::kResourceExtra + economic_v1::kShopResourceExtra);
+    if (dimensions.context != kContextWidth || !(original || economic) ||
         dimensions.classes != 11 || dimensions.previous != 12)
       throw std::runtime_error("native actor dimensions do not match planner ABI");
     actor_ = std::move(actor);
@@ -1425,7 +1508,7 @@ class PrefixBatch {
     const auto& dimensions = actor_->dimensions();
     const auto canonical = pack_observation(
         *result.env, result.cache.seat, true);
-    if (canonical.size() > dimensions.observation)
+    if (canonical.size() > economic_v1::kOldObservation)
       throw std::runtime_error("canonical observation exceeds actor capacity");
     const auto tokens = student_v3::tokenize(
         *result.env, result.cache.seat, dimensions.token_capacity);
@@ -1435,6 +1518,12 @@ class PrefixBatch {
       context[i] = static_cast<float>(result.context[i]);
     for (std::size_t i = 0; i < canonical.size(); ++i)
       observation[i] = static_cast<float>(canonical[i]);
+    if (dimensions.observation > economic_v1::kOldObservation) {
+      const auto extra = economic_v1::observation(
+          *result.env, result.cache.seat);
+      std::copy(extra.begin(), extra.end(),
+                observation.begin() + economic_v1::kOldObservation);
+    }
     ActorDayCapture* day_capture = nullptr;
     if (capture) {
       result.actor_day_captures.emplace_back();
@@ -1452,7 +1541,8 @@ class PrefixBatch {
       day_capture->token_count = tokens.count;
     }
     ActorCallbackState state{
-        *actor_, result, result.env->step_count(), capture,
+        *actor_, result, result.env->step_count(), capture, actor_greedy_,
+        actor_force_alt_step_ == result.env->step_count(),
         day_capture,
         std::vector<float>(dimensions.hidden),
         std::vector<float>(dimensions.resources),
@@ -1563,6 +1653,8 @@ class PrefixBatch {
       return result.salemali->action(*result.env, player);
     if (result.cache.opponent == 5)
       return result.fieldcraft->action(*result.env, player);
+    if (result.cache.opponent == 6)
+      return result.soil->action(*result.env, player);
     auto action = replay_->action_external(
         *result.env, player, result.cache.route,
         result.replay_opponent_state,
@@ -1599,6 +1691,8 @@ class PrefixBatch {
     else if (cache.opponent == 5)
       result.fieldcraft = std::make_unique<fieldcraft_2887::Opponent>(
           fieldcraft_asset_);
+    else if (cache.opponent == 6)
+      result.soil = std::make_unique<metav4_2965::Opponent>(soil_asset_, true);
     auto& env = *result.env;
     result.opening_route = arbitrary_jobs_ ? deployment_routes_[0] : -1;
     for (std::uint32_t step = 0; step < cache.steps; ++step) {
@@ -1738,10 +1832,13 @@ class PrefixBatch {
   std::string actor_path_;
   std::uint64_t actor_policy_seed_{};
   bool actor_configured_{};
+  bool actor_greedy_{};
+  int actor_force_alt_step_{-1};
   std::string thomas_asset_;
   std::string meta_asset_;
   std::string salemali_asset_;
   std::string fieldcraft_asset_;
+  std::string soil_asset_;
   std::vector<Result> results_;
   std::atomic<std::size_t> next_{};
   bool ran_{};
@@ -1788,7 +1885,13 @@ void bind_prefix_batch(py::module_& module) {
            py::arg("weights_path"), py::arg("policy_seed"),
            py::arg("threads") = 0,
            py::arg("stack_bytes") = kDefaultStackBytes,
-           py::arg("capture") = false)
+           py::arg("capture") = false,
+           py::arg("greedy") = false,
+           py::arg("capture_action_traces") = true,
+           py::arg("branch_step") = -1,
+           py::arg("branch_salt") = 0,
+           py::arg("branch_force_alternative") = false,
+           py::arg("branch_future_seed") = 0)
       .def("actor_traces", &PrefixBatch::actor_traces)
       .def("ppo_arrays", &PrefixBatch::ppo_arrays)
       .def("summary", &PrefixBatch::summary);
@@ -1802,12 +1905,14 @@ void bind_prefix_batch(py::module_& module) {
                     const std::vector<std::uint64_t>&,
                     const std::vector<double>&, const std::vector<int>&,
                     const std::string&, const std::string&,
-                    const std::string&, const std::string&>(),
+                    const std::string&, const std::string&,
+                    const std::string&>(),
            py::arg("library_path"), py::arg("replay_executor"),
            py::arg("seeds"), py::arg("seats"), py::arg("opponents"),
            py::arg("routes"), py::arg("policy_seeds"), py::arg("settings"),
            py::arg("deployment_routes"), py::arg("thomas_asset"),
            py::arg("meta_asset"), py::arg("salemali_asset") = "",
            py::arg("fieldcraft_asset") = "",
+           py::arg("soil_asset") = "",
            py::keep_alive<1, 3>());
 }

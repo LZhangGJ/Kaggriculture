@@ -13,7 +13,8 @@ namespace metav4_2965 {
 // to the policy -- this class is only a training-environment opponent.
 class Opponent {
  public:
-  explicit Opponent(const std::string& asset_path);
+  explicit Opponent(const std::string& asset_path, bool soil_variant = false,
+                    bool v57_variant = false, bool v15_variant = false);
   ~Opponent();
   Opponent(Opponent&&) noexcept;
   Opponent& operator=(Opponent&&) noexcept;

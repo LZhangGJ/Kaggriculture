@@ -1,0 +1,11 @@
+{
+  "agents": [
+    {"slug": "thomas_2945", "source_family": "thomas_2945", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/thomas_2945/main.py"},
+    {"slug": "melon_2749", "source_family": "melon_2749", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/melon_2749/main.py"},
+    {"slug": "demand_preserving", "source_family": "demand_preserving", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/demand_preserving/main.py"},
+    {"slug": "ahmed_v47", "source_family": "ahmed_v47", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/ahmed_v47/main.py"},
+    {"slug": "pipe8", "source_family": "pipe8", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/pipe8/main.py"},
+    {"slug": "herd_safe_2700", "source_family": "herd_safe_2700", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/herd_safe_2700/main.py"},
+    {"slug": "salemali7_2900", "source_family": "salemali7_2900", "path": "/root/kaggriculture-replay-switch-clean-v1/opponents/salemali7_2900/main.py"}
+  ]
+}

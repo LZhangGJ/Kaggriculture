@@ -1,0 +1,116 @@
+{
+  "schema": "thomas-2945-pure-cpp-parity-summary-v1",
+  "source": "opponents/thomas_2945/main.py",
+  "source_sha256": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd",
+  "native_build": "experiments/native_opponents/thomas_2945_cpp/build/thomas_2945_cpp_native.cpython-311-aarch64-linux-gnu.so",
+  "native_build_sha256": "40a1d5baec1b523fd934be8d1e42c642dd46496837ec17c6c9f0888426c063f4",
+  "asset_sha256": "3f3a8dd2d51959dbbb25f749e8742dee0595f3604b77c813e3fedf7ccd7949fd",
+  "shared_metav4_source_sha256": "61eb792e32a456eba6570398a43019f64053d6e464b1c62f684473162d27513a",
+  "shared_native_teammate_sha256": "c67235091e2a35e5f720d17d87b978cd1c87058fb62074cbb870b38f7cd741b2",
+  "steps": 719,
+  "seed_count": 20,
+  "both_seats": true,
+  "exact_runs": 160,
+  "total_runs": 160,
+  "first_mismatch": null,
+  "components": [
+    {
+      "file": "parity_probe.json",
+      "seed_start": 2609500000,
+      "seed_count": 4,
+      "rival_route": null,
+      "exact_runs": 8,
+      "total_runs": 8
+    },
+    {
+      "file": "active_route0_probe.json",
+      "seed_start": 2609500000,
+      "seed_count": 4,
+      "rival_route": 0,
+      "exact_runs": 8,
+      "total_runs": 8
+    },
+    {
+      "file": "active_route2_probe.json",
+      "seed_start": 2609500000,
+      "seed_count": 4,
+      "rival_route": 2,
+      "exact_runs": 8,
+      "total_runs": 8
+    },
+    {
+      "file": "active_route100_probe.json",
+      "seed_start": 2609500000,
+      "seed_count": 4,
+      "rival_route": 100,
+      "exact_runs": 8,
+      "total_runs": 8
+    },
+    {
+      "file": "passive_holdout_probe.json",
+      "seed_start": 2609510000,
+      "seed_count": 8,
+      "rival_route": null,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route0_holdout_probe.json",
+      "seed_start": 2609510000,
+      "seed_count": 8,
+      "rival_route": 0,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route2_holdout_probe.json",
+      "seed_start": 2609510000,
+      "seed_count": 8,
+      "rival_route": 2,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route100_holdout_probe.json",
+      "seed_start": 2609510000,
+      "seed_count": 8,
+      "rival_route": 100,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "passive_holdout2_probe.json",
+      "seed_start": 2609520000,
+      "seed_count": 8,
+      "rival_route": null,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route9_holdout_probe.json",
+      "seed_start": 2609520000,
+      "seed_count": 8,
+      "rival_route": 9,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route105_holdout_probe.json",
+      "seed_start": 2609520000,
+      "seed_count": 8,
+      "rival_route": 105,
+      "exact_runs": 16,
+      "total_runs": 16
+    },
+    {
+      "file": "active_route118_holdout_probe.json",
+      "seed_start": 2609520000,
+      "seed_count": 8,
+      "rival_route": 118,
+      "exact_runs": 16,
+      "total_runs": 16
+    }
+  ],
+  "normalization": "Only PASS/zero-quantity market no-ops and implicit unit quantity one are normalized; executable order position and quantity, all unit actions, and selected route are exact.",
+  "scope": "Active rival routes are deterministic interaction fixtures, not complete policy opponents."
+}

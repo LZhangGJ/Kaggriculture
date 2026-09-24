@@ -599,7 +599,23 @@ PYBIND11_MODULE(_paused_plan, module) {
       .def("close", &Batch::close);
   module.attr("CONTEXT_WIDTH") = kContextWidth;
   module.attr("RESOURCE_WIDTH") = kResourceWidth;
+  module.attr("SHOP_RESOURCE_SEMANTICS") = 1;
   module.attr("CLASS_COUNT") = kClassCount;
   module.attr("MAX_SESSIONS") = kMaxSessions;
+#ifdef ECONOMIC_FEATURES_MATURE_STORED
+  module.attr("ECONOMIC_FEATURES_SEMANTICS") = 2;
+#else
+  module.attr("ECONOMIC_FEATURES_SEMANTICS") = 1;
+#endif
+#ifdef STUDENT_EXPLICIT_SHOP_TOKENS
+#ifndef SHOP_TOKEN_GAIN
+#define SHOP_TOKEN_GAIN 1
+#endif
+  module.attr("SHOP_TOKEN_SEMANTICS") = 2;
+  module.attr("SHOP_TOKEN_GAIN") = float(SHOP_TOKEN_GAIN);
+#else
+  module.attr("SHOP_TOKEN_SEMANTICS") = 1;
+  module.attr("SHOP_TOKEN_GAIN") = 1.0f;
+#endif
   bind_prefix_batch(module);
 }

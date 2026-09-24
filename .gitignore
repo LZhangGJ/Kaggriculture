@@ -16,6 +16,7 @@ work/new_public_opponents/eval/*
 # Kept locally and verified by manifests; avoid accidental multi-GB commits.
 data/replays/raw/
 data/replays/daily/
+data/bc/
 data/artifacts/*.npz
 data/artifacts/*.bin
 data/artifacts/*.f32
@@ -29,4 +30,7 @@ policy/r1/agent.so
 fast_kaggriculture/python/fast_kaggriculture/_fast_kaggriculture*.so
 experiments/native_student_rollout/build/
 experiments/native_student_rollout/build_asset_shared/
+experiments/native_student_rollout/build-*/
+experiments/native_student_v3/parity_bench
 experiments/native_opponents/*/build/
+models/student-v261/

@@ -1,0 +1,44 @@
+{
+  "schema": "salemali7-2900-native-parity-v1",
+  "source": "opponents/salemali7_2900/main.py",
+  "source_sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9",
+  "native_build": "experiments/native_opponents/salemali7_2900/build/salemali7_2900_native.cpython-311-aarch64-linux-gnu.so",
+  "native_build_sha256": "163923bc5fdaa278d2532f5a33a2393103cd92c00a33e85f2d3652f966c4cb39",
+  "asset_sha256": "e4310fae37ecf0d7d4574c90a9f7ffb0a3b4561611298fff10239819d2e3d0c3",
+  "seed_start": 2631000000,
+  "seed_count": 2,
+  "steps": 719,
+  "both_seats": true,
+  "exact_runs": 4,
+  "total_runs": 4,
+  "runs": [
+    {
+      "seed": 2631000000,
+      "seat": 0,
+      "steps": 719,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631000000,
+      "seat": 1,
+      "steps": 719,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631000001,
+      "seat": 0,
+      "steps": 719,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2631000001,
+      "seat": 1,
+      "steps": 719,
+      "exact": true,
+      "first_mismatch": null
+    }
+  ]
+}

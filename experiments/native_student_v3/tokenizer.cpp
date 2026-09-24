@@ -198,6 +198,18 @@ EncodedTokens tokenize(const fastkag::Simulator& env, int seat,
   for (int shop = 0; shop < int(shop_counts.size()); ++shop)
     output.add(kTokenTown, {ratio(shop_counts[shop], 8)}, shop + 1);
 
+#ifdef STUDENT_EXPLICIT_SHOP_TOKENS
+#ifndef SHOP_TOKEN_GAIN
+#define SHOP_TOKEN_GAIN 1
+#endif
+  // The old mean pool loses the association between shop ID and count:
+  // all eight IDs are always present, while their counts sum to a constant.
+  // These previously unused continuous slots survive that mean exactly.
+  for (int shop = 0; shop < int(shop_counts.size()); ++shop)
+    output.continuous[8 + shop] =
+        ratio(shop_counts[shop], 8) * output.count * SHOP_TOKEN_GAIN;
+#endif
+
   return {std::move(output.continuous), std::move(output.categories),
           output.count};
 }

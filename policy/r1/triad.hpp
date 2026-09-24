@@ -122,6 +122,10 @@ struct Controller {
  std::array<int8_t,100>forced_kind{};
 #endif
  double greedy_budget_initial=0,greedy_budget_final=0;
+#if R2_OPTIMIZER_AUDIT
+ int greedy_stop_pos=-1,greedy_stop_skipped_empty=0,greedy_stop_examined_empty=0,greedy_stop_positive_empty=0;
+ double greedy_stop_best_later_gain=0;
+#endif
  int greedy_preview_proposed=0,greedy_preview_started=0,greedy_preview_removed=0;
  bool greedy_preview_checked=false;
  int previous_step=-1;std::array<int,12>previous_stock{};
@@ -388,6 +392,9 @@ struct Controller {
   core.target.clear();core.plant_not_before.fill(0);core.triad_crop_age.fill(-1);
   portfolio={};paths={};forecast_service={};forecast_crop_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
   if constexpr(R2_OPTIMIZER_AUDIT){greedy_audit.clear();greedy_budget_initial=greedy_budget_final=0;
+#if R2_OPTIMIZER_AUDIT
+   greedy_stop_pos=-1;greedy_stop_skipped_empty=greedy_stop_examined_empty=greedy_stop_positive_empty=0;greedy_stop_best_later_gain=0;
+#endif
    greedy_preview_proposed=greedy_preview_started=greedy_preview_removed=0;greedy_preview_checked=false;}
 #if R2_STUDENT_SLOT_AUDIT
   student_slot_audit.clear();
@@ -615,7 +622,37 @@ struct Controller {
 #if R2_STUDENT_SLOT_AUDIT
    if(student_v3_none)continue;if(student_v3_stop)break;
 #endif
-   if(bestkind<0)break;
+   if(bestkind<0){
+#if R2_OPTIMIZER_AUDIT
+    {
+     greedy_stop_pos=pos;
+     for(int j=used;j<int(free.size());j++){
+      int later=free[j];if(farm.tiles[later].kind!=TileKind::EMPTY)continue;
+      greedy_stop_skipped_empty++;
+      if(greedy_stop_examined_empty>=3)continue;
+      greedy_stop_examined_empty++;
+      auto probe_model=model;auto probe_dp=rotations_dp(later,path_prices(),o.day);
+      double best_later=0;
+      for(int k:{0,1,2,3,4,9,10,11}){
+       if(k>=9&&(animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
+       Asset a;int len=0;
+       if(k>=9)a=animal_path(k,o.day,later,path_prices());
+       else{auto c=choose_crop(k,o.day,later,path_prices(),probe_dp);if(c.kind<0)continue;a=c.a;len=c.length;}
+       double cost=a.first_cost;if(cost<=0)continue;
+       if(stock_left[k]>0){a.fixed[o.day]+=cost;cost=0;}
+       double immediate=cost+(k>=9?o.market.prices[W]*s.feed_cover:0);
+       if(immediate>budget)continue;
+       auto next=portfolio;add(next,a);
+       double gain=probe_model.value(o,next)-current-s.land_rent*(k>=9?29-o.day:len);
+       best_later=std::max(best_later,gain);
+      }
+      greedy_stop_best_later_gain=std::max(greedy_stop_best_later_gain,best_later);
+      greedy_stop_positive_empty+=best_later>1e-6;
+     }
+    }
+#endif
+    break;
+   }
    settarget(pos,bestkind);successor[pos]=bestkind;length[pos]=bestlen;paths[pos]=bestpath;add(portfolio,bestpath);
    current=bestval;budget-=bestcost;animals+=bestkind>=9;if(stock_left[bestkind]>0)stock_left[bestkind]--;
    book[pos].successor=plant(t)?bestkind:-1;
@@ -754,7 +791,13 @@ struct Controller {
    <<",\"preview_checked\":"<<(greedy_preview_checked?"true":"false")<<",\"preview_proposed\":"<<greedy_preview_proposed
    <<",\"preview_started\":"<<greedy_preview_started<<",\"preview_removed\":"<<greedy_preview_removed
    <<",\"swap_trials\":"<<portfolio_swap_trials<<",\"swap_accepts\":"<<portfolio_swap_accepts<<",\"swap_gain\":"<<portfolio_swap_gain
-   <<",\"pair_trials\":"<<portfolio_pair_trials<<",\"pair_accepts\":"<<portfolio_pair_accepts<<",\"pair_gain\":"<<portfolio_pair_gain<<",\"slots\":[";
+   <<",\"pair_trials\":"<<portfolio_pair_trials<<",\"pair_accepts\":"<<portfolio_pair_accepts<<",\"pair_gain\":"<<portfolio_pair_gain;
+#if R2_OPTIMIZER_AUDIT
+  o<<",\"stop_pos\":"<<greedy_stop_pos<<",\"stop_skipped_empty\":"<<greedy_stop_skipped_empty
+   <<",\"stop_examined_empty\":"<<greedy_stop_examined_empty<<",\"stop_positive_empty\":"<<greedy_stop_positive_empty
+   <<",\"stop_best_later_gain\":"<<greedy_stop_best_later_gain;
+#endif
+  o<<",\"slots\":[";
   for(size_t i=0;i<greedy_audit.size();i++){if(i)o<<",";const auto&a=greedy_audit[i];
    o<<"{\"pos\":"<<a.pos<<",\"budget\":"<<a.budget<<",\"candidates\":"<<a.candidates<<",\"picked_kind\":"<<a.picked_kind
     <<",\"raw_kind\":"<<a.raw_kind<<",\"value_kind\":"<<a.value_kind<<",\"picked_gain\":"<<a.picked_gain<<",\"raw_gain\":"<<a.raw_gain

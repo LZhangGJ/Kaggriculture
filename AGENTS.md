@@ -4,7 +4,45 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
-## 队友主机续训（`handoff/rl-student-v45-20260923`）
+## 队友主机：v285 采样对手与续训（`handoff/rl-student-v285-20260924`）
+
+- 从 `https://github.com/LZhangGJ/Kaggriculture` 的**本分支**检出。冻结的正式 economic RL v285 在 `models/student-v285/`：`actor.pt`（模型与 AdamW 状态，SHA-256 `77db07d754fd3d79000e37b7742bb5a19199c7f2c55f51b21ea741968841e2a0`）、`actor.bin`（同轮 C++ 前向权重，SHA-256 `800227b1f399bdfe78d436dc75c422c4156e1c2991aa39edb813c0722ff54e04`）、`manifest.json`（固定训练契约，SHA-256 `25e12c5bafc1f2aca509dfc8dfd1d6d6678042b94d06d8294cc8724c0591dc87`）。manifest 与 v45 相同，旧本机 BC 路径不是原生 PPO 续训的数据依赖。v285 是训练链快照，不是盲测最优或 Kaggle 提交包；本机后续训练不会自动更新此分支。
+- 运行行为必须是**前 288 步 replay/浅树，之后逐格 actor 采样，`student_intraday=0`**。不传 `--sample` 就是 argmax，不能拿来代表交给队友的对手。`agent/main.py` 目前仍运行非 NN 的 replay→R1；它不会自动加载 `actor.bin`。本分支提供可复现的原生 JobBatch 对局入口与续训入口，尚未提供可直接塞进任意外部 RL 框架或 Kaggle 的独立 bot 回调；那种接入仍需适配此执行/特征/随机数契约并核对动作。
+- 在 Python 3.11、PyTorch、NumPy、scikit-learn、pybind11、GCC/C++20、OpenSSL 开发库环境，从仓库根目录重建原生扩展；x86_64 主机**不能**复制本机 aarch64 `.so`。只用下列三手已随仓库带的小型 C++ 对手资产即可复现当前训练池，不需原始 replay、历史 rollout NPZ、BC mmap 或实验缓存。
+- 本机按本分支源码隔离重建的 student bridge SHA-256 为 `ae666af83c9639ca54160e35019e8823365dfc807ebe40025d1ef0d5d6c182de`，与 v285 训练所用二进制完全一致；重建的原生 JobBatch 用 v285 采样，五手 × 前 8 seed × 双座共 `80/80` 局的终局现金、actor hash 和前缀动作 hash 均与原评测一致。跨架构主机仍须在本机重建后复核，不应复制这两个 aarch64 `.so`。
+
+```bash
+(cd fast_kaggriculture && python setup.py build_ext --inplace)
+bash experiments/native_student_rollout/build_student_bridge.sh work/agent-student-actor-owned-v3.so
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/thomas_2945_cpp/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/metav4_2965/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/fieldcraft_2887/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/salemali7_2900/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_student_rollout/build.sh
+PYTHONPATH=. python experiments/eval_student_native_argmax.py \
+  --weights models/student-v285/actor.bin \
+  --binary work/agent-student-actor-owned-v3.so \
+  --module-dir experiments/native_student_rollout/build \
+  --opponents thomas_2945_cpp,metav4_2965,fieldcraft_2887 \
+  --sample --student-intraday 0 --seed-start 3200000000 --seeds 256 \
+  --threads 32 --output work/teammate-v285-sample.json
+```
+
+续训同一 v285 economic 训练链时用以下参数；Ascend 主机可把 `--device cpu` 改为本机 NPU，`--native-job-threads` 取实际可用核心数。`--economic-input-v1`、三手池和 `--student-intraday 0` 不可漏；`--shop-resource-v1` / `--shop-action-head-v1` 是另一个未晋级实验，不属于 v285。
+
+```bash
+PYTHONPATH=. python -u experiments/run_student_rl_continuous.py \
+  --start-round 286 --checkpoint models/student-v285/actor.pt \
+  --weights models/student-v285/actor.bin --manifest models/student-v285/manifest.json \
+  --binary work/agent-student-actor-owned-v3.so \
+  --native-job-module-dir experiments/native_student_rollout/build \
+  --economic-input-v1 --no-day-state-baseline --student-intraday 0 \
+  --opponents thomas_2945_cpp,metav4_2965,fieldcraft_2887 \
+  --seed-start 3200010000 --native-job-threads 32 --device cpu \
+  --runtime-dir work/continuous-rl-economic-v285-handoff --tag economic-v1-v285
+```
+
+## 历史交接：v45（`handoff/rl-student-v45-20260923`）
 
 - 仓库：`https://github.com/LZhangGJ/Kaggriculture`；请从本交接分支检出，不要把它当成 `main` 的状态。
 - 已训练到 v45 的逐格 actor 快照放在 `models/student-v45/`：`actor.pt`（模型和 AdamW 状态，7.3 MB）、`actor.bin`（同一轮的 C++ 前向权重，2.5 MB）及 `manifest.json`（checkpoint 的固定数据契约，约 10 MB）。v45 是训练链快照，不代表盲测最优，也尚未替换线上 R1。
@@ -28,7 +66,20 @@ PYTHONPATH=. python -u experiments/run_student_rl_continuous.py \
   --seed-start 2640000000 --native-job-threads 32 --device cpu
 ```
 
-续训会保留 v45 的 AdamW 状态；每轮新采 1,536 局 on-policy 对局并自动导出下一轮 C++ 权重。`--native-job-threads` 取主机实际可用核心数；有 Ascend NPU 时把 `--device` 改为本机设备号。上面的新 seed 段与本机训练段及保留盲测段分离。训练输出只写本机 `work/`，不会覆盖仓库里的 v45 快照。本机仍在后台继续训练，后续轮次不会自动推送到该分支。
+这段仅供复现旧 v45 交接，不是当前 v285 续训命令；当前训练链仍在本机后台推进，后续轮次不会自动推送到交接分支。
+
+## 2026-09-24 v261 本机旧对照（非本分支交接快照）
+
+- 本次全 C++ 对手旧评测锁定**正式训练链 v261**；其小型快照仅保留在本机 `models/student-v261/{actor.pt,actor.bin,manifest.json}`，不上传本分支。bin SHA-256 为 `e9afc1f2c423d7752b62b43f54a635876a68388da9ece7a555b5fd22fff33d17`。不能把 v261 结果冒称后续版本。v261 为 637,127 参数、`scale=3`，输入宽度 `2233/3145/374`，没有逐格 9 维商店率或 shop-gate 实验头。
+- 当前 `agent/main.py` 仍是 replay→R1；`actor.bin` 不是可独立运行的 Kaggle 对手。v261 的实际对局入口是 `experiments/eval_student_native_argmax.py` 的原生 JobBatch：前 288 步 replay/浅树，后续每天由逐格 student 决策，`student_intraday=0`。**交给队友当训练对手时用 `--sample` 对应的逐格采样策略，不用 argmax**；`--sample` 只切换 student 动作抽样，前 288 步与执行器契约不变。队友须复用这套原生执行/特征契约或制作通过逐步动作与终局 parity 的采样对手适配器；不要把旧 Python `StudentActionEventAgent` 或单个权重文件直接当成 v261 完整 bot。
+- v261 的本机快照仅供旧对照，**本分支交接的是上面的 v285**；不要推原始 replay、历史 rollout NPZ、评测轨迹及缓存。现有 `models/student-v45/` 仍只是旧交接快照，x86_64 主机须重建 `.so`，不能复制本机 aarch64 构建物。
+- `--shop-action-head-v1` 是独立、默认关闭的研究分支，**不是**本节正式 v261。它从 v254 零漂移分叉并通过原生 old-policy 回放，尚未通过互斥 seed 闭环收益验证；不得误交给队友作为正式对手。
+- 冻结 v261 的原生 argmax 评测：seed `3000060000..3000060127`，每手 128 seed × 双座（256 局）。Thomas `204/256=79.7%`、Meta `209/256=81.6%`、Fieldcraft `210/256=82.0%`、Soil `206/256=80.5%`、SaleMali `256/256=100%`；五手共 `1085/1280=84.8%`。逐局结果在本机 `work/student-v1/eval-economic-v261-allcpp-argmax-s128a.json`，它是 dev 评测，不是盲测或正式七强 R1 验收。另测 replay 壳 G397 `58/64=90.6%`（32 seed × 双座），不算第六个独立公开对手。当前源码重编译后，同一前 8 seed 的 80 局完整逐步动作与终局和评测所用旧模块完全一致。
+- 后续常规 student 评测运行 `experiments/eval_student_native_argmax.py`，默认只存逐局比分与权重/JobBatch 模块哈希；只有建 BC 数据或抽样执行审计时才加 `--save-trajectories`。上述 1,280 局是切换默认值前启动的旧评测，因此耗时 `1481s`，其中大量时间花在 719 帧逐局重放与 JSONL.gz；不可把这个总时长当成原生 rollout 耗时，也不可据此推断正式 RL 训练会因关闭评测归档而提速。
+- 同一 v261、同一 128 seed × 双座 × 五手，`--sample --threads 192` 且不存轨迹的结果在 `work/student-v1/eval-economic-v261-allcpp-sample-s128-scoreonly.json`：Thomas `203/256=79.3%`、Meta `205/256=80.1%`、Fieldcraft `212/256=82.8%`、Soil `207/256=80.9%`、SaleMali `256/256=100%`，合计 `1083/1280=84.6%`。与 argmax 逐局配对为输转赢 43、赢转输 45；原生评测用时 `17.75s`（约 `72.1` 局/秒），没有生成逐帧档案。该吞吐含同时运行的正式 RL 负载，不等于正式训练吞吐。
+- 正式 economic 链 v285 也只跑采样：同一 seed、五手、双座、192 线程，只存比分 `work/student-v1/eval-economic-v285-allcpp-sample-s128-scoreonly.json`。Thomas `206/256=80.5%`、Meta `195/256=76.2%`、Fieldcraft `213/256=83.2%`、Soil `198/256=77.3%`、SaleMali `256/256=100%`；合计 `1068/1280=83.4%`，比 v261 采样少 15 胜。同一环境 seed 的逐局胜负转移为输转赢 34、赢转输 49；采样的 policy RNG 不应默认视为两版本完全耦合。五手平均钱差均略升但胜数下降，因此不能用钱差代替胜率。这不是盲测晋级结论；本分支明确交接的是 v285 而非 v261。
+- **训练/评测胜率口径已核实**：v286 训练指标的 `1287/1536=83.8%` 是更新前 **v285** 在新 256 seed × Thomas/Meta/Fieldcraft × 双座上的 rollout，不是 v286 更新后的回测；五手 dev 中这三手的 v285 采样为 `614/768=79.9%`。把评测换成 v286 rollout 的同一环境 seed 与三手、但仍用评测默认的逐局编号采样 seed，得到 `1294/1536=84.2%`；再把保存的 v286 rollout 每局 `policy_seed` 原样回放，`1536/1536` 局我方与对手终局现金均逐元一致、胜局严格 `1287/1536`，无错误。权重、执行二进制和 JobBatch 模块 SHA 与训练记录一致。因此当前没有发现“评测误用 argmax/错误执行器”的证据；约 4pp 的三强差距主要来自不同环境 seed 段，另有采样 RNG 差异。固定 dev 和训练流不能互相冒充泛化成绩。
+- 按同一 v285 权重、三手、采样、192 线程另取三个互斥的 256-seed 段，不写轨迹：`3000070000` 为 `1273/1536=82.88%`，`3000071000` 为 `1245/1536=81.05%`，`3000072000` 为 `1308/1536=85.16%`；合计 `3826/4608=83.03%`。逐手合计 Thomas `1291/1536=84.05%`、Meta `1252/1536=81.51%`、Fieldcraft `1283/1536=83.53%`。逐局结果在 `work/student-v1/eval-economic-v285-triad-sample-s256-seed{3000070000,3000071000,3000072000}.json`，三个段各有 256 个独立环境 seed，双座不算独立 seed。这进一步显示此前单个 128-seed dev 段的 `79.9%` 不代表稳定总体水平；这些反复查看的段也都应视作 dev，不冒称永久盲测。
 
 ## 硬约束
 
@@ -111,11 +162,12 @@ tail 错误后，单条 open-loop 对手供给仍会被候选搜索利用。不�
 - **seed 段互斥**，不要重复使用同一段。
 - 判定「每个对手 ≥80%」需要约 683–1537 seed（现在只有 512）。`engine fast` 跑 64 seed × 7 手 × 双座约 5 分钟。
 
-所有动态策略对 `opponents/` 公开脚本的新评测都必须保存可用于后续 BC 的逐步轨迹。正式入口
-`experiments/run_strong_ab.py` 默认写 `<结果文件 stem>-trajectories/` 下的 `jsonl.gz`：每帧一份公共
-observation、双方 private、双方 action，并记录策略标签、对手、seed、座位、引擎和终局 reward。
-不要只保留比分，也不要把 forced-candidate 诊断轨迹无标记地并入专家数据；训练/验证必须按 seed 与对手
-分组切分，避免同 seed 双座和 baseline/candidate 互相泄漏。
+常规胜率评测**不强制保存 719 帧 JSON**：至少保留每局 seed、座位、对手、策略/权重与执行模块哈希、
+终局现金/胜负及汇总；有需要时保存紧凑动作轨迹。完整公共 observation、双方 private/action 的
+`jsonl.gz` 只在明确建设 BC corpus、做执行审计或需要逐帧复现的抽样对局时显式采集。
+`experiments/eval_student_native_argmax.py` 默认只写逐局比分，`--save-trajectories` 才做慢速完整归档；
+`experiments/run_strong_ab.py` 的既有轨迹默认行为是该脚本自身配置，不再是所有评测的强制协议。
+forced-candidate 诊断轨迹不可无标记并入专家数据；训练/验证仍须按 seed 与对手分组切分，避免泄漏。
 
 中盘学习路线见 `docs/LEARNED_MIDGAME_PLAN_ZH.md`。硬边界：RL/NN 只作用于 step288 后；慢 R1/终局
 闭环只作离线 teacher，线上 student 不再每局跑完整 DP。大规模自博弈、反事实 suffix、特征提取和小模型

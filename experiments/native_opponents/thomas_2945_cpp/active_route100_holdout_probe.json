@@ -1,0 +1,161 @@
+{
+  "schema": "thomas-2945-pure-cpp-parity-v1",
+  "source": "opponents/thomas_2945/main.py",
+  "source_sha256": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd",
+  "native_build": "experiments/native_opponents/thomas_2945_cpp/build/thomas_2945_cpp_native.cpython-311-aarch64-linux-gnu.so",
+  "native_build_sha256": "40a1d5baec1b523fd934be8d1e42c642dd46496837ec17c6c9f0888426c063f4",
+  "asset_sha256": "3f3a8dd2d51959dbbb25f749e8742dee0595f3604b77c813e3fedf7ccd7949fd",
+  "seed_start": 2609510000,
+  "seed_count": 8,
+  "steps": 719,
+  "both_seats": true,
+  "rival_route": 100,
+  "exact_runs": 16,
+  "total_runs": 16,
+  "runs": [
+    {
+      "seed": 2609510000,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510000,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510001,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510001,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510002,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510002,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510003,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510003,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510004,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510004,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510005,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510005,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510006,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510006,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510007,
+      "seat": 0,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2609510007,
+      "seat": 1,
+      "steps": 719,
+      "expected_route": 2,
+      "native_route": 2,
+      "exact": true,
+      "first_mismatch": null
+    }
+  ]
+}

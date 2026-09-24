@@ -117,6 +117,7 @@ def _load_compact_groups(paths: list[Path]) -> tuple[dict[tuple[str, int], tuple
     grouped: dict[tuple[str, int], tuple] = {}
     all_openings: list[str] = []
     all_targets: list[str] = []
+    target_schema: list[str] | None = None
     for path in paths:
         with np.load(path) as saved:
             outcome = saved["outcome"].astype(np.float32) * 0.5
@@ -127,6 +128,10 @@ def _load_compact_groups(paths: list[Path]) -> tuple[dict[tuple[str, int], tuple
             opponents = saved["opponents"].astype(str)
             checkpoints = saved["checkpoints"].astype(int).tolist()
             seed_values = saved["seeds"].astype(np.int64)
+        if target_schema is None:
+            target_schema = targets
+        elif targets != target_schema:
+            raise ValueError(f"compact target schema mismatch in {path}")
         for value in openings:
             if value not in all_openings:
                 all_openings.append(value)
@@ -154,8 +159,24 @@ def _load_compact_groups(paths: list[Path]) -> tuple[dict[tuple[str, int], tuple
                     }
                     for sample in range(len(matrix))
                 ]
-                grouped[(opening, checkpoint)] = (
-                    matrix, labels, seed_grid.copy(), opponent_grid.copy(), node_outcomes
+                key = (opening, checkpoint)
+                current = (matrix, labels, seed_grid.copy(), opponent_grid.copy(), node_outcomes)
+                if key not in grouped:
+                    grouped[key] = current
+                    continue
+                previous = grouped[key]
+                if previous[0].shape[1:] != matrix.shape[1:]:
+                    raise ValueError(f"compact feature schema mismatch for {key} in {path}")
+                old_pairs = set(zip(previous[3].tolist(), previous[2].tolist()))
+                new_pairs = set(zip(current[3].tolist(), current[2].tolist()))
+                if old_pairs & new_pairs:
+                    raise ValueError(f"duplicate compact opponent/seed cells for {key} in {path}")
+                grouped[key] = (
+                    np.concatenate((previous[0], current[0]), axis=0),
+                    np.concatenate((previous[1], current[1]), axis=0),
+                    np.concatenate((previous[2], current[2]), axis=0),
+                    np.concatenate((previous[3], current[3]), axis=0),
+                    [*previous[4], *current[4]],
                 )
     return grouped, all_openings, all_targets
 
@@ -768,6 +789,13 @@ def main() -> None:
         _load_compact_groups(args.search) if compact else _load_groups(args.search)
     )
     names = feature_names()
+    if compact:
+        for key, group in grouped.items():
+            if group[0].ndim != 2 or group[0].shape[1] != len(names):
+                raise ValueError(
+                    f"feature schema mismatch for {key}: matrix has {group[0].shape}, "
+                    f"feature_names has {len(names)} entries"
+                )
     node_tasks = []
     for opening in openings:
         for checkpoint in sorted(cp for family, cp in grouped if family == opening):

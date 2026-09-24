@@ -1,0 +1,303 @@
+{
+  "schema": "fieldcraft-2887-native-live-parity-v1",
+  "source": "work/new_public_opponents/kaggriculture-2887-score-fieldcraft-agent/output/extracted/main.py",
+  "source_sha256": "7fab02c889fde933e642ee9ceb35dd56ae9a0a073fffc0f6d7a689128367651d",
+  "asset_sha256": "58fafe70c03c398c850951a684a0cc6d53d57416e6aeec723c6ec1f884a8aa25",
+  "native_build": "experiments/native_opponents/fieldcraft_2887/build/fieldcraft_2887_native.cpython-311-aarch64-linux-gnu.so",
+  "native_build_sha256": "3b66493eb6ec709540dac732400e996dc2d4b60eaea2d520a54529cc58867a0c",
+  "seed_start": 2632800000,
+  "seed_count": 16,
+  "steps": 719,
+  "runs": [
+    {
+      "seed": 2632800000,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800000,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800001,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800001,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800002,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 111,
+      "native_route": 111,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800002,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 111,
+      "native_route": 111,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800003,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800003,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800004,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800004,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800005,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 111,
+      "native_route": 111,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800005,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 111,
+      "native_route": 111,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800006,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800006,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800007,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 112,
+      "native_route": 112,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800007,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 112,
+      "native_route": 112,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800008,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800008,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800009,
+      "seat": 0,
+      "steps": 719,
+      "python_route": null,
+      "native_route": -1,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800009,
+      "seat": 1,
+      "steps": 719,
+      "python_route": null,
+      "native_route": -1,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800010,
+      "seat": 0,
+      "steps": 719,
+      "python_route": null,
+      "native_route": -1,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800010,
+      "seat": 1,
+      "steps": 719,
+      "python_route": null,
+      "native_route": -1,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800011,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 123,
+      "native_route": 123,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800011,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 123,
+      "native_route": 123,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800012,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 116,
+      "native_route": 116,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800012,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 116,
+      "native_route": 116,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800013,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 103,
+      "native_route": 103,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800013,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 103,
+      "native_route": 103,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800014,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800014,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 105,
+      "native_route": 105,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800015,
+      "seat": 0,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    },
+    {
+      "seed": 2632800015,
+      "seat": 1,
+      "steps": 719,
+      "python_route": 107,
+      "native_route": 107,
+      "exact_steps": 719,
+      "first_mismatch": null
+    }
+  ],
+  "exact_runs": 32,
+  "total_runs": 32
+}

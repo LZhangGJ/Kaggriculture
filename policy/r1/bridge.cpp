@@ -96,6 +96,277 @@ extern "C" double td_candidate_score_horizon_observation(void*p,int index,const 
  return h.policy.score(v,h.prepared[index],horizon);
  }catch(...){return NAN;}}
 
+#if R2_SHOP_BRANCH_AUDIT
+// Diagnostic Bellman boundary table. The public-flow scenario and online
+// SearchController are copied; neither the prepared handle nor production ABI
+// changes. A short horizon prevents accidental full-game use.
+extern "C" const char*td_candidate_online_boundaries_json(void*p,int index,const double*input,size_t count,int days,int shift_item,int shift_units){try{
+ auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size())||days<2||days>6||
+  shift_item<-1||shift_item>=9||shift_units<0||(shift_item<0&&shift_units))return nullptr;
+ Cursor r{input,count};int step=r.integer(),day=r.integer(),hour=r.integer(),seat=r.integer();
+ auto a=r.farm(),b=r.farm();auto priv=r.priv();fastkag::Market market;
+ for(auto&x:market.inventory)x=r.integer();for(auto&x:market.prices)x=r.integer();
+ std::vector<int8_t>shops;int n=r.count();for(int i=0;i<n;i++)shops.push_back(r.integer());
+ if(r.i!=count||day!=step/24||hour!=step%24||seat<0||seat>1||hour!=0)return nullptr;
+ dp7::View start{step,day,hour,seat==0?a:b,seat==0?b:a,priv,market,shops};
+ const auto&proposal=h.prepared[index];for(int d=0;d<30;d++)for(int i=0;i<9;i++)
+  if(proposal.policy.model.rival[d][i]!=h.prepared[0].policy.model.rival[d][i])
+   throw std::runtime_error("online boundaries require common rival flow");
+ auto online=h.policy;online.install(proposal,day);
+ fastkag::PublicFlowScenario world(start,proposal.policy.model.rival,online.base.supply,
+#if R2_SALE_CLOCK_MODE >= 1
+  &online.sale_clock
+#else
+  nullptr
+#endif
+ );
+ triad::Settings common=online.base;common.scenario=0;
+ double beta=1+online.base.discount*std::max(0.,1-start.own.money/20000.);
+ double realized=start.own.money-online.base.competition*start.opponent.money;
+ double realized_margin=start.own.money-start.opponent.money;
+ std::array<int,9> sold{},bought{};
+ competitive::Flow prior_rival{};bool have_prior_rival=false;
+ std::array<int,9> prior_market_prediction{};bool have_prior_market=false;
+ competitive::Asset prior_portfolio{};bool have_prior_portfolio=false;
+ std::ostringstream s;s.precision(17);s<<"{\"id\":"<<proposal.id<<",\"start_day\":"<<day
+  <<",\"competition\":"<<online.base.competition<<",\"beta\":"<<beta
+  <<",\"formal_h1\":"<<h.prepared_scores[index]<<",\"boundaries\":[";
+ bool first=true;
+ while(!world.done()&&world.view().day<=day+days){
+  auto v=world.view();
+  if(v.hour==0){
+   online.begin_observation(v);
+   if(v.day>day){
+    triad::Controller tail=online.live;tail.configure(common);
+    tail.model.use_value_basis=true;tail.model.value_basis={day,start.own.money};tail.plan(v);
+    competitive::ValueBreakdown parts;
+    competitive::ValueBasis basis{day,start.own.money};
+    double checked=tail.model.value(v,tail.portfolio,nullptr,-1,&parts,&basis);
+    if(std::abs(checked-tail.predicted)>1e-6)throw std::runtime_error("boundary tail breakdown mismatch");
+    auto margin_model=tail.model;margin_model.cfg.competition=1;
+    double margin_tail=margin_model.value(v,tail.portfolio,nullptr,-1,nullptr,&basis);
+    double carried_rival_tail=0;
+    if(have_prior_rival){auto carried=tail.model;carried.rival=prior_rival;
+     carried_rival_tail=carried.value(v,tail.portfolio,nullptr,-1,nullptr,&basis);}
+    double prior_market_tail=0;
+    if(have_prior_market){auto market_prior=v.market;market_prior.inventory=prior_market_prediction;
+     dp7::View old_market_view{v.step,v.day,v.hour,v.own,v.opponent,v.priv,market_prior,v.shops};
+     prior_market_tail=tail.model.value(old_market_view,tail.portfolio,nullptr,-1,nullptr,&basis);}
+    double prior_both_tail=0;
+    if(have_prior_market&&have_prior_rival){auto market_prior=v.market;market_prior.inventory=prior_market_prediction;
+     dp7::View old_market_view{v.step,v.day,v.hour,v.own,v.opponent,v.priv,market_prior,v.shops};
+     auto carried=tail.model;carried.rival=prior_rival;
+     prior_both_tail=carried.value(old_market_view,tail.portfolio,nullptr,-1,nullptr,&basis);}
+    double prior_portfolio_tail=0,prior_portfolio_stock_tail=0;
+    std::array<double,9> prior_stock_item_delta{},prior_stock_own_delta{},prior_stock_rival_delta{};
+    if(have_prior_portfolio){
+     competitive::ValueBreakdown old_parts;
+     prior_portfolio_tail=tail.model.value(v,prior_portfolio,nullptr,-1,&old_parts,&basis);
+     auto with_stock=prior_portfolio;
+     for(int i=0;i<9;i++){int qty=v.priv.shed[i];for(const auto&bag:v.priv.inventories)qty+=bag[i];
+      with_stock.f[v.day][i]+=qty;
+      auto one=prior_portfolio;one.f[v.day][i]+=qty;
+      competitive::ValueBreakdown one_parts;
+      prior_stock_item_delta[i]=tail.model.value(v,one,nullptr,-1,&one_parts,&basis)-prior_portfolio_tail;
+      prior_stock_own_delta[i]=one_parts.own_trade-old_parts.own_trade;
+      prior_stock_rival_delta[i]=one_parts.rival_penalty-old_parts.rival_penalty;}
+     prior_portfolio_stock_tail=tail.model.value(v,with_stock,nullptr,-1,nullptr,&basis);
+    }
+    if(!first)s<<",";first=false;
+    s<<"{\"day\":"<<v.day<<",\"step\":"<<v.step
+     <<",\"own_cash\":"<<world.own_cash()<<",\"rival_cash\":"<<world.rival_cash()
+     <<",\"realized\":"<<realized<<",\"tail\":"<<tail.predicted
+     <<",\"boundary\":"<<realized+tail.predicted
+     <<",\"realized_margin\":"<<realized_margin<<",\"margin_tail\":"<<margin_tail
+     <<",\"margin_boundary\":"<<realized_margin+margin_tail
+     <<",\"searches\":"<<online.searches<<",\"search_changes\":"<<online.changes
+     <<",\"tail_parts\":{\"fixed\":"<<parts.fixed<<",\"own_trade\":"<<parts.own_trade
+     <<",\"wages\":"<<parts.wages<<",\"actions\":"<<parts.actions
+     <<",\"rival_penalty\":"<<parts.rival_penalty
+     <<",\"liquidity_penalty\":"<<parts.liquidity_penalty<<"}"
+     <<",\"carried_rival_available\":"<<(have_prior_rival?"true":"false");
+    if(have_prior_rival)s<<",\"carried_rival_tail\":"<<carried_rival_tail
+     <<",\"carried_rival_delta\":"<<carried_rival_tail-tail.predicted;
+    s<<",\"prior_market_available\":"<<(have_prior_market?"true":"false");
+    if(have_prior_market)s<<",\"prior_market_tail\":"<<prior_market_tail
+     <<",\"prior_market_delta\":"<<prior_market_tail-tail.predicted;
+    if(have_prior_market&&have_prior_rival)s<<",\"prior_both_tail\":"<<prior_both_tail
+     <<",\"prior_both_delta\":"<<prior_both_tail-tail.predicted;
+    s<<",\"prior_portfolio_available\":"<<(have_prior_portfolio?"true":"false");
+    if(have_prior_portfolio)s<<",\"prior_portfolio_tail\":"<<prior_portfolio_tail
+     <<",\"prior_portfolio_stock_tail\":"<<prior_portfolio_stock_tail
+     <<",\"prior_portfolio_stock_delta\":"<<prior_portfolio_stock_tail-tail.predicted;
+    s<<",\"prior_stock_item_delta\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<prior_stock_item_delta[i];}s<<"]";
+    s<<",\"prior_stock_own_delta\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<prior_stock_own_delta[i];}s<<"]";
+    s<<",\"prior_stock_rival_delta\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<prior_stock_rival_delta[i];}s<<"]";
+    s
+     <<",\"shift_item\":"<<shift_item<<",\"shift_units\":"<<shift_units;
+    if(shift_item>=0&&v.day==day+days&&v.day+1<30){
+     if(tail.portfolio.f[v.day][shift_item]<shift_units)
+      throw std::runtime_error("boundary tail shift exceeds flow");
+     competitive::Asset shifted=tail.portfolio;
+     shifted.f[v.day][shift_item]-=shift_units;shifted.f[v.day+1][shift_item]+=shift_units;
+     double shifted_value=tail.model.value(v,shifted,nullptr,-1,nullptr,&basis);
+     s<<",\"shifted_tail\":"<<shifted_value
+      <<",\"shift_delta\":"<<shifted_value-tail.predicted;
+    }
+    s
+     <<",\"sold_previous_day\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<sold[i];}s<<"],\"bought_previous_day\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<bought[i];}s<<"],\"market_inventory\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<v.market.inventory[i];}
+    s<<"],\"prior_market_inventory\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<prior_market_prediction[i];}
+    s<<"],\"private_stock\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";int qty=v.priv.shed[i];
+     for(const auto&bag:v.priv.inventories)qty+=bag[i];s<<qty;}
+    s<<"],\"tail_own_by_item\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<parts.own_trade_by_item[i];}
+    s<<"],\"tail_rival_by_item\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";s<<parts.rival_penalty_by_item[i];}
+    s<<"],\"tail_supply_by_item\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";double qty=0;for(int d=v.day;d<30;d++)qty+=tail.portfolio.f[d][i];s<<qty;}
+    s<<"],\"tail_daily_flow\":[";
+    for(int d=v.day;d<30;d++){if(d!=v.day)s<<",";s<<"[";
+     for(int i=0;i<9;i++){if(i)s<<",";s<<tail.portfolio.f[d][i];}s<<"]";}
+    s<<"],\"tail_rival_forecast_by_item\":[";
+    for(int i=0;i<9;i++){if(i)s<<",";double qty=0;for(int d=v.day;d<30;d++)qty+=tail.model.rival[d][i];s<<qty;}
+    s<<"],\"tail_rival_daily_flow\":[";
+    for(int d=v.day;d<30;d++){if(d!=v.day)s<<",";s<<"[";
+     for(int i=0;i<9;i++){if(i)s<<",";s<<tail.model.rival[d][i];}s<<"]";}
+    s<<"],\"tail_demand_daily_flow\":[";
+    for(int d=v.day;d<30;d++){if(d!=v.day)s<<",";s<<"[";
+     for(int i=0;i<9;i++){if(i)s<<",";s<<tail.model.dem[d][i];}s<<"]";}
+    s<<"]}";
+    for(int i=0;i<9;i++){
+     double stock=v.market.inventory[i],dem=tail.model.dem[v.day][i];
+     double rival=tail.model.cfg.supply*tail.model.rival[v.day][i]*.5;
+     stock-=dem*.5;competitive::Planner::trade(i,stock,rival);
+     competitive::Planner::trade(i,stock,tail.portfolio.f[v.day][i]);
+     competitive::Planner::trade(i,stock,rival);stock-=dem*.5;
+     prior_market_prediction[i]=int(std::llround(stock));
+    }
+    have_prior_market=true;
+    prior_rival=tail.model.rival;have_prior_rival=true;
+    prior_portfolio=tail.portfolio;have_prior_portfolio=true;
+    sold.fill(0);bought.fill(0);
+   }
+  }
+  if(v.day==day+days)break;
+  double own0=world.own_cash(),rival0=world.rival_cash();auto act=online.act(v);world.advance(act);
+  const auto&fills=world.own_market_fills();
+  if(fills.size()!=act.market.size())throw std::runtime_error("boundary market fill length");
+  for(size_t j=0;j<fills.size();j++){int i=int(act.market[j].item);if(i<0||i>=9)continue;
+   if(act.market[j].op==fastkag::Op::SELL)sold[i]+=fills[j];
+   if(act.market[j].op==fastkag::Op::BUY_PRODUCT)bought[i]+=fills[j];}
+  realized+=((world.own_cash()-own0)-online.base.competition*(world.rival_cash()-rival0))
+   /std::pow(beta,v.day-day);
+  realized_margin+=((world.own_cash()-own0)-(world.rival_cash()-rival0))
+   /std::pow(beta,v.day-day);
+ }
+ s<<"],\"end_step\":"<<world.view().step<<",\"done\":"<<(world.done()?"true":"false")<<"}";
+ h.text=s.str();return h.text.c_str();
+ }catch(const std::exception&e){static_cast<Handle*>(p)->text=std::string("ERROR: ")+e.what();return nullptr;}}
+extern "C" const char*td_candidate_transition_json(void*p,int index){
+ auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared_audits.size()))return nullptr;
+ const auto&a=h.prepared_audits[index];std::ostringstream s;s.precision(17);
+ auto vec=[&](const char*name,const auto&v){s<<",\""<<name<<"\":[";for(size_t i=0;i<v.size();i++){if(i)s<<",";s<<v[i];}s<<"]";};
+ s<<"{\"own_cash\":"<<a.rollout_own_cash<<",\"rival_cash\":"<<a.rollout_rival_cash;
+ vec("market_inventory",a.transition_inventory);vec("market_prices",a.transition_prices);
+ vec("own_assets",a.transition_own_assets);vec("rival_assets",a.transition_rival_assets);
+ s<<"}";h.text=s.str();return h.text.c_str();
+}
+extern "C" const char*td_candidate_tail_items_json(void*p,int index){
+ auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared_audits.size()))return nullptr;
+ const auto&a=h.prepared_audits[index];std::ostringstream s;s.precision(17);
+ auto vec=[&](const char*name,const auto&v){s<<",\""<<name<<"\":[";for(size_t i=0;i<v.size();i++){if(i)s<<",";s<<v[i];}s<<"]";};
+ s<<"{\"tail\":"<<a.tail<<",\"tail_exact_market\":"<<a.static_tail_exact_market;
+ vec("own_trade_by_item",a.tail_parts.own_trade_by_item);
+ vec("rival_penalty_by_item",a.tail_parts.rival_penalty_by_item);
+ vec("exact_own_trade_by_item",a.static_tail_exact_market_parts.own_trade_by_item);
+ vec("exact_rival_penalty_by_item",a.static_tail_exact_market_parts.rival_penalty_by_item);
+ vec("tail_flow_total",a.static_tail_flow_total);
+ s<<"}";h.text=s.str();return h.text.c_str();
+}
+// Same-plan, single-incumbent harvest-age replacements. Diagnostic only:
+// no resource calendar or executor is rerun, so gains are local value regret.
+extern "C" const char*td_candidate_harvest_age_json(void*p,int index,const double*input,size_t count){try{
+ auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size()))return nullptr;
+ Cursor r{input,count};int step=r.integer(),day=r.integer(),hour=r.integer(),seat=r.integer();
+ auto a=r.farm(),b=r.farm();auto priv=r.priv();fastkag::Market market;
+ for(auto&x:market.inventory)x=r.integer();for(auto&x:market.prices)x=r.integer();
+ std::vector<int8_t>shops;int n=r.count();for(int i=0;i<n;i++)shops.push_back(r.integer());
+ if(r.i!=count||day!=step/24||hour!=step%24||seat<0||seat>1)return nullptr;
+ dp7::View v{step,day,hour,seat==0?a:b,seat==0?b:a,priv,market,shops};
+ auto c=h.prepared[index].policy;competitive::ValueBreakdown base_parts;
+ double baseline=c.model.value(v,c.portfolio,nullptr,-1,&base_parts);
+ std::ostringstream s;s.precision(17);s<<"{\"baseline\":"<<baseline<<",\"rows\":[";
+ int eligible=0,positive=0,mismatch=0;double max_gain=0;bool first_row=true;
+ for(int pos=0;pos<100;pos++){
+  const auto&t=v.own.tiles[pos];if(!dp7::plant(t)||dp7::ongoing(int(t.crop))||
+    c.joint.index(pos)>=0||c.book[pos].successor>=0)continue;
+  int k=int(t.crop),chosen=c.release[pos],earliest=std::max(day,int(t.planted_day)+dp7::first[k]);
+  int last=std::min(29,int(t.planted_day)+(k==dp7::W?4:k==dp7::C?3:12));
+  if(chosen<earliest||chosen>last)continue;
+  eligible++;double best=baseline,chosen_rebuilt=0;int best_day=chosen;
+  auto best_asset=c.paths[pos];auto best_parts=base_parts;
+  for(int d=earliest;d<=last;d++){
+   auto alt=c.crop(k,t.planted_day,pos,d,c.path_prices(),&t,nullptr,-1,-1,
+      c.s.marginal_value>0?&c.forecast_crop_service[pos]:nullptr);
+   auto portfolio=c.portfolio;competitive::add(portfolio,c.paths[pos],-1);competitive::add(portfolio,alt);
+   competitive::ValueBreakdown parts;double val=c.model.value(v,portfolio,nullptr,-1,&parts);
+   if(d==chosen)chosen_rebuilt=val-baseline;
+   if(val>best+1e-9){best=val;best_day=d;best_asset=alt;best_parts=parts;}
+  }
+  mismatch+=std::abs(chosen_rebuilt)>1e-6;double gain=best-baseline;
+  positive+=gain>1e-6;max_gain=std::max(max_gain,gain);
+  if(!first_row)s<<',';first_row=false;
+  double labor_delta=0;for(int d=day;d<30;d++)labor_delta+=best_asset.labor[d]-c.paths[pos].labor[d];
+  double scalar_delta=c.scalar(best_asset,c.path_prices(),day)-c.scalar(c.paths[pos],c.path_prices(),day);
+  s<<"{\"pos\":"<<pos<<",\"crop\":"<<k<<",\"chosen\":"<<chosen
+   <<",\"best\":"<<best_day<<",\"gain\":"<<gain
+   <<",\"scalar_delta\":"<<scalar_delta<<",\"labor_delta\":"<<labor_delta
+   <<",\"own_trade_delta\":"<<best_parts.own_trade-base_parts.own_trade
+   <<",\"rival_penalty_delta\":"<<best_parts.rival_penalty-base_parts.rival_penalty
+   <<",\"wages_delta\":"<<best_parts.wages-base_parts.wages
+   <<",\"actions_delta\":"<<best_parts.actions-base_parts.actions
+   <<",\"fixed_delta\":"<<best_parts.fixed-base_parts.fixed
+   <<",\"chosen_rebuild_delta\":"<<chosen_rebuilt<<"}";
+ }
+ s<<"],\"eligible\":"<<eligible<<",\"positive\":"<<positive
+  <<",\"mismatch\":"<<mismatch<<",\"max_gain\":"<<max_gain<<"}";
+ h.text=s.str();return h.text.c_str();
+ }catch(const std::exception&e){static_cast<Handle*>(p)->text=std::string("ERROR: ")+e.what();return nullptr;}}
+extern "C" const char*td_candidate_shop_branch_json(void*p,int index,const double*input,size_t count,int shop){try{
+ auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size())||shop<-1||shop>7)return nullptr;
+ for(int d=0;d<30;d++)for(int i=0;i<9;i++)
+  if(h.prepared[index].policy.model.rival[d][i]!=h.prepared[0].policy.model.rival[d][i])
+   throw std::runtime_error("shop branch candidates have different rival forecasts");
+ Cursor r{input,count};int step=r.integer(),day=r.integer(),hour=r.integer(),seat=r.integer();
+ auto a=r.farm(),b=r.farm();auto priv=r.priv();fastkag::Market market;
+ for(auto&x:market.inventory)x=r.integer();for(auto&x:market.prices)x=r.integer();
+ std::vector<int8_t>shops;int n=r.count();for(int i=0;i<n;i++)shops.push_back(r.integer());
+ if(r.i!=count||day!=step/24||hour!=step%24||seat<0||seat>1)return nullptr;
+ dp7::View v{step,day,hour,seat==0?a:b,seat==0?b:a,priv,market,shops};
+ triad::SearchController::ScoreAudit audit;
+ double q=h.policy.score(v,h.prepared[index],30-day,&audit,shop);
+ if(audit.continuation_first_key.empty()||(shop>=0&&audit.shop_branch_day15_key.empty()))return nullptr;
+ std::ostringstream s;s.precision(17);s<<"{\"shop\":"<<shop<<",\"q\":"<<q;
+ auto vec=[&](const char*name,const auto&v){s<<",\""<<name<<"\":[";for(size_t i=0;i<v.size();i++){if(i)s<<",";s<<v[i];}s<<"]";};
+ vec("static_tail_key",h.prepared_audits[index].static_tail_key);
+ vec("continuation_first_key",audit.continuation_first_key);
+ vec("next_shop_plan_key",audit.shop_branch_day15_key);
+ s<<",\"static_tail_predicted\":"<<h.prepared_audits[index].static_tail_predicted
+  <<",\"continuation_first_predicted\":"<<audit.continuation_first_predicted;
+ vec("static_tail_flow_day",h.prepared_audits[index].static_tail_flow_day);
+ vec("continuation_first_flow_day",audit.continuation_first_flow_day);
+ s<<"}";h.text=s.str();return h.text.c_str();
+ }catch(const std::exception&e){static_cast<Handle*>(p)->text=std::string("ERROR: ")+e.what();return nullptr;}}
+#endif
+
 extern "C" int td_candidate_features(void*p,int index,double*out,size_t cap){auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size()))return -1;const auto&f=h.prepared[index].features.x;if(cap<f.size())return -2;std::copy(f.begin(),f.end(),out);return f.size();}
 extern "C" int td_candidate_id(void*p,int index){auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size()))return -1;return h.prepared[index].id;}
 extern "C" const char*td_candidate_json(void*p,int index){auto&h=*static_cast<Handle*>(p);if(index<0||index>=int(h.prepared.size()))return nullptr;const auto&q=h.prepared[index];const auto&a=h.prepared_audits[index];int crops=0,animals=0,hires=0;for(auto[pos,k]:q.policy.core.target){crops+=k>=0&&k<5;animals+=k>=9;}for(auto x:q.policy.core.queue)hires+=x.op==fastkag::Op::HIRE;double work1=q.policy.portfolio.labor[h.prepared_day],work3=0;for(int d=h.prepared_day;d<std::min(30,h.prepared_day+3);d++)work3+=q.policy.portfolio.labor[d];std::ostringstream s;s.precision(17);auto parts=[&](const char*name,const competitive::ValueBreakdown&b){s<<",\""<<name<<"\":{\"fixed\":"<<b.fixed<<",\"own_trade\":"<<b.own_trade<<",\"wages\":"<<b.wages<<",\"actions\":"<<b.actions<<",\"rival_penalty\":"<<b.rival_penalty<<",\"liquidity_penalty\":"<<b.liquidity_penalty<<",\"total\":"<<b.total<<"}";};s<<"{\"index\":"<<index<<",\"id\":"<<q.id<<",\"diagnostic\":\""<<h.prepared_names[index]<<"\",\"key_unique\":"<<(h.prepared_key_unique[index]?"true":"false")<<",\"score\":"<<h.prepared_scores[index]<<",\"scores_horizon\":[";for(int d=0;d<5;d++){if(d)s<<",";s<<h.prepared_horizons[index][d];}s<<"],\"predicted\":"<<q.policy.predicted<<",\"discount\":"<<q.policy.s.discount<<",\"capital_power\":"<<q.policy.s.capital_power<<",\"delay_sale\":"<<q.policy.s.delay_sale<<",\"rotation\":"<<q.policy.s.rotation<<",\"repeat\":"<<q.policy.s.repeat<<",\"target_crops\":"<<crops<<",\"target_animals\":"<<animals<<",\"hires\":"<<hires<<",\"forecast_work_1\":"<<work1<<",\"forecast_work_3\":"<<work3<<",\"scenario_rollout_own_cash\":"<<a.rollout_own_cash<<",\"scenario_rollout_rival_cash\":"<<a.rollout_rival_cash<<",\"scenario_rollout_objective\":"<<a.rollout_objective<<",\"scenario_tail\":"<<a.tail<<",\"scenario_frozen_clock_tail\":"<<a.frozen_clock_tail<<",\"scenario_frozen_clock_delta\":"<<a.frozen_clock_tail-a.tail<<",\"scenario_carried_tail\":"<<a.carried_tail<<",\"scenario_carried_delta\":"<<a.carried_tail-a.tail<<",\"scenario_carried_replan_tail\":"<<a.carried_replan_tail<<",\"scenario_carried_replan_delta\":"<<a.carried_replan_tail-a.tail<<",\"scenario_replan_changed\":"<<(a.replan_changed?"true":"false");parts("scenario_tail_parts",a.tail_parts);parts("scenario_frozen_clock_parts",a.frozen_clock_parts);parts("scenario_carried_tail_parts",a.carried_parts);parts("scenario_carried_replan_parts",a.carried_replan_parts);s<<",\"optimizer\":"<<q.policy.optimizer_json()<<",\"rival_flow_today\":[";for(int i=0;i<9;i++){if(i)s<<",";s<<a.initial[h.prepared_day][i];}s<<"],\"rival_future_mismatch\":[";for(int i=0;i<9;i++){if(i)s<<",";double x=0;for(int d=h.prepared_day+1;d<30;d++)x+=a.recomputed[d][i]-a.initial[d][i];s<<x;}s<<"]}";h.text=s.str();return h.text.c_str();}
