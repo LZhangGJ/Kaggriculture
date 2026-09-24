@@ -1,5 +1,7 @@
 # 交接
 
+> **2026-09-24 三地 RL 续训分支**：`handoff/rl-student-economic-v678-20260924` 冻结完整更新后的 v678 `.pt`（含 AdamW）与同轮 `.bin`，见 `models/student-v678/`。本机三地连续训练仍可继续，之后轮次不会自动进入此分支。当前三地行为为 G275/旧浅树 + funded replay，到 step288 后逐格采样、`intraday=0`；队友续训命令、环境和身份哈希见 `AGENTS.md` 首节。本快照**不含交易 DP**，也不是 Kaggle 包或跨 seed 最优声明；新 Kaggle 上传须再次获得用户同意。
+
 > **2026-09-24 最新：v463 Kaggle 提交**。三地 G275/旧浅树 + funded replay，step288 后逐格采样、`intraday=0`。最近 100 轮同一三手训练池中最高的已记录胜数是 v464 rollout 的 `1377/1536`；它实际由输入 checkpoint **v463** 产生，不是 v464 更新后权重，也不是独立盲测。原样提交包 `submissions/student-v463-funded-kaggle.tar.gz`，SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`；Kaggle ID `56517329` 已 COMPLETE，初始公开分 `600.0` 尚不能代表匹配强度。按用户要求未另跑胜率测试。三地连续训练仍运行，四地隔离链暂停。
 
 > **2026-09-24 v306 新交接分支**：`handoff/rl-student-v306-kaggle-20260924`。

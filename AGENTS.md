@@ -4,6 +4,33 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
+## 三地 RL 续训快照 v678（`handoff/rl-student-economic-v678-20260924`）
+
+- 这是供队友**续训**的隔离 GitHub 分支，不是 Kaggle 提交或部署晋级。冻结 `models/student-v678/{actor.pt,actor.bin,manifest.json,metrics.json}`；`.pt` 含模型及 `rl_optimizer` 的 28 组 AdamW 状态，`.bin` 是同一 checkpoint 的 C++ 前向权重。SHA-256：`.pt` `7d5566732125aa3e6cf48ce9e8f5eec5948f59cddb194ec6dc0dfe3ad6ff810a`，`.bin` `d59f4f4ce8e97651534cf8b32a591ea3753ca138e0da6b725896b8096b870523`，manifest `25e12c5bafc1f2aca509dfc8dfd1d6d6678042b94d06d8294cc8724c0591dc87`。v678 metrics 的 `checkpoint_out_sha256` 核对 `.pt`；**v679** metrics 的 `checkpoint_in_sha256/native_weights_sha256` 分别核对这对 `.pt/.bin`（v678 metrics 中的 `native_weights_sha256` 指其输入 v677，不是输出 v678）。
+- 本机原生 bridge SHA-256 `ae666af83c9639ca54160e35019e8823365dfc807ebe40025d1ef0d5d6c182de`、funded JobBatch SHA-256 `019d24a32b157b4f63e07fabb1f11b00ed8a1f82b48148eb0d9f6dac31e4c79e`；对方主机须按下列源码重新编译，不能复制 aarch64 `.so`。三地行为是 G275/旧浅树 + funded replay 到 step288，之后 17 个日初逐格**采样**、`intraday=0`。训练池 Thomas/Meta/Fieldcraft 各 1/3；不要启用四地 lifecycle/shop-gate 或旧 `sale_dp=1`。当前交易博弈 DP 仍是隔离研究，**本快照不含交易 DP**。
+- v678 是最近完成的训练链快照，不是盲测最优。另选的 v619 在五个 C++ 对手各 128 seed × 双座的 dev 采样评测为 `1123/1280`，v463 同 seed 为 `1119/1280`；不可把 v619 结果写成 v678 或 DP 收益。续训 seed 段必须与现有训练和保留盲测互斥；下例 `3300100000` 为交接新段，本机后续轮次不会自动推送。
+
+```bash
+(cd fast_kaggriculture && python setup.py build_ext --inplace)
+bash experiments/native_student_rollout/build_student_bridge.sh work/agent-student-actor-owned-v3.so
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/thomas_2945_cpp/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/metav4_2965/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/fieldcraft_2887/build.sh
+PYTHON_BIN="$(command -v python)" bash experiments/native_opponents/salemali7_2900/build.sh
+PYTHON_BIN="$(command -v python)" BUILD_DIR=experiments/native_student_rollout/build-economic-funded bash experiments/native_student_rollout/build.sh
+PYTHONPATH=. python -u experiments/run_student_rl_continuous.py \
+  --start-round 679 --checkpoint models/student-v678/actor.pt \
+  --weights models/student-v678/actor.bin --manifest models/student-v678/manifest.json \
+  --binary work/agent-student-actor-owned-v3.so \
+  --native-job-module-dir experiments/native_student_rollout/build-economic-funded \
+  --economic-input-v1 --no-day-state-baseline --student-intraday 0 \
+  --opponents thomas_2945_cpp,metav4_2965,fieldcraft_2887 \
+  --seed-start 3300100000 --native-job-threads 32 --device cpu \
+  --runtime-dir work/continuous-rl-economic-v678-handoff --tag economic-v1-v678
+```
+
+- 只需本分支源码、小型原生对手资产和四个模型文件；不要下载或上传原始 replay、历史 rollout NPZ、BC mmap、缓存、本机 `.so`。如 `manifest.json` 包含本机旧 BC 路径，原生 PPO 只用其内容哈希/契约，不会读取那些文件。完整运行身份还需在队友机器首次 fresh rollout 的 metrics 中重新核对 `native_job_inputs_sha256`、old-policy replay gate 和合法/fallback 数，不可仅凭可加载 checkpoint 宣称跨架构逐步 parity。
+
 ## 2026-09-24 当前研究与 Kaggle 提交
 
 - 已按用户要求从近期同池 RL rollout 的已记录胜数直接选模型、未追加胜率测试：v464 rollout `1377/1536` 由 **v463 `checkpoint_in`** 产生。打包三地 G275/旧浅树 + funded replay、step288 后 17 天逐格采样、`intraday=0`；原样包 `submissions/student-v463-funded-kaggle.tar.gz`（SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`）已上传 Kaggle，submission `56517329` 已 COMPLETE。初始公开分 `600.0` 不能代表匹配强度。训练胜数不是独立盲测；此包也没有替换普通 `agent/main.py`。
