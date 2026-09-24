@@ -185,7 +185,8 @@ def load_training_data(base_directory: Path, dagger_directories: list[Path]):
 
 
 def build_model(context_width: int, observation_width: int, resource_width: int,
-                scale: int = 1, *, shop_action_head: bool = False):
+                scale: int = 1, *, shop_action_head: bool = False,
+                event_classes=EVENT_CLASSES):
     import torch
 
     if not 1 <= scale <= 4:
@@ -209,10 +210,10 @@ def build_model(context_width: int, observation_width: int, resource_width: int,
             self.cell = torch.nn.Embedding(100, event_embedding)
             self.stage = torch.nn.Embedding(2, event_embedding)
             self.previous = torch.nn.Embedding(
-                len(EVENT_CLASSES) + 1, event_embedding)
+                len(event_classes) + 1, event_embedding)
             self.gru = torch.nn.GRUCell(
                 resource_hidden + 3 * event_embedding, hidden)
-            self.head = torch.nn.Linear(hidden, len(EVENT_CLASSES))
+            self.head = torch.nn.Linear(hidden, len(event_classes))
             if shop_action_head:
                 if resource_width != 383:
                     raise ValueError("shop action head requires the 383D resource ABI")

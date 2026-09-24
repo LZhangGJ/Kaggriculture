@@ -16,6 +16,7 @@ import numpy as np
 import torch
 
 from experiments.train_midgame_autofill_v3 import EVENT_CLASSES
+from experiments.student_v3_runtime_model import EVENT_CLASSES_V4, LOCAL_FEATURE_WIDTH_V4
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -76,7 +77,8 @@ def f32_bytes(value) -> bytes:
     return array.astype("<f4", copy=False).tobytes(order="C")
 
 
-def expected_shapes(d: dict[str, int], shop_action_head=False) -> dict[str, tuple[int, ...]]:
+def expected_shapes(d: dict[str, int], shop_action_head=False,
+                    classes=len(EVENT_CLASSES)) -> dict[str, tuple[int, ...]]:
     p, s, e, h = d["projection"], d["scalar"], d["embedding"], d["hidden"]
     rh, ee = d["resource_hidden"], d["event_embedding"]
     shapes = {
@@ -87,10 +89,10 @@ def expected_shapes(d: dict[str, int], shop_action_head=False) -> dict[str, tupl
         "begin.weight": (h, 3 * p + s), "begin.bias": (h,),
         "resource.weight": (rh, d["resource"]), "resource.bias": (rh,),
         "cell.weight": (100, ee), "stage.weight": (2, ee),
-        "previous.weight": (len(EVENT_CLASSES) + 1, ee),
+        "previous.weight": (classes + 1, ee),
         "gru.weight_ih": (3 * h, rh + 3 * ee), "gru.weight_hh": (3 * h, h),
         "gru.bias_ih": (3 * h,), "gru.bias_hh": (3 * h,),
-        "head.weight": (len(EVENT_CLASSES), h), "head.bias": (len(EVENT_CLASSES),),
+        "head.weight": (classes, h), "head.bias": (classes,),
     }
     for index, size in enumerate((7, 32, 32, 32, 64, 64, 4)):
         shapes[f"token_embeddings.{index}.weight"] = (size, e)
@@ -125,10 +127,12 @@ def main() -> None:
         "resource_hidden": 64 * scale, "event_embedding": 8 * scale,
     }
     shop_action_head = checkpoint.get("shop_action_head_semantics") == 1
+    lifecycle_v4 = checkpoint.get("student_lifecycle_semantics") == 4
+    classes = EVENT_CLASSES_V4 if lifecycle_v4 else EVENT_CLASSES
     parameter_order = SHOP_PARAMETER_ORDER if shop_action_head else PARAMETER_ORDER
-    version = 2 if shop_action_head else VERSION
+    version = 3 if lifecycle_v4 else 2 if shop_action_head else VERSION
     contract_digest = contract_sha(version, parameter_order)
-    shapes = expected_shapes(dims, shop_action_head)
+    shapes = expected_shapes(dims, shop_action_head, len(classes))
     normalization_shapes = {
         "context_mean": (dims["context"],), "context_std": (dims["context"],),
         "observation_mean": (dims["observation"],),
@@ -137,9 +141,12 @@ def main() -> None:
         "resource_mean": (dims["resource"],), "resource_std": (dims["resource"],),
     }
     if (not 1 <= scale <= 4 or tuple(checkpoint.get("event_classes", ())) !=
-            EVENT_CLASSES or tuple(state) != parameter_order or
+            classes or tuple(state) != parameter_order or
             tuple(normalization) != NORMALIZATION_ORDER):
         raise ValueError("checkpoint does not match the fixed v3 actor contract")
+    if lifecycle_v4 and (shop_action_head or dims["resource"] != 374 +
+                         LOCAL_FEATURE_WIDTH_V4):
+        raise ValueError("lifecycle v4 actor requires 406D resource and no shop gate")
     if shop_action_head and (dims["resource"] != 383 or
                              checkpoint.get("shop_resource_semantics") != 1 or
                              not np.all(np.asarray(normalization["resource_mean"])[374:383] == 0) or
@@ -170,11 +177,11 @@ def main() -> None:
 
     header = HEADER.pack(
         MAGIC, version, HEADER.size, ENDIAN_TAG, SCALAR_F32,
-        len(NORMALIZATION_ORDER), len(parameter_order), len(EVENT_CLASSES),
+        len(NORMALIZATION_ORDER), len(parameter_order), len(classes),
         320, 24, 7, dims["context"], dims["observation"], dims["resource"],
         scale, dims["projection"], dims["scalar"], dims["embedding"],
         dims["hidden"], dims["resource_hidden"], dims["event_embedding"],
-        100, 2, len(EVENT_CLASSES) + 1, len(payload),
+        100, 2, len(classes) + 1, len(payload),
         checkpoint_sha, shard_sha, contract_digest, payload_sha)
     temporary = args.output.with_suffix(args.output.suffix + ".tmp")
     with temporary.open("wb") as target:

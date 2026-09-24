@@ -15,6 +15,8 @@ mkdir -p "$(dirname "$output")"
   -DT3_CAPACITY_REPAIR=1 -DT3_RECEIPT_REPAIR=1 \
   -DP16_JOINT_BUNDLES=1 -DR2_STUDENT_SLOT_AUDIT=1 \
   -DR2_OUTER_NEIGHBOR_AUDIT=1 -DR2_OUTER_BEAM_WIDTH=2 \
+  -DR2_STUDENT_MAX_LAND="${STUDENT_MAX_LAND:-3}" \
+  -DR2_STUDENT_LIFECYCLE_V4="${STUDENT_LIFECYCLE_V4:-0}" \
   -I"$root/policy/r1" \
   "$root/policy/r1/teacher_bridge.cpp" \
   "$root/policy/r1/executor/vendor/simulator.cpp" \

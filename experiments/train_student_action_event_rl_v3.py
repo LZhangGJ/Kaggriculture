@@ -50,6 +50,7 @@ from experiments.student_action_event_agent import (
 )
 from experiments.train_midgame_autofill_v3 import build_model
 from experiments.train_midgame_student_v1 import _sha256
+from experiments.student_v3_runtime_model import EVENT_CLASSES_V4, LOCAL_FEATURE_WIDTH_V4
 
 
 FORMAL_OPPONENTS = (
@@ -447,6 +448,8 @@ def _collect_one(job: dict) -> dict:
 
 def _student_scaffold_settings(args) -> list[float]:
     config = json.loads((ROOT / "policy/r1/config.json").read_text())
+    if getattr(args, "experimental_four_land_route", None):
+        config["max_land"] = 4
     override = getattr(args, "student_intraday", None)
     if override is not None:
         config["intraday"] = override
@@ -476,8 +479,8 @@ def _collect_native_job_batch(
     native = importlib.import_module("_paused_plan")
     bundle = NativeTeammateBundle(
         ROOT / "agent/teammate_base.py",
-        ROOT / "agent/route_actions.json.zlib",
-        ROOT / "agent/route_library.json")
+        args.experimental_route_actions or ROOT / "agent/route_actions.json.zlib",
+        args.experimental_route_library or ROOT / "agent/route_library.json")
     deployment_routes = [bundle.index(name) for name in
                          ("G275", "G195", "G024", "G316", "G267")]
     settings = _student_scaffold_settings(args)
@@ -512,6 +515,10 @@ def _collect_native_job_batch(
         str(fieldcraft)]
     if any(job["opponent"] == "soil_current" for job in jobs):
         batch_args.append(str(soil))
+    if args.experimental_four_land_route:
+        if len(batch_args) == 13:
+            batch_args.append("")  # Positionally skip optional soil_asset.
+        batch_args.extend((bundle.index(args.experimental_four_land_route), 144))
     batch = native.JobBatch(*batch_args)
     started = time.perf_counter()
     batch.run(args.native_job_threads, 2 << 20, False)
@@ -902,7 +909,8 @@ def _day_state_crossfit_advantages(
         arrays["day_step"], normalization)
     extraction_seconds = time.perf_counter() - started
     counts = actionable_day_counts(
-        len(features), arrays["event_day_index"], arrays["event_legal_mask"])
+        len(features), arrays["event_day_index"], arrays["event_legal_mask"],
+        len(EVENT_CLASSES))
     native_rewards = _native_session_rewards(
         arrays, args.margin_weight, args.margin_scale)
     result = crossfit_global_hgb(
@@ -1270,8 +1278,10 @@ def _validate_inputs(args) -> dict:
     expected_dimensions = {
         "causal_context": 2233,
         "packed_observation": 3145 if args.economic_input_v1 else 3074,
-        "event_resources": (383 if getattr(args, "shop_resource_v1", False) else 374)
-        if args.economic_input_v1 else 347,
+        "event_resources": (374 + LOCAL_FEATURE_WIDTH_V4
+                            if getattr(args, "student_lifecycle_v4", False) else
+                            (383 if getattr(args, "shop_resource_v1", False) else 374)
+                            if args.economic_input_v1 else 347),
     }
     if (tuple(checkpoint.get("event_classes", ())) != EVENT_CLASSES or
             tuple(checkpoint.get("training_state_steps", ())) != STUDENT_STEPS or
@@ -1280,7 +1290,9 @@ def _validate_inputs(args) -> dict:
             bool(args.shop_action_head_v1) or
             (args.economic_input_v1 and checkpoint.get(
                 "economic_fork", {}).get("schema") !=
-                "public-economic-input-v1-diagnostic-only")):
+                "public-economic-input-v1-diagnostic-only") or
+            (checkpoint.get("student_lifecycle_semantics") == 4) !=
+            bool(getattr(args, "student_lifecycle_v4", False))):
         raise ValueError("checkpoint is not the full-day v3 actor")
     fingerprints = {
         "checkpoint_sha256": _sha256(args.checkpoint),
@@ -1301,7 +1313,8 @@ def _validate_inputs(args) -> dict:
         frozen = args.native_weights.read_bytes()
         if (len(frozen) < 236 or frozen[:8] != b"KAGSV3A\0" or
                 int.from_bytes(frozen[8:12], "little") !=
-                (2 if args.shop_action_head_v1 else 1) or
+                (3 if getattr(args, "student_lifecycle_v4", False) else
+                 2 if args.shop_action_head_v1 else 1) or
                 frozen[108:140].hex() != fingerprints["checkpoint_sha256"]):
             raise ValueError("native actor weights/checkpoint fingerprint mismatch")
         fingerprints["native_weights_sha256"] = _sha256(args.native_weights)
@@ -1352,9 +1365,16 @@ def _validate_inputs(args) -> dict:
             "fast_env": _sha256(fast_modules[0]),
             "r1_config": _sha256(ROOT / "policy/r1/config.json"),
             "teammate_source": _sha256(ROOT / "agent/teammate_base.py"),
-            "route_actions": _sha256(ROOT / "agent/route_actions.json.zlib"),
-            "route_library": _sha256(ROOT / "agent/route_library.json"),
+            "route_actions": _sha256(args.experimental_route_actions or
+                                     ROOT / "agent/route_actions.json.zlib"),
+            "route_library": _sha256(args.experimental_route_library or
+                                     ROOT / "agent/route_library.json"),
         }
+        if args.experimental_four_land_route:
+            fingerprints["native_job_inputs_sha256"]["opening_switch"] = (
+                f"G275→{args.experimental_four_land_route}@144:max_land=4")
+        if getattr(args, "student_lifecycle_v4", False):
+            fingerprints["native_job_inputs_sha256"]["lifecycle_contract"] = 4
         if getattr(args, "student_intraday", None) is not None:
             settings = _student_scaffold_settings(args)
             fingerprints["native_job_inputs_sha256"]["student_scaffold_settings"] = (
@@ -1577,7 +1597,8 @@ def train(args) -> dict:
         payload["model_dimensions"]["causal_context"],
         payload["model_dimensions"]["packed_observation"],
         payload["model_dimensions"]["event_resources"],
-        payload["model_scale"], shop_action_head=args.shop_action_head_v1)
+        payload["model_scale"], shop_action_head=args.shop_action_head_v1,
+        event_classes=EVENT_CLASSES)
     model.load_state_dict(payload["model"])
     model.train()
 
@@ -1591,7 +1612,8 @@ def train(args) -> dict:
             payload["model_dimensions"]["causal_context"],
             payload["model_dimensions"]["packed_observation"],
             payload["model_dimensions"]["event_resources"],
-            payload["model_scale"], shop_action_head=args.shop_action_head_v1)
+            payload["model_scale"], shop_action_head=args.shop_action_head_v1,
+            event_classes=EVENT_CLASSES)
         cpu_model.load_state_dict(payload["model"])
         cpu_model.train()
         cpu_replay_pool = ThreadPoolExecutor(max_workers=1)
@@ -2027,6 +2049,12 @@ def main() -> None:
     parser.add_argument("--native-weights", type=Path)
     parser.add_argument("--native-job-module-dir", type=Path,
                         default=ROOT / "experiments/native_student_rollout/build")
+    parser.add_argument("--experimental-four-land-route",
+                        help="isolated G275→DSM step144 opening; default unchanged")
+    parser.add_argument("--student-lifecycle-v4", action="store_true",
+                        help="occupied crop DIG / animal RETIRE and 32D local tile input")
+    parser.add_argument("--experimental-route-actions", type=Path)
+    parser.add_argument("--experimental-route-library", type=Path)
     parser.add_argument("--economic-input-v1", action="store_true",
                         help="isolated zero-initialized economic feature fork")
     parser.add_argument("--shop-resource-v1", action="store_true",
@@ -2098,6 +2126,20 @@ def main() -> None:
         parser.error("invalid rollout/PPO hyperparameter")
     if args.native_job_rollout and args.native_weights is None:
         parser.error("--native-weights is required with --native-job-rollout")
+    if args.experimental_four_land_route:
+        if (not args.native_job_rollout or not args.experimental_route_actions or
+                not args.experimental_route_library or
+                "replay_clean" in args.opponents or
+                not args.student_lifecycle_v4 or not args.economic_input_v1 or
+                args.student_intraday != 0 or
+                not args.experimental_route_actions.is_file() or
+                not args.experimental_route_library.is_file()):
+            parser.error("four-land route requires isolated native assets, no replay_clean, and --student-intraday 0")
+    elif args.experimental_route_actions or args.experimental_route_library:
+        parser.error("experimental route assets require --experimental-four-land-route")
+    if args.student_lifecycle_v4 and (not args.experimental_four_land_route or
+                                      args.shop_action_head_v1 or args.shop_resource_v1):
+        parser.error("lifecycle v4 requires four-land native route and no shop head")
     if args.shop_resource_v1 and not args.economic_input_v1:
         parser.error("--shop-resource-v1 requires --economic-input-v1")
     if args.shop_action_head_v1 and not args.shop_resource_v1:
@@ -2108,6 +2150,9 @@ def main() -> None:
     if args.device_resident_rollout and (
             not args.native_job_rollout or not args.device.startswith("npu")):
         parser.error("--device-resident-rollout requires native JobBatch and NPU")
+    if args.student_lifecycle_v4:
+        global EVENT_CLASSES
+        EVENT_CLASSES = EVENT_CLASSES_V4
     train(args)
 
 

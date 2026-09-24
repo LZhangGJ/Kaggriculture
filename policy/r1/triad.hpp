@@ -23,6 +23,9 @@
 #ifndef R2_STUDENT_SLOT_AUDIT
 #define R2_STUDENT_SLOT_AUDIT 0
 #endif
+#ifndef R2_STUDENT_LIFECYCLE_V4
+#define R2_STUDENT_LIFECYCLE_V4 0
+#endif
 #ifndef R2_GREEDY_VALUE_ORDER
 #define R2_GREEDY_VALUE_ORDER 0
 #endif
@@ -117,6 +120,10 @@ struct Controller {
  std::vector<StudentV3SlotAudit>student_v3_slot_audit;
  std::function<int(const StudentReleaseAudit&)>student_release_selector;
  std::function<int(const StudentSlotAudit&,int)>student_v3_selector;
+#if R2_STUDENT_LIFECYCLE_V4
+ std::array<int8_t,100>student_feed_choice=[](){std::array<int8_t,100>a;a.fill(-1);return a;}();
+ std::array<int,100>student_retire_until=[](){std::array<int,100>a;a.fill(-1);return a;}();
+#endif
 #endif
 #if R2_OUTER_NEIGHBOR_AUDIT
  std::array<int8_t,100>forced_kind{};
@@ -157,7 +164,7 @@ struct Controller {
   // 0/1 retain the released execution path. >=2 enables the additional
   // public-price-pressure trigger for already feasible mid-route delivery.
   p.triad_delivery_pressure=s.batch_delivery>=2?s.batch_delivery-1:0;
-  p.renew_ongoing=true;p.insertion_hire_estimate=true;p.reconcile_seed_drift=true;
+  p.renew_ongoing=!R2_STUDENT_LIFECYCLE_V4;p.insertion_hire_estimate=true;p.reconcile_seed_drift=true;
   p.regret_hire_estimate=p.regret_compile=p.incremental_regret_cost=true;
   p.feed_cover_days=int(s.feed_cover);p.feed_stock_cap=60;
   p.recover_service_inputs=p.procure_service_inputs=p.finance_service_inputs=true;
@@ -364,6 +371,9 @@ struct Controller {
     AnimalServiceDP d;d.solve(int(t.animal),t.placed_day,o.day,path_prices(),s.work_price,s.marginal_value>0?1/(1+s.discount):1.);auto c=d.first(o.day,t);
     if(s.service_reconcile>0){c.feed=forecast_service[pos][0];c.care=forecast_service[pos][1];}
     core.service_feed[pos]=s.service<=0?1:c.feed;core.service_care[pos]=s.service<=0?core.care_due(t):c.care;
+#if R2_STUDENT_LIFECYCLE_V4
+    if(student_feed_choice[pos]>=0){core.service_feed[pos]=student_feed_choice[pos];if(!student_feed_choice[pos])core.service_care[pos]=0;}
+#endif
    }
    if(plant(t)&&ongoing(int(t.crop))){
     int k=int(t.crop);OngoingMaintenanceDP md;md.kind=k;md.birth=t.planted_day;md.mode=2;md.work=s.work_price;md.discount=s.marginal_value>0?1/(1+s.discount):1.;
@@ -390,6 +400,9 @@ struct Controller {
   Farm farm=o.own;int expiry=dp7::Controller::project_zero_expiry(farm,o.step);
   View v{o.step,o.day,o.hour,farm,o.opponent,o.priv,o.market,o.shops};
   core.target.clear();core.plant_not_before.fill(0);core.triad_crop_age.fill(-1);
+#if R2_STUDENT_LIFECYCLE_V4
+  core.student_crop_release.fill(0);core.student_crop_dig.fill(0);student_feed_choice.fill(-1);
+#endif
   portfolio={};paths={};forecast_service={};forecast_crop_service={};release.fill(o.day);successor.fill(-1);length.fill(0);
   if constexpr(R2_OPTIMIZER_AUDIT){greedy_audit.clear();greedy_budget_initial=greedy_budget_final=0;
 #if R2_OPTIMIZER_AUDIT
@@ -410,7 +423,11 @@ struct Controller {
   int student_release_count=0,student_existing_animals=0;
   std::array<int,12>student_initial_stock{};
   for(const auto&t:farm.tiles){
+#if R2_STUDENT_LIFECYCLE_V4
+   student_release_count+=plant(t)||animal(t);
+#else
    student_release_count+=plant(t)&&!ongoing(int(t.crop));
+#endif
    student_existing_animals+=animal(t);
   }
   for(int k=0;k<5;k++)student_initial_stock[k]=o.priv.seeds[k];
@@ -420,7 +437,30 @@ struct Controller {
   // the current tile and never replaces maintenance of the incumbent crop.
   for(int pos=0;pos<100;pos++){
    auto&t=farm.tiles[pos];if(t.kind==TileKind::LOCKED)continue;
-   if(animal(t)){paths[pos]=animal_path(int(t.animal),t.placed_day,pos,path_prices(),&t,&forecast_service[pos]);add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
+   if(animal(t)){
+    paths[pos]=animal_path(int(t.animal),t.placed_day,pos,path_prices(),&t,&forecast_service[pos]);
+#if R2_STUDENT_LIFECYCLE_V4
+    if(student_release_selector){
+     StudentReleaseAudit event;event.pos=pos;event.label=forecast_service[pos][0]?1:12;
+     event.legal_mask=student_retire_until[pos]>=o.day?(1<<12):((1<<1)|(1<<12));
+     if(!(event.legal_mask&(1<<event.label)))event.label=12;
+     auto&state=event.state;state.pos=pos;state.animals=student_existing_animals;state.owned=owned;
+     state.slot_index=student_release_audit.size();state.slot_count=student_release_count;
+     state.stock_left=student_initial_stock;state.prefix=portfolio;
+     int selected=student_release_selector(event);
+     if((selected!=1&&selected!=12)||!(event.legal_mask&(1<<selected)))throw std::runtime_error("student animal lifecycle selector returned illegal choice");
+     student_feed_choice[pos]=selected==1;
+     if(selected==12)student_retire_until[pos]=std::max(student_retire_until[pos],o.day+(t.consecutive_unfed==0));
+     else student_retire_until[pos]=-1;
+     std::array<int8_t,2>first{student_feed_choice[pos],int8_t(student_feed_choice[pos]?forecast_service[pos][1]:0)};
+     paths[pos]=animal_path(int(t.animal),t.placed_day,pos,path_prices(),&t,&forecast_service[pos],&first);
+     event.label=selected;student_release_audit.push_back(event);
+    }
+#endif
+    add(portfolio,paths[pos]);core.target.emplace_back(pos,int(t.animal));animals++;book[pos]={int(t.animal),t.placed_day,o.day,0,-1,true};continue;}
+#if R2_STUDENT_LIFECYCLE_V4
+   student_retire_until[pos]=-1;
+#endif
    if(plant(t)){
    int k=int(t.crop),finish=std::max(o.day,t.planted_day+(ongoing(k)?first[k]+3*interval[k]:core.h_age(k)));
 #if R2_STUDENT_SLOT_AUDIT
@@ -442,6 +482,28 @@ struct Controller {
     int retained=(book[pos].birth==t.planted_day&&book[pos].kind==k)?book[pos].successor:-1;
     if(retained>=0&&o.priv.seeds[retained]>0&&o.day>=t.planted_day+first[k]&&joint.index(pos)<0)finish=o.day;
 #if R2_STUDENT_SLOT_AUDIT
+#if R2_STUDENT_LIFECYCLE_V4
+    if(student_release_selector){
+     int earliest=std::max(o.day,int(t.planted_day)+first[k]);
+     int last=std::min(29,int(t.planted_day)+(k==W?4:k==C?3:12));
+     bool ripe=!ongoing(k)&&earliest<=o.day&&o.day<=last;
+     bool keep=ongoing(k)||!ripe||student_keep_finish>=0;
+     int mask=(keep?1<<1:0)|(ripe?1<<2:0)|(o.day<29&&!ripe?1<<11:0);
+     if(!mask)throw std::runtime_error("student crop lifecycle has no legal choice");
+     StudentReleaseAudit event;event.pos=pos;event.label=ripe&&finish==o.day?2:1;event.legal_mask=mask;
+     if(!(mask&(1<<event.label)))event.label=ripe?2:11;
+     auto&state=event.state;state.pos=pos;state.animals=student_existing_animals;state.owned=owned;
+     state.slot_index=student_release_audit.size();state.slot_count=student_release_count;
+     state.stock_left=student_initial_stock;state.prefix=portfolio;
+     int selected=student_release_selector(event);
+     if((selected!=1&&selected!=2&&selected!=11)||!(mask&(1<<selected)))throw std::runtime_error("student crop lifecycle selector returned illegal choice");
+     if(selected==2||selected==11)finish=o.day;
+     else if(!ongoing(k)&&student_keep_finish>=0)finish=student_keep_finish;
+     core.student_crop_release[pos]=selected==2||selected==11;
+     core.student_crop_dig[pos]=selected==11;
+     event.label=selected;student_release_audit.push_back(event);
+    }
+#else
     if(!ongoing(k)&&student_release_selector){
      int earliest=std::max(o.day,int(t.planted_day)+first[k]);
      int last=std::min(29,int(t.planted_day)+(k==W?4:k==C?3:12));
@@ -458,6 +520,17 @@ struct Controller {
      if(selected==2)finish=o.day;else if(student_keep_finish>=0)finish=student_keep_finish;
      release_audit.label=selected;student_release_audit.push_back(release_audit);
     }
+#endif
+#endif
+#if R2_STUDENT_LIFECYCLE_V4
+    if(core.student_crop_dig[pos]){
+     Asset scrap;scrap.kind=k;scrap.end=o.day;
+     scrap.labor[o.day]=1+.06*near(pos)+.10;
+     if(t.yield_units>0&&o.day-t.planted_day>=first[k]){
+      scrap.f[o.day][k]+=t.yield_units;scrap.labor[o.day]+=1+.06*near(pos)+.10;
+     }
+     paths[pos]=scrap;
+    }else
 #endif
     paths[pos]=crop(k,t.planted_day,pos,finish,path_prices(),&t,nullptr,-1,-1,s.marginal_value>0?&forecast_crop_service[pos]:nullptr);add(portfolio,paths[pos]);
 #if R2_FINITE_FERTILIZER
@@ -548,7 +621,11 @@ struct Controller {
 #endif
    int student_kind_index=0;for(int k:{0,1,2,3,4,9,10,11}){
     ++student_kind_index;
-    if(k>=9&&(plant(t)||animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
+    if(k>=9&&((plant(t)
+#if R2_STUDENT_LIFECYCLE_V4
+       &&!core.student_crop_release[pos]
+#endif
+       )||animals>=core.p.max_animals||o.day+afirst[k-9]>29))continue;
     Asset a;int len=0;
     if(k>=9)a=animal_path(k,o.day,pos,path_prices());else{auto c=choose_crop(k,o.day,pos,path_prices(),dp);if(c.kind<0)continue;a=c.a;len=c.length;}
     double cost=a.first_cost;

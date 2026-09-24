@@ -2,6 +2,9 @@
 #ifndef R2_FINITE_FERTILIZER
 #define R2_FINITE_FERTILIZER 0
 #endif
+#ifndef R2_STUDENT_LIFECYCLE_V4
+#define R2_STUDENT_LIFECYCLE_V4 0
+#endif
 static_assert(R2_FINITE_FERTILIZER==0||R2_FINITE_FERTILIZER==1);
 // Native v7 policy. Only public farms, own private state and current market are
 // visible here. No Simulator/seed/opponent-private access enters the policy API.
@@ -192,6 +195,9 @@ class Controller {
  std::array<int,100>crop_birth{},crop_kind{};
  std::array<int8_t,100>crop_water{},crop_fertilize{};
  int animal_service_day=-1;std::array<int8_t,100>service_feed{},service_care{};
+#if R2_STUDENT_LIFECYCLE_V4
+ std::array<int8_t,100>student_crop_release{},student_crop_dig{};
+#endif
  std::array<int,100>triad_crop_age=[](){std::array<int,100>a;a.fill(-1);return a;}();
  int input_rejected_atoms=0,input_rejected_feed=0,input_rejected_fertilize=0;
  Params p;int day=-1,last_step=-1,phase=0,planned_land=1,feed_stock_target=0,resource_degraded=0,actual_drop=0,liquidity_recoveries=0,unresolved_overflow=0;double proposal_value=0.;
@@ -516,8 +522,22 @@ class Controller {
   const auto&harvest_age=p.crop_harvest_age;
   std::vector<Job>js;for(auto [pos,want]:target){if(want<0)continue;Tile t=o.own.tiles[pos];if(t.kind==TileKind::LOCKED){if(!anticipate)continue;t=Tile{};}Job j;j.pos=pos;auto push=[&](Op op,int it=-1){j.actions.push_back(action(op,it));};
    if(want>=9){if(animal(t)){bool controlled=animal_service_day==day,retiring=controlled&&!service_feed[pos]&&t.consecutive_unfed>=1;int k=int(t.animal)-9;int ds=day+1-t.placed_day-afirst[k];int incoming=(ds>=0&&ds%ainterval[k]==0&&!t.fed_today)?1+t.pending_care_bonus:0;if(t.yield_units>0&&(day>=29||retiring||(p.frequent_harvest&&t.yield_units>=p.frequent_threshold)||t.yield_units+incoming>held[k]||t.yield_units>=held[k])){push(Op::HARVEST);j.out[product[k]]=t.yield_units;}if(t.fertilizer_available){push(Op::COLLECT_FERTILIZER);j.out[F]=1;}if(day<29){if(!t.fed_today&&(!controlled||service_feed[pos])){push(Op::FEED);j.needs[W]=1;}if(controlled?(service_care[pos]&&!t.cared_today):care_due(t))push(Op::CARE);}j.priority=day<29?0:-5;}
+#if R2_STUDENT_LIFECYCLE_V4
+    else if(plant(t)&&student_crop_release[pos]){
+     const int old=int(t.crop);
+     if(t.yield_units>0&&day-t.planted_day>=first[old]){push(Op::HARVEST);j.out[old]=t.yield_units;}
+     if(student_crop_dig[pos])push(Op::DIG);
+     t=Tile{};
+     push(want==G?Op::BUILD_COOP:Op::BUILD_PASTURE);push(Op::PLACE,want);push(Op::FEED);push(Op::CARE);
+     j.needs[want]=1;j.needs[W]=1;j.priority=6;
+    }
+#endif
     else if(t.kind==TileKind::EMPTY||t.kind==TileKind::WEED||t.kind==TileKind::COOP||t.kind==TileKind::PASTURE){if(t.kind==TileKind::WEED){push(Op::DIG);t=Tile{};}auto st=want==G?TileKind::COOP:TileKind::PASTURE;auto build=want==G?Op::BUILD_COOP:Op::BUILD_PASTURE;if(t.kind==TileKind::EMPTY)push(build);else if(t.kind!=st){push(Op::DIG);push(build);}push(Op::PLACE,want);push(Op::FEED);push(Op::CARE);j.needs[want]=1;j.needs[W]=1;j.priority=6;}
-   }else{if(animal(t))continue;j.crop=true;if(t.kind==TileKind::WEED||t.kind==TileKind::COOP||t.kind==TileKind::PASTURE){if(day>=29)continue;push(Op::DIG);t=Tile{};}int desired=want;if(plant(t)){int c=int(t.crop),y=t.yield_units;bool fdue=finite_fertilize_due(t,o,pos);if(fdue){push(Op::FERTILIZE);j.needs[F]=1;}bool expiry=p.fix_expiry&&t.max_lifespan_step>=0&&t.max_lifespan_step<=(day+1)*24;if(ongoing(c)){bool due=fertilize_due(t);if(y>0&&(day>=29||expiry||(p.frequent_harvest&&y>=p.frequent_threshold)||y>=4||(due&&y+2>4))){push(Op::HARVEST);j.out[c]=y;}if(day<29){if(due){push(Op::FERTILIZE);j.needs[F]=1;}if(water_due(t))push(Op::WATER);}desired=c;if(p.renew_ongoing&&day-t.planted_day>=first[c]+3*interval[c]&&want<5&&day+first[want]<=29){if(y>0&&!output(j.out)){push(Op::HARVEST);j.out[c]=y;}j.actions.erase(std::remove_if(j.actions.begin(),j.actions.end(),[](auto a){return a.op==Op::WATER||a.op==Op::FERTILIZE;}),j.actions.end());j.needs[F]=0;push(Op::DIG);t=Tile{};desired=want;}}else if(((day-t.planted_day)>=(triad_crop_age[pos]>=0?triad_crop_age[pos]:harvest_age[c])||(expiry&&y>0))&&day<=28){if(water_due(t))push(Op::WATER);push(Op::HARVEST);if(p.fix_finite_projection){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;int bonus=!t.watered_today&&age>=(maxday+1)/2&&age<=maxday?(fdue||t.fertilized_until_day>=day?2:1):0;j.out[c]=std::min(c==C?4:6,y+bonus);}else j.out[c]=std::max(y,finite_yield(c,h_age(c)));t=Tile{};}else if(day>=29){if(y>0&&(!p.fix_finite_projection||day-t.planted_day>=first[c])){int bonus=0;if(p.fix_finite_projection&&!t.watered_today){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;if(age>=(maxday+1)/2&&age<=maxday){push(Op::WATER);bonus=fdue||t.fertilized_until_day>=day?2:1;}}push(Op::HARVEST);j.out[c]=std::min(c==C?4:6,y+bonus);}}else if(water_due(t))push(Op::WATER);}
+   }else{if(animal(t))continue;j.crop=true;if(t.kind==TileKind::WEED||t.kind==TileKind::COOP||t.kind==TileKind::PASTURE){if(day>=29)continue;push(Op::DIG);t=Tile{};}int desired=want;
+#if R2_STUDENT_LIFECYCLE_V4
+    if(plant(t)&&student_crop_dig[pos]){int c=int(t.crop);if(t.yield_units>0&&day-t.planted_day>=first[c]){push(Op::HARVEST);j.out[c]=t.yield_units;}push(Op::DIG);t=Tile{};}
+#endif
+    if(plant(t)){int c=int(t.crop),y=t.yield_units;bool fdue=finite_fertilize_due(t,o,pos);if(fdue){push(Op::FERTILIZE);j.needs[F]=1;}bool expiry=p.fix_expiry&&t.max_lifespan_step>=0&&t.max_lifespan_step<=(day+1)*24;if(ongoing(c)){bool due=fertilize_due(t);if(y>0&&(day>=29||expiry||(p.frequent_harvest&&y>=p.frequent_threshold)||y>=4||(due&&y+2>4))){push(Op::HARVEST);j.out[c]=y;}if(day<29){if(due){push(Op::FERTILIZE);j.needs[F]=1;}if(water_due(t))push(Op::WATER);}desired=c;if(p.renew_ongoing&&day-t.planted_day>=first[c]+3*interval[c]&&want<5&&day+first[want]<=29){if(y>0&&!output(j.out)){push(Op::HARVEST);j.out[c]=y;}j.actions.erase(std::remove_if(j.actions.begin(),j.actions.end(),[](auto a){return a.op==Op::WATER||a.op==Op::FERTILIZE;}),j.actions.end());j.needs[F]=0;push(Op::DIG);t=Tile{};desired=want;}}else if(((day-t.planted_day)>=(triad_crop_age[pos]>=0?triad_crop_age[pos]:harvest_age[c])||(expiry&&y>0))&&day<=28){if(water_due(t))push(Op::WATER);push(Op::HARVEST);if(p.fix_finite_projection){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;int bonus=!t.watered_today&&age>=(maxday+1)/2&&age<=maxday?(fdue||t.fertilized_until_day>=day?2:1):0;j.out[c]=std::min(c==C?4:6,y+bonus);}else j.out[c]=std::max(y,finite_yield(c,h_age(c)));t=Tile{};}else if(day>=29){if(y>0&&(!p.fix_finite_projection||day-t.planted_day>=first[c])){int bonus=0;if(p.fix_finite_projection&&!t.watered_today){int age=day-t.planted_day,maxday=c==W?4:c==C?3:12;if(age>=(maxday+1)/2&&age<=maxday){push(Op::WATER);bonus=fdue||t.fertilized_until_day>=day?2:1;}}push(Op::HARVEST);j.out[c]=std::min(c==C?4:6,y+bonus);}}else if(water_due(t))push(Op::WATER);}
     if(t.kind==TileKind::EMPTY&&day<29&&day+harvest_age[desired]<=(p.fix_calendar?29:28)){push(Op::PLANT,desired);push(Op::WATER);j.seeds[desired]=1;}j.priority=plant(o.own.tiles[pos])?0:12;if(output(j.out))j.priority=-1;
    }if(!j.actions.empty())js.push_back(j);
   }

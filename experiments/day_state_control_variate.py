@@ -288,16 +288,18 @@ def whole_seed_folds(seeds: np.ndarray, n_splits: int = 6) -> np.ndarray:
 
 def actionable_day_counts(
         day_count: int, event_day_index: np.ndarray,
-        event_legal_mask: np.ndarray) -> np.ndarray:
+        event_legal_mask: np.ndarray, class_count: int = 11) -> np.ndarray:
     event_days = np.asarray(event_day_index, dtype=np.int64).reshape(-1)
     masks = np.asarray(event_legal_mask, dtype=np.uint32).reshape(-1)
     if (day_count <= 0 or len(event_days) != len(masks) or
             np.any((event_days < 0) | (event_days >= day_count))):
         raise ValueError("invalid event/day arrays")
-    lookup = np.asarray([value.bit_count() for value in range(1 << 11)],
+    if class_count < 1 or class_count > 16:
+        raise ValueError("invalid action class count")
+    lookup = np.asarray([value.bit_count() for value in range(1 << class_count)],
                         dtype=np.uint8)
     if np.any(masks >= len(lookup)):
-        raise RuntimeError("event legal mask exceeds the 11-class contract")
+        raise RuntimeError("event legal mask exceeds the action class contract")
     counts = np.zeros(day_count, dtype=np.int32)
     active_days = event_days[lookup[masks] > 1]
     np.add.at(counts, active_days, 1)

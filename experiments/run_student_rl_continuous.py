@@ -87,6 +87,10 @@ def main() -> None:
     parser.add_argument("--native-job-threads", type=int, default=192)
     parser.add_argument("--native-job-module-dir", type=Path,
                         default=ROOT / "experiments/native_student_rollout/build")
+    parser.add_argument("--experimental-four-land-route")
+    parser.add_argument("--student-lifecycle-v4", action="store_true")
+    parser.add_argument("--experimental-route-actions", type=Path)
+    parser.add_argument("--experimental-route-library", type=Path)
     parser.add_argument("--economic-input-v1", action="store_true")
     parser.add_argument("--shop-resource-v1", action="store_true")
     parser.add_argument("--shop-action-head-v1", action="store_true")
@@ -110,6 +114,14 @@ def main() -> None:
         parser.error("--shop-resource-v1 requires --economic-input-v1")
     if args.shop_action_head_v1 and not args.shop_resource_v1:
         parser.error("--shop-action-head-v1 requires --shop-resource-v1")
+    if args.experimental_four_land_route and (
+            not args.experimental_route_actions or
+            not args.experimental_route_library or
+            not args.experimental_route_actions.is_file() or
+            not args.experimental_route_library.is_file() or
+            args.student_intraday != 0 or
+            not args.student_lifecycle_v4):
+        parser.error("four-land route requires two assets and --student-intraday 0")
     if (args.start_round < 1 or args.seed_start < 0 or args.rounds < 0 or
             args.native_job_threads < 1 or
             not math.isfinite(args.train_timeout_seconds) or
@@ -250,6 +262,13 @@ def main() -> None:
                 train.append("--overlap-cpu-replay")
             if args.student_intraday is not None:
                 train.extend(("--student-intraday", str(args.student_intraday)))
+            if args.experimental_four_land_route:
+                train.extend((
+                    "--experimental-four-land-route", args.experimental_four_land_route,
+                    "--experimental-route-actions", str(args.experimental_route_actions.resolve()),
+                    "--experimental-route-library", str(args.experimental_route_library.resolve())))
+            if args.student_lifecycle_v4:
+                train.append("--student-lifecycle-v4")
             if rollout.exists():
                 train.append("--resume-rollout")
             export = [

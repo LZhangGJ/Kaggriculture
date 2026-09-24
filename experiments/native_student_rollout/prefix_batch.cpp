@@ -547,6 +547,7 @@ struct Result {
   std::uint64_t prefix_action_hash{1469598103934665603ull};
   int opening_route{-1};
   int opening_switch_step{-1};
+  int fourth_purchase_state_step{-1};
   int actor_days{};
   int validated_steps{};
   int suffix_steps{};
@@ -574,6 +575,7 @@ struct ActorCallbackState {
   std::vector<float> logits;
   std::vector<float> next_hidden;
   std::uint32_t previous;
+  std::array<std::uint8_t,100> local_release{};
   int events{};
   bool forced{};
 
@@ -594,9 +596,11 @@ struct ActorCallbackState {
   int choose(int stage, int cell, int suggested, int mask,
              const double* values, std::size_t width) {
     const auto& dimensions = actor.dimensions();
+    const bool lifecycle = dimensions.classes == 13;
     const bool valid_stage_mask =
-        (stage == 0 && (mask & ~0b110) == 0 && (mask & 0b110)) ||
-        (stage == 1 && !(mask & (1 << 2)) && (mask & (1 << 1)));
+        (stage == 0 && (mask & ~(lifecycle ? ((1<<1)|(1<<2)|(1<<11)|(1<<12)) : 0b110)) == 0 &&
+         (mask & (lifecycle ? ((1<<1)|(1<<2)|(1<<11)|(1<<12)) : 0b110))) ||
+        (stage == 1 && !(mask & ((1<<2)|(1<<11)|(1<<12))) && (mask & (1 << 1)));
     if (cell < 0 || cell >= int(dimensions.cells) || suggested < 0 ||
         suggested >= int(dimensions.classes) || !mask ||
         (std::uint32_t(mask) >> dimensions.classes) ||
@@ -607,16 +611,58 @@ struct ActorCallbackState {
                                  economic_v1::kResourceExtra &&
          dimensions.resources != economic_v1::kOldResource +
                                  economic_v1::kResourceExtra +
-                                 economic_v1::kShopResourceExtra) ||
+                                 economic_v1::kShopResourceExtra &&
+         dimensions.resources != economic_v1::kOldResource +
+                                 economic_v1::kResourceExtra + 32) ||
         !values || !valid_stage_mask)
       throw std::runtime_error("invalid native actor callback event");
     for (std::size_t i = 0; i < width; ++i)
       resources[i] = static_cast<float>(values[i]);
     if (dimensions.resources > width)
       economic_v1::prefix_flow(values, step / 24, resources.data() + width);
-    if (dimensions.resources > width + economic_v1::kResourceExtra)
+    if (dimensions.resources == width + economic_v1::kResourceExtra +
+                                 economic_v1::kShopResourceExtra)
       economic_v1::shop_rate(*result.env,
           resources.data() + width + economic_v1::kResourceExtra);
+    if (lifecycle) {
+      if (dimensions.resources != width + economic_v1::kResourceExtra + 32)
+        throw std::runtime_error("lifecycle actor local feature width");
+      auto* local = resources.data() + width + economic_v1::kResourceExtra;
+      std::fill(local, local + 32, 0.0f);
+      const auto& tile = result.env->farms()[result.cache.seat].tiles[cell];
+      const int kind = int(tile.kind), day = step / 24;
+      if (kind >= 0 && kind < 7) local[kind] = 1.0f;
+      const bool crop = tile.kind == fastkag::TileKind::PLANT;
+      const bool animal = tile.kind == fastkag::TileKind::ANIMAL;
+      const int product = crop ? int(tile.crop) : animal ? int(tile.animal)-4 : -1;
+      if (crop && product >= 0 && product < 5) local[7 + product] = 1.0f;
+      if (animal && int(tile.animal) >= 9 && int(tile.animal) < 12)
+        local[12 + int(tile.animal)-9] = 1.0f;
+      local[15] = (crop ? day-tile.planted_day : animal ? day-tile.placed_day : 0) / 30.0f;
+      local[16] = tile.yield_units / 6.0f;
+      local[17] = tile.max_lifespan_step < 0 ? 0.0f :
+          std::clamp((tile.max_lifespan_step-step) / 720.0f, -1.0f, 1.0f);
+      local[18] = tile.consecutive_unwatered / 2.0f;
+      local[19] = crop ? std::clamp((tile.fertilized_until_day-day) / 3.0f, -1.0f, 1.0f) : 0.0f;
+      local[20] = tile.watered_today;
+      local[21] = tile.consecutive_unfed / 2.0f;
+      local[22] = tile.fed_today;
+      local[23] = tile.cared_today;
+      local[24] = tile.pending_care_bonus / 6.0f;
+      local[25] = tile.fertilizer_available;
+      local[26] = (29-day) / 29.0f;
+      int distance = 100;
+      for (int depot : {44,45,54,55})
+        distance = std::min(distance, std::abs(cell/10-depot/10)+std::abs(cell%10-depot%10));
+      local[27] = distance / 8.0f;
+      if (product >= 0 && product < 9) {
+        local[28] = result.env->market().prices[product] / 250.0f;
+        float rates[9];economic_v1::shop_rate(*result.env,rates);
+        local[29] = rates[product];
+      }
+      local[30] = local_release[cell] / 3.0f;
+      local[31] = crop && day-tile.planted_day >= economic_v1::kFirstCrop[product];
+    }
     actor.step(hidden.data(), resources.data(), cell, stage, previous,
                std::uint32_t(mask), logits.data(), next_hidden.data());
     const std::uint64_t counter = result.actor_counter++;
@@ -636,6 +682,10 @@ struct ActorCallbackState {
     }
     if (!(mask & (1 << distribution.action)))
       throw std::runtime_error("native actor sampled illegal action");
+    if (lifecycle && stage == 0)
+      local_release[cell] = distribution.action == 2 ? 1 :
+                            distribution.action == 11 ? 2 :
+                            distribution.action == 12 ? 3 : 0;
     hash_actor_int(result.actor_hash, step);
     hash_actor_int(result.actor_hash, stage);
     hash_actor_int(result.actor_hash, cell);
@@ -902,12 +952,16 @@ class PrefixBatch {
               const std::string& meta_asset,
               const std::string& salemali_asset,
               const std::string& fieldcraft_asset,
-              const std::string& soil_asset)
+              const std::string& soil_asset,
+              int forced_switch_route = -1,
+              int forced_switch_step = -1)
       : runtime_(std::make_shared<Runtime>(library_path)), replay_(&replay),
         thomas_asset_(thomas_asset), meta_asset_(meta_asset),
         salemali_asset_(salemali_asset), fieldcraft_asset_(fieldcraft_asset),
         soil_asset_(soil_asset),
-        arbitrary_jobs_(true), per_job_actor_seeds_(true) {
+        arbitrary_jobs_(true), per_job_actor_seeds_(true),
+        forced_switch_route_(forced_switch_route),
+        forced_switch_step_(forced_switch_step) {
     const std::size_t count = seeds.size();
     if (!count || count > 2048 || seats.size() != count ||
         opponents.size() != count || routes.size() != count ||
@@ -923,6 +977,11 @@ class PrefixBatch {
         throw std::out_of_range("deployment route is outside replay library");
       deployment_routes_[i] = route;
     }
+    if ((forced_switch_route_ < 0) != (forced_switch_step_ < 0) ||
+        (forced_switch_route_ >= 0 &&
+         (forced_switch_route_ >= replay.route_count() ||
+          (forced_switch_step_ != 144 && forced_switch_step_ != 168))))
+      throw std::invalid_argument("forced opening switch must specify a valid route at step 144 or 168");
     results_.reserve(count);
     for (std::size_t i = 0; i < count; ++i) {
       const bool replay_opponent = opponents[i] == 3;
@@ -1440,6 +1499,7 @@ class PrefixBatch {
       row["prefix_action_hash"] = py::int_(result.prefix_action_hash);
       row["opening_route"] = result.opening_route;
       row["opening_switch_step"] = result.opening_switch_step;
+      row["fourth_purchase_state_step"] = result.fourth_purchase_state_step;
       row["error"] = result.error;
       rows.append(std::move(row));
     }
@@ -1468,8 +1528,12 @@ class PrefixBatch {
             economic_v1::kOldResource + economic_v1::kResourceExtra ||
          dimensions.resources == economic_v1::kOldResource +
             economic_v1::kResourceExtra + economic_v1::kShopResourceExtra);
-    if (dimensions.context != kContextWidth || !(original || economic) ||
-        dimensions.classes != 11 || dimensions.previous != 12)
+    const bool lifecycle = dimensions.classes == 13 &&
+        dimensions.resources == economic_v1::kOldResource +
+                                economic_v1::kResourceExtra + 32;
+    if (dimensions.context != kContextWidth || !(original || economic || lifecycle) ||
+        (dimensions.classes != 11 && !lifecycle) ||
+        dimensions.previous != dimensions.classes + 1)
       throw std::runtime_error("native actor dimensions do not match planner ABI");
     actor_ = std::move(actor);
     actor_path_ = weights_path;
@@ -1658,7 +1722,8 @@ class PrefixBatch {
     auto action = replay_->action_external(
         *result.env, player, result.cache.route,
         result.replay_opponent_state,
-        fastkag::NativeMarketArm::LegacyDefault, nullptr, nullptr, true);
+        fastkag::NativeMarketArm::LegacyDefault, nullptr, nullptr,
+        forced_switch_route_ < 0);
     if (fastkag::native_macro_unit_failures(*result.env, player, action))
       throw std::runtime_error("replay opponent unit macro failure at step " +
                                std::to_string(result.env->step_count()));
@@ -1699,8 +1764,10 @@ class PrefixBatch {
       if (env.step_count() != int(step)) throw std::runtime_error("prefix clock drift");
       if (arbitrary_jobs_ && result.opening_switch_step < 0 &&
           (step == 144 || step == 168)) {
-        const int selected = choose_deployment_route(
-            env, cache.seat, *replay_, deployment_routes_);
+        const int selected = forced_switch_route_ >= 0
+            ? (step == std::uint32_t(forced_switch_step_)
+                   ? forced_switch_route_ : result.opening_route)
+            : choose_deployment_route(env, cache.seat, *replay_, deployment_routes_);
         if (selected != result.opening_route) {
           result.opening_route = selected;
           result.opening_switch_step = step;
@@ -1710,7 +1777,7 @@ class PrefixBatch {
           ? replay_->action_external(
                 env, cache.seat, result.opening_route, result.opening_state)
           : cache.actions[step][0];
-      if (arbitrary_jobs_)
+      if (arbitrary_jobs_ && forced_switch_route_ < 0)
         sell_before_unfunded_land(env, cache.seat, own_action);
       const auto opponent_action = this->opponent_action(result);
       if (!arbitrary_jobs_ && !same_action(opponent_action, cache.actions[step][1]))
@@ -1735,10 +1802,18 @@ class PrefixBatch {
       std::array<fastkag::PlayerAction, 2> actions;
       actions[cache.seat] = std::move(own_action);
       actions[1 - cache.seat] = opponent_action;
+      const int land_before = std::popcount(unsigned(env.farms()[cache.seat].unlocked_mask));
       env.step(actions);
+      if (forced_switch_route_ >= 0 && land_before < 4 &&
+          std::popcount(unsigned(env.farms()[cache.seat].unlocked_mask)) == 4)
+        result.fourth_purchase_state_step = step + 1;
       check_opponent_market(result, opponent_action);
       ++result.validated_steps;
     }
+    if (forced_switch_route_ >= 0 &&
+        (result.fourth_purchase_state_step < 0 ||
+         int(kPrefixSteps) - result.fourth_purchase_state_step < 24))
+      throw std::runtime_error("four-land opening lacks one full day after purchase before step288");
     if (!arbitrary_jobs_) {
       const int actual_route = result.thomas
           ? result.thomas->route(1 - cache.seat)
@@ -1829,6 +1904,8 @@ class PrefixBatch {
   std::shared_ptr<const student_v3::Actor> actor_;
   const fastkag::NativeTeammateExecutor* replay_{};
   std::array<int, 5> deployment_routes_{};
+  int forced_switch_route_{-1};
+  int forced_switch_step_{-1};
   std::string actor_path_;
   std::uint64_t actor_policy_seed_{};
   bool actor_configured_{};
@@ -1906,7 +1983,7 @@ void bind_prefix_batch(py::module_& module) {
                     const std::vector<double>&, const std::vector<int>&,
                     const std::string&, const std::string&,
                     const std::string&, const std::string&,
-                    const std::string&>(),
+                    const std::string&, int, int>(),
            py::arg("library_path"), py::arg("replay_executor"),
            py::arg("seeds"), py::arg("seats"), py::arg("opponents"),
            py::arg("routes"), py::arg("policy_seeds"), py::arg("settings"),
@@ -1914,5 +1991,7 @@ void bind_prefix_batch(py::module_& module) {
            py::arg("meta_asset"), py::arg("salemali_asset") = "",
            py::arg("fieldcraft_asset") = "",
            py::arg("soil_asset") = "",
+           py::arg("forced_switch_route") = -1,
+           py::arg("forced_switch_step") = -1,
            py::keep_alive<1, 3>());
 }

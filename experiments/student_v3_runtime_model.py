@@ -4,9 +4,12 @@ EVENT_CLASSES = (
     "STOP", "NONE_OR_KEEP", "RELEASE", "WHEAT", "CARROT", "TOMATO",
     "STRAWBERRY", "MELON", "GOOSE", "COW", "SHEEP",
 )
+EVENT_CLASSES_V4 = EVENT_CLASSES + ("DIG", "RETIRE")
+LOCAL_FEATURE_WIDTH_V4 = 32
 
 
-def build_model(context_width, observation_width, resource_width, scale=1):
+def build_model(context_width, observation_width, resource_width, scale=1,
+                event_classes=EVENT_CLASSES):
     import torch
 
     projection, scalar = 16 * scale, 4 * scale
@@ -27,10 +30,10 @@ def build_model(context_width, observation_width, resource_width, scale=1):
             self.resource = torch.nn.Linear(resource_width, resource_hidden)
             self.cell = torch.nn.Embedding(100, event_embedding)
             self.stage = torch.nn.Embedding(2, event_embedding)
-            self.previous = torch.nn.Embedding(len(EVENT_CLASSES) + 1, event_embedding)
+            self.previous = torch.nn.Embedding(len(event_classes) + 1, event_embedding)
             self.gru = torch.nn.GRUCell(
                 resource_hidden + 3 * event_embedding, hidden)
-            self.head = torch.nn.Linear(hidden, len(EVENT_CLASSES))
+            self.head = torch.nn.Linear(hidden, len(event_classes))
 
         def initial_hidden(self, context, observation, observation_length,
                            token_continuous, token_categories, token_count):

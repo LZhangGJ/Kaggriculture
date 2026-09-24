@@ -4,6 +4,11 @@
 #include "bridge.cpp"
 #include <chrono>
 
+#ifndef R2_STUDENT_MAX_LAND
+#define R2_STUDENT_MAX_LAND 3
+#endif
+static_assert(R2_STUDENT_MAX_LAND == 3 || R2_STUDENT_MAX_LAND == 4);
+
 namespace {
 
 constexpr int kTeacherAbiVersion = 2;
@@ -11,7 +16,7 @@ constexpr int kTeacherScenarios = 4;
 constexpr int kTeacherRowWidth = 7 + 3 * kTeacherScenarios;
 constexpr int kExpectedCandidateFeatureWidth = 356;
 constexpr int kExpectedContextWidth = 2233;
-constexpr int kStudentSlotAbiVersion = 3;
+constexpr int kStudentSlotAbiVersion = R2_STUDENT_LIFECYCLE_V4 ? 4 : 3;
 constexpr int kStudentSlotMetaWidth = 4;
 constexpr int kStudentSlotResourceWidth = 5 + 12 + 30 * 11;
 constexpr const char* kExpectedCandidateFeatureHash =
@@ -955,7 +960,8 @@ extern "C" int td_student_plan_v3_callback_observation(
       std::memcpy(&settings, scaffold_settings, sizeof(settings));
     }
     const int owned_land = std::popcount(unsigned(v.own.unlocked_mask));
-    if (owned_land < 2 || owned_land > 3 || int(settings.max_land) != 3)
+    if (owned_land < 2 || owned_land > R2_STUDENT_MAX_LAND ||
+        int(settings.max_land) != R2_STUDENT_MAX_LAND)
       throw std::runtime_error("student v3 land invariant");
     h.policy.begin_observation(v);
     triad::Controller planned = h.policy.live;

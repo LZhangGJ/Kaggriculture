@@ -2,7 +2,7 @@
 """Experimental first-handoff v3 action-event student.
 
 The network controls only the native plan built at step 288.  The opening is
-the unchanged replay route and all later observations use the frozen R1 again.
+the replay route with a v306 cash safety guard; later observations use frozen R1.
 This module is deliberately separate from the production entry point.
 """
 
@@ -411,11 +411,116 @@ class StudentActionEventAgent(policy.Agent):
         }
 
 
+def _hire_cost(index):
+    a, b = 1, 1
+    for _ in range(index):
+        a, b = b, a + b
+    return a
+
+
+class FundedReplayRoute:
+    """Keep next morning's replay hires funded without changing unit commands."""
+
+    def __init__(self, route):
+        self.route = route
+        self.controller = route.controller
+        self.expanded_agent = route.expanded_agent
+
+    def __call__(self, observation, configuration=None):
+        action = self.route(observation, configuration)
+        step = policy.observed_step(observation)
+        if step >= 288:
+            return action
+        seat = int(observation.get("player", 0))
+        farm = observation["farms"][seat]
+        money = float(farm["money"])
+        tape = self.expanded_agent.action_tapes[
+            self.controller.route_by_family[self.controller.current]]
+        next_start = (step // 24 + 1) * 24
+        next_market = tape[next_start].get("market", ()) if next_start < 288 else ()
+        first_hire = next((i for i, order in enumerate(next_market)
+                           if order and order[0] == "HIRE"), None)
+        # A sale before the hiring wave is the route's funding source.  Do not
+        # reserve cash twice; same-day sale failure is handled below.
+        reserve = int(first_hire is not None and not any(
+            order and order[0] == "SELL" for order in next_market[:first_hire]))
+        prices = observation["market"]["prices"]
+        fixed = {"WHEAT": 10, "CARROT": 20, "TOMATO": 50,
+                 "STRAWBERRY": 100, "MELON": 80,
+                 "GOOSE": 300, "COW": 400, "SHEEP": 500}
+        market = []
+        shed_now = dict(observation["private"]["shed"])
+        hires_today = int(farm.get("hires_today", 0))
+        lands = len(farm["unlocked_quadrants"])
+        first_hire_cash = None
+        for order in action.get("market", ()):
+            if order[0] == "SELL":
+                quantity = min(int(order[2]), int(shed_now.get(order[1], 0)))
+                money += quantity * prices[order[1]]
+                shed_now[order[1]] -= quantity
+            elif order[0] == "HIRE":
+                if first_hire_cash is None:
+                    first_hire_cash = money
+                cost = _hire_cost(hires_today)
+                if money >= cost:
+                    money -= cost
+                    hires_today += 1
+            elif order[0] == "BUY_LAND":
+                cost = (1000, 2000, 4000)[lands - 1] if lands <= 3 else 0
+                if cost and money >= cost:
+                    money -= cost
+                    lands += 1
+            elif order[0] in ("BUY_SEED", "BUY_ANIMAL", "BUY_PRODUCT"):
+                unit_price = (prices[order[1]] if order[0] == "BUY_PRODUCT"
+                              else fixed[order[1]])
+                cost = int(order[2]) * unit_price
+                if reserve and money - cost < reserve:
+                    continue
+                money -= cost
+            market.append(list(order))
+        hires = sum(order[0] == "HIRE" for order in market if order)
+        first = int(farm.get("hires_today", 0))
+        deficit = sum(_hire_cost(first + index) for index in range(hires)) - (
+            first_hire_cash if first_hire_cash is not None else money)
+        if deficit > 0 and hires and first == 0:
+            shed = observation["private"]["shed"]
+            animals = sum(isinstance(tile, dict) and "animal" in tile
+                          for row in farm["tiles"] for tile in row)
+            existing = {order[1] for order in market if order[0] == "SELL"}
+            sales = []
+            for item in sorted(prices, key=lambda name: -prices[name]):
+                if item in existing:
+                    continue
+                available = int(shed.get(item, 0)) - (animals if item == "WHEAT" else 0)
+                if available <= 0:
+                    continue
+                quantity = min(available, math.ceil(deficit / max(1, prices[item])) + 1)
+                sales.append(["SELL", item, quantity])
+                deficit -= quantity * prices[item]
+                if deficit <= 0:
+                    break
+            if sales:
+                market = [order for order in market if order[0] not in
+                          ("BUY_SEED", "BUY_ANIMAL", "BUY_PRODUCT")]
+                action = {**action, "market": (sales + market)[:10]}
+                return action
+        if market != action.get("market", []):
+            action = {**action, "market": market}
+        return action
+
+    def close(self):
+        close = getattr(self.route, "close", None)
+        if close:
+            close()
+
+
 def create_agent(seat=0):
     config = json.loads((ROOT / "policy/r1/config.json").read_text())
     checkpoint_path = Path(os.environ.get("STUDENT_CHECKPOINT", DEFAULT_CHECKPOINT))
-    if (checkpoint_path.parent.name == "student-v306" or
-            checkpoint_path.name.startswith("v3-ppo-native-job-economic-v1-v306-")):
+    full_daily = (os.environ.get("STUDENT_FULL_DAILY") == "1" or
+                  checkpoint_path.parent.name == "student-v306" or
+                  checkpoint_path.name.startswith("v3-ppo-native-job-economic-v1-v306-"))
+    if full_daily:
         config["intraday"] = 0
         student_steps = tuple(range(288, 673, 24))
         sample = True
@@ -435,6 +540,8 @@ def create_agent(seat=0):
     if not replay:
         return dynamic
     route = production.create_replay_agent(replay, f"student_v3_replay_seat_{seat}")
+    if full_daily:
+        route = FundedReplayRoute(route)
     # The accepted shard is explicitly a step-288 first-handoff contract.
     # Do not let the land-triggered deployment wrapper activate R1 earlier.
     return production.ReplayThenDynamicAgent(

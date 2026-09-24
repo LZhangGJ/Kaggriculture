@@ -25,6 +25,11 @@ constexpr std::array<unsigned char, 32> kShopContractSha = {
     0x82, 0xb5, 0x46, 0x9c, 0x95, 0x31, 0x29, 0xe2,
     0xd2, 0x5c, 0x6b, 0x92, 0x1e, 0x1c, 0xe6, 0x74,
     0x8e, 0x60, 0xaa, 0x51, 0x62, 0xdb, 0x5a, 0xb2};
+constexpr std::array<unsigned char, 32> kLifecycleContractSha = {
+    0x35, 0x5a, 0xd1, 0x73, 0xb9, 0xd4, 0x87, 0xc2,
+    0x57, 0xdc, 0x50, 0x69, 0xc6, 0x0d, 0x33, 0xbd,
+    0x8d, 0x99, 0xd2, 0x31, 0x51, 0xdc, 0xd2, 0xfb,
+    0x5f, 0xa4, 0x1f, 0xc2, 0x7c, 0xa7, 0xbb, 0xe9};
 constexpr std::array<std::uint32_t, 7> kCategorySizes = {7, 32, 32, 32,
                                                          64, 64, 4};
 
@@ -223,12 +228,15 @@ Actor Actor::load(const std::string& path) {
   const auto* header = bytes.data();
   const auto version = u32(header + 8);
   const bool shop_action_head = version == 2;
+  const bool lifecycle_v4 = version == 3;
   if (std::memcmp(header, "KAGSV3A\0", 8) ||
-      (version != 1 && version != 2) ||
+      (version != 1 && version != 2 && version != 3) ||
       u32(header + 12) != kHeaderBytes || u32(header + 16) != 0x01020304 ||
       u32(header + 20) != 1 || u32(header + 24) != 8 ||
       u32(header + 28) != (shop_action_head ? 30u : 28u) ||
-      (shop_action_head
+      (lifecycle_v4
+        ? !std::equal(kLifecycleContractSha.begin(), kLifecycleContractSha.end(), header + 172)
+        : shop_action_head
         ? !std::equal(kShopContractSha.begin(), kShopContractSha.end(), header + 172)
         : !std::equal(kContractSha.begin(), kContractSha.end(), header + 172)))
     throw std::runtime_error("actor weight contract mismatch");
@@ -252,7 +260,8 @@ Actor Actor::load(const std::string& path) {
   d.event_embedding = u32(header + 84); d.cells = u32(header + 88);
   d.stages = u32(header + 92); d.previous = u32(header + 96);
   const auto scale = u32(header + 60);
-  if (d.classes != 11 || d.token_capacity != 320 ||
+  if ((lifecycle_v4 ? (d.classes != 13 || d.resources != 406) : d.classes != 11) ||
+      d.token_capacity != 320 ||
       d.token_continuous != 24 || d.categories != 7 || scale < 1 || scale > 4 ||
       d.projection != 16 * scale || d.scalar != 4 * scale ||
       d.embedding != 4 * scale || d.hidden != 64 * scale ||

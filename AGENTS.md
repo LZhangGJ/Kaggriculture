@@ -4,6 +4,12 @@
 本工程唯一主线是：高手 replay 离线提取/聚类 → 路线互打 → 147 维状态上的浅树切换 replay 路线 →
 中期接管无开局模板的 JointAFS R1。
 
+## 2026-09-24 当前研究与 Kaggle 提交
+
+- 已按用户要求从近期同池 RL rollout 的已记录胜数直接选模型、未追加胜率测试：v464 rollout `1377/1536` 由 **v463 `checkpoint_in`** 产生。打包三地 G275/旧浅树 + funded replay、step288 后 17 天逐格采样、`intraday=0`；原样包 `submissions/student-v463-funded-kaggle.tar.gz`（SHA-256 `7a8fcabeb04096e330bacc3e6d6acb42a9cb3b93567c0bfb1b4cb1de05092445`）已上传 Kaggle，submission `56517329` 已 COMPLETE。初始公开分 `600.0` 不能代表匹配强度。训练胜数不是独立盲测；此包也没有替换普通 `agent/main.py`。
+- 四地 D011/v4 生命周期首轮完整 1536 局虽完成，但 `0/1536`、均分差 `−47.3k`，四地链已暂停，三地连续训练仍运行。新动作不是主缺口：同 48 局三地 v474 `42/48,+6.4k`，四地旧生命周期 `0/48,−40.9k`，四地 v4 关闭新动作 `0/48,−43.1k`。D011 接管后 NN 很快填满 100 格；day15 的 14 株胡萝卜因漏浇变草。配置雇工上限 14，单局升到允许的 15 会消除这波草，却让 48 局终局均分差再降约 4.3k，不能当作完整修复。DSM 258 局中后期实际雇工中位 12、最高 14。细节与下步见 `HANDOFF_ZH.md` 首节。
+- 交易 DP 子 agent 持续隔离研究。固定动作市场/日末守恒对官方已达 `1728/1728` tick；69 个固定销售状态中，当步现金与假想跨日清仓的双方钱差方向有 9 次翻转。可信 continuation value 仍缺，不启用旧 `sale_dp=1`，不改三地训练或此次 Kaggle 包。见 `docs/ECONOMIC_MODEL_ZH.md`。
+
 ## 当前交接：v306 采样 RL 与 Kaggle 提交（`handoff/rl-student-v306-kaggle-20260924`）
 
 - 仓库 `https://github.com/LZhangGJ/Kaggriculture` 的本分支保留 v285 不动，新增 `models/student-v306/{actor.pt,actor.bin,manifest.json,metrics.json}`。v306 的 `.pt` 是可续训的模型与 AdamW 状态，`.bin` 是同轮 C++ 前向权重；两者 SHA-256 分别为 `14ff8eeced3fb1fe9414de70909ddba82271ce5fc73fa1e46676bc89a931d31f`、`ea877102df5342ec70de5c54dbe90b541566657749b4c4f87a6ab5b59e48ed08`。manifest 与 v285/v45 内容相同，不要求下载旧 BC 文件。
