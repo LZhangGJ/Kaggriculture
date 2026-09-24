@@ -1352,6 +1352,20 @@
       "version": "3-output-50e27e731834"
     },
     {
+      "agent_type": "team",
+      "aliases": [],
+      "author": "LZhangGJ",
+      "id": "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56",
+      "last_checked": null,
+      "name": "teammate-lzhang-student-v306",
+      "notebook": null,
+      "notebook_version": null,
+      "refresh_status": "not configured",
+      "status": "placement-rated",
+      "validation_failed": false,
+      "version": "student-v306-908235e3"
+    },
+    {
       "agent_type": "public",
       "aliases": [],
       "author": "xuantianfengwu",
@@ -264078,6 +264092,125 @@
       "updated": "2026-09-24T04:28:41.911865+00:00"
     },
     {
+      "complete": true,
+      "completed": 1,
+      "components": [
+        [
+          "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8",
+          "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56"
+        ]
+      ],
+      "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+      "created": "2026-09-24T04:40:04.639845+00:00",
+      "fingerprint": "3a150e4da90597e859252e9e955530667b614026668a41e925577373321bde61",
+      "intervals": {
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": null,
+        "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56": null
+      },
+      "kind": "placement",
+      "matrix": {
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8:9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56": {
+          "cash_games": 0,
+          "cash_margin": null,
+          "draws": 0,
+          "games": 1,
+          "losses": 0,
+          "score": 1.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 1,
+              "wins": 1
+            }
+          },
+          "win_rate": 1.0,
+          "wins": 1
+        },
+        "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56:84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 0,
+          "cash_margin": null,
+          "draws": 0,
+          "games": 1,
+          "losses": 1,
+          "score": 0.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 1,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            }
+          },
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "method": "half-win-bt-v2",
+      "method_description": "Bradley-Terry; draws half wins; centered strengths; Gaussian SD=3 regularization; no seat adjustment",
+      "planned": 1,
+      "ratings": {
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": 1.0255221401275127,
+        "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56": -1.0255221401275127
+      },
+      "run": "placement-9ee8959a275c673adb90",
+      "stats": {
+        "84c4abf12e6bcd6ffe9c65e6d4e4eecf2f516a2da80f83cb599ca09d834ff3c8": {
+          "cash_games": 0,
+          "cash_margin": null,
+          "draws": 0,
+          "games": 1,
+          "losses": 0,
+          "score": 1.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 1,
+              "wins": 1
+            }
+          },
+          "win_rate": 1.0,
+          "wins": 1
+        },
+        "9ee8959a275c673adb90e20938fcc6ec8af4268091117fa71bf41668f0974f56": {
+          "cash_games": 0,
+          "cash_margin": null,
+          "draws": 0,
+          "games": 1,
+          "losses": 1,
+          "score": 0.0,
+          "seats": {
+            "0": {
+              "draws": 0,
+              "games": 1,
+              "wins": 0
+            },
+            "1": {
+              "draws": 0,
+              "games": 0,
+              "wins": 0
+            }
+          },
+          "win_rate": 0.0,
+          "wins": 0
+        }
+      },
+      "updated": "2026-09-24T04:40:26.575975+00:00"
+    },
+    {
       "complete": false,
       "completed": 86,
       "components": [
@@ -336902,5 +337035,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-24T04:39:51.191667+00:00"
+  "updated": "2026-09-24T04:40:28.694009+00:00"
 }
