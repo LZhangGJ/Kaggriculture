@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 24, 2026 at 4:40 AM UTC
+Updated: Sep 24, 2026 at 4:41 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -102,6 +102,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-utils-v1 | **PUBLIC** | 7-output-617136c14fd3 | archived |
 | kaggriculture-dynamic-route-agent | **PUBLIC** | 6-output-67cbfe1ab2d1 | placement-rated |
 | kaggriculture-dynamic-route-agent | **PUBLIC** | 7-output-15e07f56740d | placement-rated |
+| teammate-lzhang-student-v306 | Team | student-v306-908235e3 | placement-rated |
 | A06 R9C7 five-day | Team | r9c7-h5-e515e0ba-6be3a188 | active |
 | game-theoretic-master-discrete-optimization | **PUBLIC** | 1-output-19a0f33e6f66 | placement-rated |
 | kaggriculture-structured-economic-policy | **PUBLIC** | 44-output-fe33b25f1989 | archived |
@@ -440,6 +441,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-c943304fc8a225590aa6 | Provisional | 366/384 |
 | placement-cfe725def642ac5d1afa | Complete | 384/384 |
 | placement-d0a3df82408201492493 | Complete | 384/384 |
+| placement-d246754be4304c38c2c4 | Complete | 1/1 |
 | placement-d5f2a7c1771712580ea4 | Complete | 1/1 |
 | placement-d687f0cf8eb8ce4db98c | Complete | 384/384 |
 | placement-d8f9229d205e4c7cb68c | Complete | 384/384 |
@@ -1875,9 +1877,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 1:56 PM UTC
 
 Same versions only; descriptive changes, not significance tests.
 
-- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
