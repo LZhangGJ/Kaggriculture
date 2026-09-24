@@ -1,0 +1,19 @@
+{
+  "accepted": [
+    "r14_frozen",
+    "r14_f5l3",
+    "rule_future65",
+    "r14_cashflow",
+    "r15c_rules",
+    "rule_r18",
+    "r14_terminal_switch",
+    "r14_asset_tail",
+    "r14_liquidity",
+    "r13_nml",
+    "r14_daily_staff",
+    "r14_tl5",
+    "r22_continuation"
+  ],
+  "errors": [],
+  "total": 13
+}

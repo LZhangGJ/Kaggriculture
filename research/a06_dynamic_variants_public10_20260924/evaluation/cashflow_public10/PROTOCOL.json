@@ -1,0 +1,243 @@
+{
+  "candidate": {
+    "id": "r14_cashflow",
+    "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/experiments/a06_r12_gptpro_round_robin_20260924/agents/r14_cashflow/main.py",
+    "archive": "54.37_A06_R14_CASHFLOW_candidate_20260924 (1).zip",
+    "archive_sha256": "fe2447b8acf6fe6069e07f9e5976697b03ae51b892c98d449615b4b14b6e8847",
+    "files": {
+      "COMPILER_FLAGS.json": "4c65f524ebeb0805d0d88c7f16bc49063a4840cb6f4b19a13f988cadb4a3ae85",
+      "README.md": "9cf74c4ae802e7c8a1ed6575ec6e0127f7e99da7aac5520df90c9869e357067f",
+      "RELEASE_MANIFEST.json": "91b6e1fd2e1c084f5932f0d84b50555f24bbd72344bf6c28cd3bfbb4938367c6",
+      "build/compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "build/compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "build.py": "7e88fded4e9a1ff32388eeb73988c1fa9725fa356addc7c488827cd70721e6e0",
+      "main.py": "ca3d40e780ec941215f3222f2e6be4e94d6dde3992110ccedef52b47c59fea11",
+      "native_entry.py": "3abfea2d5b4f3b380eb6054d924665ea2dfedc095b8dfe1f6282cd40495d0cda",
+      "policy/a06.BUILD.json": "8210e1233a255b372212e2a4ef6ac934d3812d83fde77ddabd922f3bb78ecccc",
+      "policy/a06.so": "831f6bba4e8212c38d1b53341d5a5faeae129a168325934118b3289cb36b7469",
+      "policy/a06_live_reinvestment.inc": "2be64d6ccbbdabad43f94200c8524abaa4dcded896cebeeeac116f36d07848c1",
+      "policy/agent.py": "2588a4134fde4af0f1e3b58929d05163c248c6acfeb30ec0b0e56595aab12031",
+      "policy/animal_service_dp.hpp": "9579ca14ac0e83990ef6e6c0905815450b5d450ead59474f869ef7d27fbbb32c",
+      "policy/bridge.cpp": "1f0fa87a833bda86b6a103ea0476279b217ae2544912a8056a9c47c88b486fd6",
+      "policy/conditional_market.hpp": "850c413dc3f32d68438b667b2c48e66ebc1f4c2264529d959a937ef54f0c6457",
+      "policy/config.json": "f2b14e10b4edede1d7cfadb37ead9606898a24e7088e82420311fc3defc469df",
+      "policy/executor/a06_fleet_dp.hpp": "ebccf745f3881ccaf015bddb936ab5b97d80a9d7d06b416f54219212560d05c0",
+      "policy/executor/compile_choices.hpp": "2a1fbc8a581ec78dfd9dc26a1f7fe49e6a1f813c47f36ceab44746f25f03adea",
+      "policy/executor/crop_delivery.hpp": "f2124713c8986d39f4c1be8d2dfc6a534994f905a3f2b5e08a716585c9d3473e",
+      "policy/executor/day_consequence.hpp": "70b1353f893411ef3025732ab395361fe7ecf2f6ae4549b474e25b0b585688ae",
+      "policy/executor/idle_task_handoff.hpp": "de88d957875fd655c2fca071bf8fa26e42fd31c6d4c76e8ab5c0f5345f4d5dfd",
+      "policy/executor/intraday_admission.hpp": "ea09f05cdcb757c8eb7f878114a125f59ceb65f925f56328ad6f421be12e6703",
+      "policy/executor/investment_candidates.hpp": "2b3da44f9109fbbc718168c1ab814f7614f63523fbaa2a5c9842de2df90e98fe",
+      "policy/executor/joint_portfolio.hpp": "37298762f3ee1a4dde5127f99d550b7166b1d921a2cd74ee2936fe756e2624cf",
+      "policy/executor/live_execution_repairs.hpp": "b3afaec58b2508d18b414a58391fd333215933971cdac5c604e8329ab6f5a637",
+      "policy/executor/observation_view.hpp": "f0c55f8691b77654b1ace843ab26e220158680538d30e7ac7ced7d47ff659dbe",
+      "policy/executor/observed_day_scenario.hpp": "2818217bcfcd28dbd505eb0a8ceadc8051f795337b1b0572e851c22893f6509c",
+      "policy/executor/ongoing_fertilizer_supply.inc": "48da54e612471b732cc019e0681eb8c7a05b83fe7d9bd5cd58e14626bba2f795",
+      "policy/executor/ongoing_labor_reserve.hpp": "d838c3916b59050c9b7a69f690f044ddd5c12e5143e2d9623e6426bd8131da00",
+      "policy/executor/pack_memo.hpp": "2d6027937a15a19ecc26b7ab42e693b3d7a99f8f4c353256a44d4fbaf9728988",
+      "policy/executor/policy.hpp": "477c8d1e9ef4e70964d171e37c1d7e726720301550ab7bd7bcc7401689eec5f4",
+      "policy/executor/regret_pack_incremental.inc": "e5a8071dcd2c2678b938f561ff4f8d3fa84c1495f23b8eb37aa56a3d7b2c3f98",
+      "policy/executor/resource_exchange.hpp": "a3856ae9b704f1b50d89641b16c54310e5ca82f9b9735bc0b1b7e4c54444518e",
+      "policy/executor/rotation_calendar.hpp": "15a212e9555b092ae5d1875f73e7a635c59d96c6b51626db4de711d120d75a2a",
+      "policy/executor/rotation_cash.hpp": "9f690887a0afca263fa49eba2f149f5b0934b37534ae66d83689b2d0cc9e717d",
+      "policy/executor/service_recovery.hpp": "f18f9bcc2f2ddf268f433bde887cf3178d778de3986ff4639e7616523a3c616c",
+      "policy/executor/terminal_rolling_delivery.hpp": "72b19ee1adecf0c2dbad2d53c3c72071ad4c54cf7efcb2db6cdca3a47ac6e59b",
+      "policy/executor/vendor/simulator.cpp": "fa383478717ae7d8a82aea91f9611d079ccb10c8c153eef9ed39b9bd45e6d5da",
+      "policy/executor/vendor/simulator.hpp": "19d0467a385cbce0cfd90e3fb674c8fcbf9bb7c6ecfab57876c82ba47c6c26ae",
+      "policy/finite_fertilizer.hpp": "94caefb7f44e1e6be914c61dcc0fd6bfb2813dac57d7620bfc9ab0275a28b061",
+      "policy/learned_value.hpp": "eee665de771051d26fdc5df9db26ee12e170c0cef257d265c78b17a8462a8242",
+      "policy/local_sale_timing.hpp": "3c1f5b9b2dd15e3ce2a8bfd6b88014b2e9518cd69e720b4f2dc0357d77ced7e9",
+      "policy/observation_codec.hpp": "871e6d29e9150af399ae3a4c668b32d5b22330e530d2d9a76cda0080380aa297",
+      "policy/observed_crop_clock.hpp": "7420e94019b28fe65c6cd53115893f98619530aa4c9aeff18aa17bb48c7a1ea4",
+      "policy/ongoing_maintenance_dp.hpp": "a94f881f84be8552d8634e40e9e08ef63133b58db54a92a20eccb793fb6d1efd",
+      "policy/ongoing_supply_admission.inc": "1238c9074e2306a2d081ceadc89b296acd76d7520a98431d98ad176da80e8cc3",
+      "policy/planner.hpp": "18fbf163c70826aba6a51cfeec629b47bae71e36a913361e4b16f8b440a1921a",
+      "policy/proposals.hpp": "5469d23121a3756a83784c7a2f05d551f5d65184d93bec99c02170e860f83b40",
+      "policy/public_flow_scenario.hpp": "2eee7bd3c6cdba6bc880940496d32f4ee69273514b24e7c54babcee4a7e99f35",
+      "policy/public_trade_ledger.hpp": "7918f7577bb810cf97a8b5e32842b405b55bd95b93306f104c9a81ffbd02a5ef",
+      "policy/r11_labor.hpp": "f602258ac0921587651501a1ab10464aa31bc999eba215ca504d3b1c4afcec82",
+      "policy/r11_recovery.inc": "f5ce128bbef455e4a96b2b4c16e82ff4884291d21d09135e3f28bf1f1904ae12",
+      "policy/r12_calendar.hpp": "185c4251fd8b533a70fd61634652f0452e04b34f6fa02a339df86e55b86c3bfe",
+      "policy/r12_calendar.inc": "b0f8a26e595f795caf4033eedb7c64525731c0ef558769f3742ebe503c5f05bf",
+      "policy/sale_clock.hpp": "6558248e3b1f0630fb8aafbd6eb270d11b676a314ee2ac12442635f48f1a9260",
+      "policy/search.hpp": "73927a05351fed17a07271806acb8deeed4e7e6446a4944bd5ff3e358f6c4c63",
+      "policy/startup_supply.hpp": "4086d57c97e14b2aca25364135eb8562f766415bb2d40ac0a69f84db87bcb05d",
+      "policy/triad.hpp": "4e0c16925cbfe98e23bec960c76792d1bd857cab95c163aafe00ff078e087a64",
+      "reports/REPORT_ZH.md": "c1a1a1143fdfc6378c38fb9bcdc4623766ab8c4169f8f9aeeb016b276ffe655d",
+      "reports/acceptance_480_games.csv": "3e3b9c317e264c57724d7d1df82d1f590539856c1294e96fe8c17c4384b9373b",
+      "reports/all_completed_this_round.csv": "5537bb85116d3045a1417c5c5b07a394b6c947c24d983476a7f2872b11137cda",
+      "reports/experiment_summary.csv": "c89cba17e9d9558d7f690dc3e82fa4a6e3cbc4312f3788bb3eb214f3f0d73ba4",
+      "reports/metrics.json": "53eb7d7aef69c81bf6a83892b04073c76b3742f5d929ca71cfc872f7e74ecc15",
+      "reports/opponents_manifest.json": "b5553954bdf467a85231e41a50b2b8131096031369bfd437b694990c3315af6a",
+      "reports/paired_acceptance.csv": "80febe50ddd26792c87d55ad2acda7c964aadc6bd6defb8b24340442ec8d5d82",
+      "reports/per_opponent.csv": "d800730ded1f8dd49e3bd898fe8a6995706bb27b0a0df391a9a3962d5cb1c4cb",
+      "tests/run_units.py": "e90314adde5f87c87d503d36d949aeaf4adffe52c1671c2ea5b1724827686cdd"
+    }
+  },
+  "opponents": [
+    {
+      "id": "n14_prvsiyan",
+      "ref": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n14_prvsiyan/main.py",
+      "version": 54,
+      "source_sha256": "6771360492a5d028cc6f9491cb56796adb199fe7e5fe94072b9b43a38155465d",
+      "files": {
+        "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "main.py": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+        "NOTICE.txt": "a8482cc51dada918c4ae944dcedbdc13b81d9fd6a4f534b410b7db0469519a3d"
+      }
+    },
+    {
+      "id": "n20_wzhengbiao",
+      "ref": "wzhengbiao/kaggriculture-v15stack-submit",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n20_wzhengbiao/main.py",
+      "version": 1,
+      "source_sha256": "fa92d249bd8ad105f4930a220e7a57eeb320c57a9b3bfd79db1c09e0e98a16c9",
+      "files": {
+        "main.py": "d6565929be5283a5decf00c986359542ee1c106d7819815f8c69ccab35e363dd"
+      }
+    },
+    {
+      "id": "d24_20_haideptry",
+      "ref": "haideptry/the-2965-master-hybrid-engine",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260924/opponents/n20_haideptry/main.py",
+      "version": 5,
+      "source_sha256": "c33edade473521719ca70187f6da24ff7c2bbd832bfce86357fa9e7c16cf7945",
+      "files": {
+        "main.py": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba"
+      }
+    },
+    {
+      "id": "n28_ahmedberatozer",
+      "ref": "ahmedberatozer/kaggriculture-v57-funding-order-invariant",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n28_ahmedberatozer/main.py",
+      "version": 3,
+      "source_sha256": "60dedb3792a8bd632d76c05acd32d7eb9b318cb5d4fd546e53606f0baf2d06bb",
+      "files": {
+        "main.py": "2ee689fdc58f38b7bf6b80b8d3f48129d19b47201dbee51fdcbd977498a5106f"
+      }
+    },
+    {
+      "id": "n69_hosen42",
+      "ref": "hosen42/kaggriculture-m4a-metav4-sr18-2690-1",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n69_hosen42/main.py",
+      "version": 1,
+      "source_sha256": "ecdfad4fcdc119c9453bb452ea9dc29591cc304fbcf97a1f70ba6e0a0b53862d",
+      "files": {
+        "main.py": "325e4144cbb0f0ff4782830934c9634e585f502b8162f4d9917489b740750259"
+      }
+    },
+    {
+      "id": "d24_05_tetsutani",
+      "ref": "tetsutani/demand-preserving-turn-sale-timing",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260924/opponents/n05_tetsutani/main.py",
+      "version": 10,
+      "source_sha256": "9bf069c207468d27ad346d1730fc26789b2041b123dc07533deaa91bed5368af",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "main.py": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+        "NOTICE.txt": "a8482cc51dada918c4ae944dcedbdc13b81d9fd6a4f534b410b7db0469519a3d"
+      }
+    },
+    {
+      "id": "d24_02_guruprasaathas111",
+      "ref": "guruprasaathas111/kaggriculture-master-engine-v3",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260924/opponents/n02_guruprasaathas111/main.py",
+      "version": 23,
+      "source_sha256": "1131414daec8cd020d495d0842a8216991aa68da373662ec3bb383cd660cc64b",
+      "files": {
+        "main.py": "ffbb800db22f6f0d390415b1bd7188c2df1ad41d5b7f6f33ca43d6513ba673fe"
+      }
+    },
+    {
+      "id": "n24_dmitriigluzdov",
+      "ref": "dmitriigluzdov/kaggriculture-more-wheat-smarter-sales",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n24_dmitriigluzdov/main.py",
+      "version": 9,
+      "source_sha256": "24c3c73cc845ea9ee6d19cf818a703cdc2ee206420d0f4218810f46b714985e7",
+      "files": {
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "main.py": "7ac1a2545ea285fa75b6a51b7ea0bbdb5f334f405f20e72b72f8188a1d898a35",
+        "NOTICE.txt": "4be01f012caf2eef36aef873cd4dfcbcc37378e905bb964a33aaabafcd366927"
+      }
+    },
+    {
+      "id": "n40_lynnsakurai",
+      "ref": "lynnsakurai/farmer-john-and-the-idle-seller",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n40_lynnsakurai/main.py",
+      "version": 2,
+      "source_sha256": "6de57bd724ec9283bb8346197bfe902c98bd408ba9f5adc6a43ec414828c4fc3",
+      "files": {
+        "main.py": "1cb133e934e3da46175be2662dec1d0980b1c13ba33b43a9ef035a0b3934e62f"
+      }
+    },
+    {
+      "id": "n42_nathanjacob",
+      "ref": "nathanjacob/kaggriculture-pipe18-six-layers",
+      "entry": "/mnt/e/ai_coding/kaggle/kaggriculture/research/recent_public_scan_20260923/opponents/n42_nathanjacob/main.py",
+      "version": 1,
+      "source_sha256": "ef5558a1eb0c38d1d2270c7fae00739d76528523e765fe05bfc4b78258367153",
+      "files": {
+        "main.py": "a4a563c66ea84746cdb5b18341e78d97677ba5a8cef67e9a157afdaf1d6207d7"
+      }
+    }
+  ],
+  "seeds": [
+    1805214525,
+    1135405629,
+    1769587734,
+    1303170787,
+    1708920619,
+    1229860880,
+    1072112742,
+    1213163814,
+    1344747748,
+    1417648125,
+    1821128174,
+    1693970126,
+    1679220999,
+    1047472059,
+    1412305723,
+    1429030870,
+    1307113948,
+    1581914892,
+    1018095859,
+    1784415804,
+    1348472903,
+    1026139675,
+    1870481557,
+    1335804786,
+    1250512400,
+    1158035814,
+    1508199864,
+    1745109075,
+    1018934291,
+    1438831900,
+    1240513905,
+    1289948328,
+    1085365834,
+    1396183620,
+    1856229076,
+    1810663533,
+    1828572782,
+    1181331762,
+    1795420184,
+    1768577076,
+    1533701325,
+    1749352442,
+    1462080360,
+    1555634577,
+    1041683092,
+    1742010785,
+    1561770762,
+    1461934241,
+    1851902541,
+    1848155600
+  ],
+  "games_per_opponent": 100,
+  "total_games": 1000,
+  "engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "top10_package_sha256": "6974ae23fd6b0701cb75e800e6ad0ff0ee8c304360de1994d1456e62c4b59db1",
+  "method": "Official Kaggriculture 1.32.7 Python rules, live policy actions; 50 new common seeds x both seats per opponent"
+}

@@ -1,0 +1,170 @@
+{
+  "agents": [
+    {
+      "id": "r15c_rules",
+      "archive": "48.75_A06_R12_RULE_IMPROVEMENT_20260924.zip",
+      "archive_sha256": "7ffacc6300cda22ca7214a07088a53fa7ddced59868333c476a7ce14ce0d592e",
+      "main_sha256": "3abfea2d5b4f3b380eb6054d924665ea2dfedc095b8dfe1f6282cd40495d0cda",
+      "native_sha256": "2efe0a655f9433ee5b2ce42cf8d2853842eda03828d457acee6b071f14e36b80",
+      "config_sha256": "4e7c11d8379f2d39c322d24330b7702671be48d2b2cbf54fc4f3dd72428b5c68"
+    },
+    {
+      "id": "r14_cashflow",
+      "archive": "54.37_A06_R14_CASHFLOW_candidate_20260924 (1).zip",
+      "archive_sha256": "fe2447b8acf6fe6069e07f9e5976697b03ae51b892c98d449615b4b14b6e8847",
+      "main_sha256": "ca3d40e780ec941215f3222f2e6be4e94d6dde3992110ccedef52b47c59fea11",
+      "native_sha256": "831f6bba4e8212c38d1b53341d5a5faeae129a168325934118b3289cb36b7469",
+      "config_sha256": "f2b14e10b4edede1d7cfadb37ead9606898a24e7088e82420311fc3defc469df"
+    },
+    {
+      "id": "r14_daily_staff",
+      "archive": "56.25A06_R14_noML_RL_20260924.zip",
+      "archive_sha256": "be726c0d3091094a39f99520cedce9d4caa4cc8607dcb97bcfe7d0848e094750",
+      "main_sha256": "772107bd1d8efcf683f7f8eddcd0e7148d667cf4f8ae4752aafbf8183356129c",
+      "native_sha256": "96e2cc87e2684a983e444f748f95ce208f5a25205d269ce59061c5e7f55a355e",
+      "config_sha256": "3ba81aa7eacaad9ef771f8fdc9c7842d64ffa9db70302be2fdba1cb4df794def"
+    },
+    {
+      "id": "r14_f5l3",
+      "archive": "59_A06_R14_F5L3_Agent_20260924.zip",
+      "archive_sha256": "c381a3ab8895c48415fe8bb7007d24bc3725058c20d83d0aa762386accf8bff7",
+      "main_sha256": "7d10a15b306fe66a2ed3bfc65a45cd03abb1f174fa534fc9d2f159468d83c24e",
+      "native_sha256": "bc1a1f335e3b7d41e6557a4bc65e4e246ce06231030b9ca20539fdaec4b410e6",
+      "config_sha256": "1d93e897c85dab43429b4e4a1bac38d99b0647f1c766d2b5ce0cceeeef2f64a5"
+    },
+    {
+      "id": "r14_asset_tail",
+      "archive": "60.62_A06_R14_AssetTail_20260924.zip",
+      "archive_sha256": "26812ac4d1356dedf0184e3bfbcc632006cbc820008ea4301f8002401559a8b8",
+      "main_sha256": "7b2b8e24dae015d2979577fd2a01628cb9779653baf16eb5b993c9fad412cd1e",
+      "native_sha256": "0652d6f349dd695ad564a668aae3ad2d63d3f37f052cb74330dd715140710a17",
+      "config_sha256": "cc0814c5f8be2afc72d2cce713f0f8b216892eadfcbeb6c4925f576bb9e00f76"
+    },
+    {
+      "id": "r14_frozen",
+      "archive": "62.5_A06_R14_agent_source_20260924.zip",
+      "archive_sha256": "9d3f3728ede753485612b6a606499586db26bcd1dab93eb15b5af1a888796519",
+      "main_sha256": "e4f8bb308922fd963506c7006a9ce3b7eddb3dd13bac9ce0dc33c8a75aead716",
+      "native_sha256": "6200cd0b9cf71912baf44347015d1b82778f0fcf2baa89b5e5f38fa42efc4783",
+      "config_sha256": "7d81e9e9b05e9c9a92d58efee8375d0a63e0cf251469bc1cfe8b3e52b0e44240"
+    },
+    {
+      "id": "r14_terminal_switch",
+      "archive": "63.75_A06_R14_RULE_TERMINAL_SWITCH_20260924.zip",
+      "archive_sha256": "e3edf1e36eb67b32f393bf0862d3ccfb19ad7ccce00e63d1cf41a875887eee77",
+      "main_sha256": "43a3943929d0a138d41457fd307ba124e8a20dd3d0419344efad03d770c37611",
+      "native_sha256": "30431cc43fcdd0ea3e4579ecf0ddc535a3f72add3c12db14f47222d4cfc1c978",
+      "config_sha256": "70513f3ee74bebeadc439830a712406fca74759d891a9175558b29a21c92352a"
+    },
+    {
+      "id": "rule_future65",
+      "archive": "65_A06R12_rule_only_104of160_20260924_full.zip",
+      "archive_sha256": "c7a6ad29445a182cbc90a3b6273479c6e24eb6f96582b10251e97c4fcf07f460",
+      "main_sha256": "5ae2b85d08a636a6595942790d9665578b50767bcbce608460f833ba8bf01a64",
+      "native_sha256": "8f2e405154f0cdd790284755c5777a60f7dcdef01006267cc9bfedf5b12d402d",
+      "config_sha256": "bf1735b3c099cac5348255dbc8d83e0bf29d5f0798e5396710fbcc5323918662"
+    },
+    {
+      "id": "r13_nml",
+      "archive": "69.38_A06_R13_NoML_NoRL_20260924_SUBMISSION.tar.gz",
+      "archive_sha256": "4239a9ecad45373ed9e658183601296ec91251c1bb6012ecaa8228db49e6b988",
+      "main_sha256": "f4d548e09943763cb62a6ff712cc9db0e908053f6feb11638a4bb489e3e382b6",
+      "native_sha256": "a79f90939360c809bdaf52a93b2262633a3e613483c79111fbd5e1794d7d7519",
+      "config_sha256": "223a56582a5255a47c9a9ef970ab3c19d9853fc2940a510c2779e9ca2ce81524"
+    },
+    {
+      "id": "rule_r18",
+      "archive": "71.87_A06_R12_RULE_R18_20260924_agent.tar.gz",
+      "archive_sha256": "a85c530bf7f4c3e802f06716ab4a942ed05601bcd370bcec43f12614d549c2d5",
+      "main_sha256": "16c4913f2d3e0e8fd08689bfd8f13a75c289f8d82cfb529d7727a9db498d2c13",
+      "native_sha256": "1be33c3502b129b02ee0b0af021167f84591497a85251b65a26a4c39fc963894",
+      "config_sha256": "6d0d8e024135e40ac2e25e0970596c7e40acd98a391328d300a956cc5fc4e8b0"
+    },
+    {
+      "id": "r14_liquidity",
+      "archive": "81.25_A06_R14_LIQUIDITY_20260924.zip",
+      "archive_sha256": "8d3014755fbb2073d8c358d329bd7e5e62789a967f07704497bd8ee9a32a0088",
+      "main_sha256": "c3424c2c607989944eb1d3cce2f0672e4b04894fb98b453bef1fb322bef0cfdd",
+      "native_sha256": "6ac37675e28c948d913ad822811dc6a09da749c9e62d52b6890c87cb1d1d9c56",
+      "config_sha256": "8d4983cbd965042668749161f47536e593770da8b32be36b5b90333ceb0e07fc"
+    },
+    {
+      "id": "r14_tl5",
+      "archive": "85.0_A06R14_TL5_Agent_20260924.zip",
+      "archive_sha256": "98bf29c66445aadf9bba5c58f2bc71c61e92a08710c7cece4751083acd4f0c5a",
+      "main_sha256": "dcbc50972426590e8963a8aa6cfa91503294e4f96869b9e2d4cae0a4a41a7980",
+      "native_sha256": "35e387c9d132bd997c7838bfad167fce5f7fa3808e09d73ddbcc07cdd75108d4",
+      "config_sha256": "3497239a05b373cf2282b608cae53f6a9e2dc9e9fc4ea272ee01bd1372a22f5e"
+    },
+    {
+      "id": "r22_continuation",
+      "archive": "A06_R22_NoML_Continuation_20260924.zip",
+      "archive_sha256": "5d59d0558799385aab0d9bab7623cabb35b8f844e2bc7131bff7eea9d10cb8d9",
+      "main_sha256": "3abfea2d5b4f3b380eb6054d924665ea2dfedc095b8dfe1f6282cd40495d0cda",
+      "native_sha256": "f9532b7cd87a1feaf785775e2a250afe7e9497c9ad4def2d2edc15254dbf0add",
+      "config_sha256": "1b4440d695dc54dbab2321ee464c2c87cd9351c066f5fc4b22aa580431f25106"
+    }
+  ],
+  "seeds": [
+    1212845991,
+    1537584943,
+    1981232478,
+    1225583511,
+    1249271616,
+    1984596732,
+    1749106869,
+    1059486850,
+    1694825586,
+    1625990051,
+    1909399458,
+    1593704364,
+    1856687857,
+    1314616805,
+    1414237481,
+    1322672442,
+    1960914903,
+    1234060575,
+    1241507135,
+    1914864229,
+    1623221565,
+    1821910361,
+    1340938480,
+    1466307825,
+    1284865937,
+    1729823408,
+    1067013648,
+    1533996349,
+    1157844995,
+    1178076110,
+    1698326513,
+    1664442057,
+    1658824603,
+    1095339794,
+    1474528504,
+    1744340197,
+    1082491175,
+    1304289709,
+    1384802070,
+    1528612715,
+    1037146075,
+    1250129413,
+    1036919281,
+    1625629375,
+    1149615926,
+    1589839001,
+    1099714777,
+    1347594282,
+    1920715312,
+    1849592153
+  ],
+  "pairs": [
+    [
+      "r15c_rules",
+      "r14_cashflow"
+    ]
+  ],
+  "games": 100,
+  "games_per_pair": 100,
+  "official_engine_sha256": "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e",
+  "method": "official 1.32.7 Python rules, live native policies, 50 common seeds x both seats per pair; no replay actions"
+}

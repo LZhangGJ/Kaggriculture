@@ -1,0 +1,35 @@
+{
+  "loader": "raw_exec_last_callable",
+  "entry_symbol": "submission_entry",
+  "passed": true,
+  "calls": 2876,
+  "max_call_seconds": 0.22093881099999635,
+  "negative_checks": 2,
+  "records": [
+    {
+      "file": "results/r18_corrected160/01_prvsiyan_s1103_p0.actions.json.gz",
+      "calls": 719,
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "results/r18_corrected160/01_prvsiyan_s1103_p1.actions.json.gz",
+      "calls": 719,
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "results/r18_corrected160/01_prvsiyan_s2207_p0.actions.json.gz",
+      "calls": 719,
+      "passed": true,
+      "error": null
+    },
+    {
+      "file": "results/r18_corrected160/01_prvsiyan_s2207_p1.actions.json.gz",
+      "calls": 719,
+      "passed": true,
+      "error": null
+    }
+  ],
+  "binary_sha256": "1be33c3502b129b02ee0b0af021167f84591497a85251b65a26a4c39fc963894"
+}

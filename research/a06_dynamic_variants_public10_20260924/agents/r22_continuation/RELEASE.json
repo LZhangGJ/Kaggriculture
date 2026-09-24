@@ -1,0 +1,11 @@
+{
+  "source_variant": "A06_R13",
+  "tested_configuration_override": {
+    "animal_bias": 4
+  },
+  "native_sha256": "79c47c6a8d89f8037cf85682686cfb939a87292116fb1fbb06f3f0741316e156",
+  "config_sha256": "cd026bb323164a67b83746234a532d7024e862ad111a34fb976a550b87da7127",
+  "note": "The runtime config includes the animal_bias=4 override used in all 160 games. A fresh rebuild with this release source/config produced the identical native SHA-256. The build receipt records the temporary output name; published policy/a06.so has identical bytes.",
+  "rebuild_verified_byte_identical": true,
+  "verified_at_utc": "2026-09-24T02:00:44.034866+00:00"
+}

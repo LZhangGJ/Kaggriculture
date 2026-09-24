@@ -1,0 +1,18 @@
+[
+  "-std=c++20",
+  "-O3",
+  "-DNDEBUG",
+  "-march=x86-64",
+  "-ffp-contract=off",
+  "-DR2_LOCAL_SALE_TIMING=1",
+  "-DR2_FINITE_FERTILIZER=1",
+  "-DR2_CROP_CLOCK_MODE=1",
+  "-DR2_OBSERVE_PUBLIC_TRADES=1",
+  "-fPIC",
+  "-shared",
+  "-Wl,-Bsymbolic",
+  "-DR2_MARKET_INTEGRAL=0",
+  "-DR2_STARTUP_SUPPLY_MODE=2",
+  "-DA06_EXEC_MODE=2",
+  "-DR2_SALE_CLOCK_MODE=1"
+]

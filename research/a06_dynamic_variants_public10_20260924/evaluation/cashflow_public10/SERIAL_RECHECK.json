@@ -1,0 +1,38 @@
+{
+  "games": 4,
+  "exact_cash_and_result_matches": 4,
+  "rows": [
+    {
+      "public": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "seed": 1805214525,
+      "seat": 0,
+      "margin": -5146.0,
+      "max_local_action_s": 0.2725592410000006,
+      "max_public_action_s": 0.03804458200000038
+    },
+    {
+      "public": "prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+      "seed": 1805214525,
+      "seat": 1,
+      "margin": -5146.0,
+      "max_local_action_s": 0.27273630500000046,
+      "max_public_action_s": 0.038324913000000294
+    },
+    {
+      "public": "guruprasaathas111/kaggriculture-master-engine-v3",
+      "seed": 1135405629,
+      "seat": 0,
+      "margin": -9595.0,
+      "max_local_action_s": 0.16758331100000134,
+      "max_public_action_s": 0.03677458599999994
+    },
+    {
+      "public": "guruprasaathas111/kaggriculture-master-engine-v3",
+      "seed": 1135405629,
+      "seat": 1,
+      "margin": -9595.0,
+      "max_local_action_s": 0.16646487399999899,
+      "max_public_action_s": 0.03818453100000241
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "A06R14-TL5",
+  "based_on": "A06R13-F4 / A06R12",
+  "fixed_panel": {
+    "games": 160,
+    "wins": 136,
+    "draws": 0,
+    "losses": 24,
+    "win_rate": 0.85,
+    "mean_own_cash": 117844.2625,
+    "mean_margin": 9612.81875,
+    "errors": 0
+  },
+  "heldout": {
+    "games": 80,
+    "wins": 13,
+    "draws": 0,
+    "losses": 67,
+    "win_rate": 0.1625,
+    "mean_own_cash": 88166.225,
+    "mean_margin": -2902.1,
+    "errors": 0
+  },
+  "official_interpreter_version": "1.32.7 (frozen provided wheel)",
+  "online_verified": false,
+  "binary_sha256": "35e387c9d132bd997c7838bfad167fce5f7fa3808e09d73ddbcc07cdd75108d4"
+}
