@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 26, 2026 at 4:00 AM UTC
+Updated: Sep 26, 2026 at 4:05 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -28,6 +28,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | notebookdb6965aa8e | **PUBLIC** | 54-output-a5e04bb362a1 | archived |
 | cha22-agent | **PUBLIC** | 5-output-9428ca7ba8f1 | placement-rated |
 | kaggriculture-shop-router-reactive-v4 | **PUBLIC** | 3-output-9bf89743ffb0 | archived |
+| kaggriculture-hack | **PUBLIC** | 5-output-023c8856eaae | pending |
 | a-song-of-ice-and-fire-fixed-flexible | **PUBLIC** | 16-output-c9fce5d84333 | placement-rated |
 | TRI_A06_r12_r3_fix1 | Team | 819df830076c | archived |
 | kaggriculture-cloning-agent | **PUBLIC** | 4-output-15e07f56740d | placement-rated |
@@ -107,8 +108,10 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-master-engine-v3 | **PUBLIC** | 15-output-19a0f33e6f66 | archived |
 | kaggriculture-v47-reactive-market-coordination | **PUBLIC** | 1-output-0735d9acff71 | archived |
 | the-2965-master-hybrid-engine | **PUBLIC** | 7-output-ba38357c3037 | active |
+| kaggriculture-harvest-ledger | **PUBLIC** | 72-output-71fdff6b713d | pending |
 | Broad PPO CP650 | Team | broad-cp650-3fce7c3b5160 | archived |
 | market-smart-farming-kaggriculture | **PUBLIC** | 24-output-ebbbbeffb0b2 | archived |
+| kaggriculture-top-2-master-engine-v4 | **PUBLIC** | 8-output-0388d251c7d2 | pending |
 | kaggriculture-2026-v1 | **PUBLIC** | 6-output-15e07f56740d | placement-rated |
 | kaggriculture-pipe16-idle-workers | **PUBLIC** | 1-output-a5919e3c8f38 | archived |
 | kaggriculture-master-engine-v3 | **PUBLIC** | 21-output-72ba56dcee43 | archived |
@@ -149,9 +152,9 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 
 Fresh seeds, both seats. New versions start at 1500.
 
-Last updated: Sep 26, 2026 at 3:59 AM UTC
+Last updated: Sep 26, 2026 at 4:01 AM UTC
 
-Status: running Â· Last sync: Sep 26, 2026 at 3:59 AM UTC
+Status: running Â· Last sync: Sep 26, 2026 at 4:01 AM UTC
 
 | Agent | Elo | Games | Score | Contract |
 |---|---:|---:|---:|---|
@@ -159,7 +162,7 @@ Status: running Â· Last sync: Sep 26, 2026 at 3:59 AM UTC
 | teammate-lzhang-student-v463 | 1930.7 | 3488 | 65.5% | ffc8942965 |
 | teammate-lzhang-student-v306 | 1921.4 | 3742 | 65.4% | ffc8942965 |
 | the-shepherds-ledger-herd-safe-sovereign **PUBLIC** | 1897.4 | 2708 | 65.9% | ffc8942965 |
-| herd-safe-v3-experimental-risk-aware-feed **PUBLIC** | 1863.6 | 2950 | 63.7% | ffc8942965 |
+| herd-safe-v3-experimental-risk-aware-feed **PUBLIC** | 1863.6 | 2952 | 63.7% | ffc8942965 |
 | kaggriculture-v15stack-submit **PUBLIC** | 1832.3 | 5396 | 64.1% | ffc8942965 |
 | teammate-a06-fusion-v2 | 1818.9 | 3160 | 57.5% | ffc8942965 |
 | teammate-a06-fusion-v1 | 1813.4 | 3080 | 57.4% | ffc8942965 |
@@ -174,12 +177,12 @@ Status: running Â· Last sync: Sep 26, 2026 at 3:59 AM UTC
 | 2842-two-identical-agents-90-points-apart **PUBLIC** | 1709.1 | 33774 | 58.8% | ffc8942965 |
 | teammate-opp-thomas_2945 | 1706.8 | 2416 | 45.6% | ffc8942965 |
 | A06 R9C6 | 1699.0 | 60862 | 55.6% | ffc8942965 |
-| Broad PPO CP1720 | 1648.0 | 3358 | 35.5% | ffc8942965 |
+| Broad PPO CP1720 | 1647.9 | 3366 | 35.6% | ffc8942965 |
 | teammate-opp-pipe8 | 1640.5 | 2316 | 39.8% | ffc8942965 |
 | Day 9 planner selector | 1639.6 | 84556 | 52.7% | ffc8942965 |
 | DP Melon Cyborg V4  gooseoverflow | 1637.2 | 48978 | 52.6% | ffc8942965 |
-| teammate-opp-herd_safe_2700 | 1442.9 | 1738 | 19.4% | ffc8942965 |
-| teammate-opp-salemali7_2900 | 808.4 | 1064 | 0.6% | ffc8942965 |
+| teammate-opp-herd_safe_2700 | 1443.0 | 1746 | 19.5% | ffc8942965 |
+| teammate-opp-salemali7_2900 | 808.4 | 1066 | 0.6% | ffc8942965 |
 
 ## Retired agents
 
@@ -275,16 +278,18 @@ Ratings stay frozen at retirement. These versions receive no new matches; games 
 |---|---|---|
 | lynnsakurai/farming-score-v5-timing-optimized | failed | Sep 15, 2026 at 3:07 PM UTC |
 | prvsiyan/kaggriculture-frontier-the-moon-counts-melons | failed | Not yet |
-| raykkretzschmar/kaggriculture-rank-your-agent | unchanged | Sep 25, 2026 at 4:00 AM UTC |
+| guruprasaathas111/kaggriculture-top-2-master-engine-v4 | failed | Not yet |
+| raykkretzschmar/kaggriculture-rank-your-agent | unchanged | Sep 26, 2026 at 4:01 AM UTC |
 | guruprasaathas111/game-theoretic-master-discrete-optimization | failed | Not yet |
 | alperen5252525/kaggriculture-ready-stock-earlier-sales | failed | Not yet |
 | tetsutani/demand-preserving-turn-sale-timing | failed | Not yet |
 | dmitriigluzdov/kaggriculture-a-smaller-market-shock | failed | Not yet |
 | leoprovorov/a-song-of-ice-and-fire-fixed-flexible | failed | Not yet |
+| haodou092/kaggriculture-harvest-ledger | failed | Not yet |
 | tetsutani/shop-aware-farming-kaggriculture | failed | Not yet |
-| reyhanksatria/kaggriculture-dynamic-route-agent | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| aurax7/kaggriculture-shop-router-reactive-v5 | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| nathanjacob/no-cow-left-behind-v40-autopsy-fix | unchanged | Sep 25, 2026 at 4:00 AM UTC |
+| reyhanksatria/kaggriculture-dynamic-route-agent | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| aurax7/kaggriculture-shop-router-reactive-v5 | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| nathanjacob/no-cow-left-behind-v40-autopsy-fix | unchanged | Sep 26, 2026 at 4:01 AM UTC |
 | alperen5252525/turn-one-market-advantage-kaggriculture | failed | Not yet |
 | arsgorynich/herd-safe-v3-experimental-risk-aware-feed | failed | Not yet |
 | lime0001/t23-kaggriculture-smart-adaptive-harvest | failed | Sep 14, 2026 at 4:55 AM UTC |
@@ -292,7 +297,7 @@ Ratings stay frozen at retirement. These versions receive no new matches; games 
 | ahmedberatozer/kaggriculture-v56-smarter-seeds-and-fertilizer | failed | Not yet |
 | ahmedberatozer/kaggriculture-v45-first-turn-wheat-round-trip | failed | Not yet |
 | jaxa623/2842-two-identical-agents-90-points-apart | failed | Not yet |
-| xuantianfengwu/kaggriculture-adaptive-land-allocator-r10 | unchanged | Sep 25, 2026 at 4:00 AM UTC |
+| xuantianfengwu/kaggriculture-adaptive-land-allocator-r10 | unchanged | Sep 26, 2026 at 4:01 AM UTC |
 | rohitt94/kaggriculture-route-replay-agent | failed | Not yet |
 | thomastschinkel/the-metav4-farm-submission-v13 | failed | Not yet |
 | statma/kaggriculture-herd-safe-sale-window-race-ca25 | failed | Not yet |
@@ -317,27 +322,28 @@ Ratings stay frozen at retirement. These versions receive no new matches; games 
 | haideptry/the-shepherds-ledger-herd-safe-sovereign | failed | Not yet |
 | alperen5252525/kaggriculture-first-in-line-stock-into-income | failed | Not yet |
 | ahmedberatozer/kaggriculture-v43-recovering-lost-harvests | failed | Not yet |
+| syedtahahassan/kaggriculture-hack | failed | Not yet |
 | wzhengbiao/kaggriculture-v15stack-submit | failed | Not yet |
 | abhinav0370/cha22-agent | failed | Not yet |
 | lynnsakurai/farming-score-v2-a-better-approach | failed | Not yet |
 | hanifnoerrofiq/pioneers-of-kaggle-town-candidate-2 | failed | Not yet |
-| arsgorynich/kaggriculture-v40-challenger | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/more-yield-smarter-labor | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| lynnsakurai/farming-score-v4-a-better-shop | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| flexonafft/kaggriculture-most-powerfull-route | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| guruprasaathas111/kaggriculture-master-engine-v3 | updated | Sep 25, 2026 at 4:00 AM UTC |
-| premaananda108/rule-agent-ecobot-v7-arena-analytics | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| kunaldesale2408/kaggriculture-2026-v1 | updated | Sep 25, 2026 at 4:00 AM UTC |
-| pilkwang/kaggriculture-structured-economic-policy | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/kaggriculture-v25-new-production-routes-with-rea | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/kaggriculture-v38-smarter-feed-stronger-margins | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/kaggriculture-v23-adaptive-routes-smart-sales | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| tetsutani/market-smart-farming-kaggriculture | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| degnonguidi/kaggriculture-utils-v1 | updated | Sep 25, 2026 at 4:00 AM UTC |
-| alperen5252525/kaggriculture-metacounter-r1-scored-agent | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| ahmedberatozer/kaggriculture-v41-review-candidate | unchanged | Sep 25, 2026 at 4:00 AM UTC |
-| aurax7/kaggriculture-shop-router-reactive-v4 | unchanged | Sep 25, 2026 at 4:00 AM UTC |
+| arsgorynich/kaggriculture-v40-challenger | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/more-yield-smarter-labor | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| lynnsakurai/farming-score-v4-a-better-shop | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/kaggriculture-v36-guarded-four-turn-sales | unchanged | Sep 26, 2026 at 4:02 AM UTC |
+| flexonafft/kaggriculture-most-powerfull-route | unchanged | Sep 26, 2026 at 4:02 AM UTC |
+| guruprasaathas111/kaggriculture-master-engine-v3 | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| premaananda108/rule-agent-ecobot-v7-arena-analytics | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| kunaldesale2408/kaggriculture-2026-v1 | failed | Sep 25, 2026 at 4:00 AM UTC |
+| pilkwang/kaggriculture-structured-economic-policy | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/kaggriculture-v25-new-production-routes-with-rea | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/kaggriculture-v38-smarter-feed-stronger-margins | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/kaggriculture-v23-adaptive-routes-smart-sales | unchanged | Sep 26, 2026 at 4:02 AM UTC |
+| tetsutani/market-smart-farming-kaggriculture | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| degnonguidi/kaggriculture-utils-v1 | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| alperen5252525/kaggriculture-metacounter-r1-scored-agent | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| ahmedberatozer/kaggriculture-v41-review-candidate | unchanged | Sep 26, 2026 at 4:01 AM UTC |
+| aurax7/kaggriculture-shop-router-reactive-v4 | unchanged | Sep 26, 2026 at 4:01 AM UTC |
 | renjistarfall/kaggriculture-best-agent | updated | Sep 14, 2026 at 4:44 AM UTC |
 | evgendvorkin/kaggriculture | updated | Sep 14, 2026 at 4:44 AM UTC |
 | xuantianfengwu/kaggriculture-adaptive-land-allocator | updated | Sep 14, 2026 at 4:44 AM UTC |
@@ -345,7 +351,7 @@ Ratings stay frozen at retirement. These versions receive no new matches; games 
 
 ## Public discovery and replacements
 
-Last scan: Sep 25, 2026 at 4:00 AM UTC. Found 612 notebooks; 16 updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. The cumulative Bradley-Terry rankings select the weakest rated public agent.
+Last scan: Sep 26, 2026 at 4:01 AM UTC. Found 611 notebooks; 14 updated in the last 24 hours. Discovery uses Kaggle public-score order, highest first. Up to four new outputs enter evaluation per day. Update time uses Kaggle's lastRunTime. The cumulative Bradley-Terry rankings select the weakest rated public agent.
 
 New challengers face the proposed replacement on 32 fresh seeds in both seats (64 games). Replacement requires a one-sided 95% Hoeffding lower bound above 50%, using each seed pair as one observation, and no failed games. Each decision describes its evidence; older full-panel comparisons retain their original method.
 
@@ -430,6 +436,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-0af437c2cdce945e16ab | Provisional | 12/384 |
 | placement-0b5eb9560f4e1ab35244 | Provisional | 37/384 |
 | placement-0eac98162cba34dc000e | Complete | 384/384 |
+| placement-1272285fc62f472646ba | Provisional | 43/384 |
 | placement-1344ffaef501d6d5e2bc | Complete | 384/384 |
 | placement-1a265b2a1ce0a2fc8039 | Complete | 384/384 |
 | placement-1aac2704ba94715a5f7e | Complete | 1/1 |
@@ -485,7 +492,9 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-b5e9fa7f15544ca51024 | Provisional | 21/384 |
 | placement-b73f0b2f65a21cd50b0b | Provisional | 22/384 |
 | placement-b785fdc2d8b919789ef6 | Provisional | 31/384 |
+| placement-b7a871d01f2a94301334 | Provisional | 42/384 |
 | placement-b93dc994c99dc9c5077f | Complete | 1/1 |
+| placement-bb8e8a7cac40e9e3c510 | Provisional | 43/384 |
 | placement-bbde4e648f943d9b70f1 | Complete | 384/384 |
 | placement-c2d3f5b73506a3156096 | Provisional | 16/384 |
 | placement-c39c5fa58520f866e7fb | Provisional | 0/384 |
@@ -581,11 +590,11 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | verified-b3f5d4cf662f | Complete | 2/2 |
 | verified-ce29ce8721a5 | Complete | 2/2 |
 | cumulative-active-e0e671e5786e | Provisional | 56/56 |
-| cumulative-active-ffc8942965b1 | Provisional | 43694/43694 |
+| cumulative-active-ffc8942965b1 | Provisional | 43704/43704 |
 
 ## cumulative-active-ffc8942965b1 â€” provisional
 
-Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
+Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 4:02 AM UTC
 
 | Agent | BT rating | W / L / D | Strict win rate | Win + half draw | Cash margin |
 |---|---:|---:|---:|---:|---:|
@@ -593,7 +602,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | teammate-lzhang-student-v306 | 1.20 | 2218 / 1174 / 0 | 65.4% | 65.4% | 3,050 |
 | teammate-lzhang-student-v463 | 1.19 | 2186 / 1176 / 0 | 65.0% | 65.0% | 2,912 |
 | the-shepherds-ledger-herd-safe-sovereign | 0.96 | 1480 / 865 / 2 | 63.1% | 63.1% | 753 |
-| herd-safe-v3-experimental-risk-aware-feed | 0.74 | 1530 / 972 / 2 | 61.1% | 61.1% | 1,365 |
+| herd-safe-v3-experimental-risk-aware-feed | 0.74 | 1532 / 972 / 2 | 61.1% | 61.2% | 1,389 |
 | teammate-opp-melon_2749 | 0.60 | 1407 / 980 / 0 | 58.9% | 58.9% | 2,352 |
 | teammate-a06-fusion-v2 | 0.58 | 1687 / 1269 / 0 | 57.1% | 57.1% | 3,144 |
 | teammate-a06-fusion-v1 | 0.57 | 1633 / 1223 / 0 | 57.2% | 57.2% | 3,106 |
@@ -609,11 +618,11 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | kaggriculture-v56-smarter-seeds-and-fertilizer | -0.12 | 1418 / 1771 / 4 | 44.4% | 44.5% | -252 |
 | teammate-opp-thomas_2945 | -0.17 | 831 / 1162 / 0 | 41.7% | 41.7% | 429 |
 | A06 R9C6 | -0.33 | 3912 / 6186 / 0 | 38.7% | 38.7% | -1,119 |
-| Broad PPO CP1720 | -0.47 | 1200 / 2176 / 0 | 35.5% | 35.5% | -2,494 |
+| Broad PPO CP1720 | -0.47 | 1206 / 2178 / 0 | 35.6% | 35.6% | -2,472 |
 | teammate-opp-pipe8 | -0.52 | 674 / 1208 / 0 | 35.8% | 35.8% | -1,664 |
 | DP Melon Cyborg V4  gooseoverflow | -0.53 | 1852 / 3125 / 0 | 37.2% | 37.2% | -2,475 |
-| teammate-opp-herd_safe_2700 | -1.83 | 191 / 1156 / 0 | 14.2% | 14.2% | -7,752 |
-| teammate-opp-salemali7_2900 | -5.25 | 4 / 831 / 0 | 0.5% | 0.5% | -31,944 |
+| teammate-opp-herd_safe_2700 | -1.83 | 193 / 1162 / 0 | 14.2% | 14.2% | -7,748 |
+| teammate-opp-salemali7_2900 | -5.26 | 4 / 833 / 0 | 0.5% | 0.5% | -31,943 |
 
 <details><summary>Win rate by opponent and seat</summary>
 
@@ -637,7 +646,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | teammate-opp-salemali7_2900 | kaggriculture-pipe18-six-layers | 0/32 | 0.0% | 0/16 | 0/16 |
 | teammate-opp-salemali7_2900 | teammate-a06-fusion-v2 | 0/34 | 0.0% | 0/17 | 0/17 |
 | teammate-opp-salemali7_2900 | your-market-list-is-an-order-book | 0/34 | 0.0% | 0/17 | 0/17 |
-| teammate-opp-salemali7_2900 | herd-safe-v3-experimental-risk-aware-feed | 0/34 | 0.0% | 0/17 | 0/17 |
+| teammate-opp-salemali7_2900 | herd-safe-v3-experimental-risk-aware-feed | 0/36 | 0.0% | 0/18 | 0/18 |
 | teammate-opp-salemali7_2900 | the-2965-master-hybrid-engine | 0/36 | 0.0% | 0/18 | 0/18 |
 | teammate-opp-salemali7_2900 | teammate-opp-thomas_2945 | 0/32 | 0.0% | 0/16 | 0/16 |
 | teammate-opp-salemali7_2900 | DP Melon Cyborg V4  gooseoverflow | 0/32 | 0.0% | 0/16 | 0/16 |
@@ -729,7 +738,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | Broad PPO CP1720 | A06 R9C6 | 18/109 | 16.5% | 8/55 | 10/54 |
 | Broad PPO CP1720 | teammate-opp-pipe8 | 78/171 | 45.6% | 40/86 | 38/85 |
 | Broad PPO CP1720 | kaggriculture-v40-challenger | 34/134 | 25.4% | 17/67 | 17/67 |
-| Broad PPO CP1720 | teammate-opp-herd_safe_2700 | 97/146 | 66.4% | 48/73 | 49/73 |
+| Broad PPO CP1720 | teammate-opp-herd_safe_2700 | 103/154 | 66.9% | 51/77 | 52/77 |
 | Broad PPO CP1720 | kaggriculture-pipe18-six-layers | 65/165 | 39.4% | 32/83 | 33/82 |
 | Broad PPO CP1720 | teammate-a06-fusion-v2 | 37/137 | 27.0% | 18/69 | 19/68 |
 | Broad PPO CP1720 | your-market-list-is-an-order-book | 43/144 | 29.9% | 21/73 | 22/71 |
@@ -983,7 +992,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | teammate-opp-herd_safe_2700 | kaggriculture-master-engine-v3 | 0/36 | 0.0% | 0/18 | 0/18 |
 | teammate-opp-herd_safe_2700 | 2842-two-identical-agents-90-points-apart | 4/58 | 6.9% | 2/29 | 2/29 |
 | teammate-opp-herd_safe_2700 | Day 9 planner selector | 12/88 | 13.6% | 6/44 | 6/44 |
-| teammate-opp-herd_safe_2700 | Broad PPO CP1720 | 49/146 | 33.6% | 24/73 | 25/73 |
+| teammate-opp-herd_safe_2700 | Broad PPO CP1720 | 51/154 | 33.1% | 25/77 | 26/77 |
 | teammate-opp-herd_safe_2700 | kaggriculture-v56-smarter-seeds-and-fertilizer | 0/32 | 0.0% | 0/16 | 0/16 |
 | teammate-opp-herd_safe_2700 | teammate-lzhang-student-v306 | 3/54 | 5.6% | 2/27 | 1/27 |
 | teammate-opp-herd_safe_2700 | teammate-lzhang-r1planner | 0/36 | 0.0% | 0/18 | 0/18 |
@@ -1075,7 +1084,7 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 26, 2026 at 3:59 AM UTC
 | your-market-list-is-an-order-book | DP Melon Cyborg V4  gooseoverflow | 62/62 | 100.0% | 31/31 | 31/31 |
 | your-market-list-is-an-order-book | teammate-lzhang-student-v463 | 11/85 | 12.9% | 6/42 | 5/43 |
 | your-market-list-is-an-order-book | kaggriculture-v15stack-submit | 14/124 | 11.3% | 7/62 | 7/62 |
-| herd-safe-v3-experimental-risk-aware-feed | teammate-opp-salemali7_2900 | 34/34 | 100.0% | 17/17 | 17/17 |
+| herd-safe-v3-experimental-risk-aware-feed | teammate-opp-salemali7_2900 | 36/36 | 100.0% | 18/18 | 18/18 |
 | herd-safe-v3-experimental-risk-aware-feed | kaggriculture-master-engine-v3 | 104/158 | 65.8% | 52/79 | 52/79 |
 | herd-safe-v3-experimental-risk-aware-feed | 2842-two-identical-agents-90-points-apart | 54/54 | 100.0% | 27/27 | 27/27 |
 | herd-safe-v3-experimental-risk-aware-feed | Day 9 planner selector | 103/144 | 71.5% | 53/72 | 50/72 |
@@ -2622,9 +2631,9 @@ Bradleyâ€“Terry leaderboard Â· Last updated: Sep 14, 2026 at 1:56 PM UTC
 
 Same versions only; descriptive changes, not significance tests.
 
-- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - AFS R1 vs AFS R2: -8.2 percentage points.
-- Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
