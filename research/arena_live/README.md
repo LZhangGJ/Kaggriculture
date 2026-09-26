@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 26, 2026 at 4:05 PM UTC
+Updated: Sep 26, 2026 at 4:06 PM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -39,6 +39,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | kaggriculture-pipe-7-wheat-microstructure | **PUBLIC** | 1-output-4909de76ffa0 | archived |
 | kaggriculture-v36-guarded-four-turn-sales | **PUBLIC** | 1-output-854cd1d0ab40 | archived |
 | Day 9 planner selector | Team | historical-cbef5780feef | active |
+| Broad PPO CP2120 | Team | broad-cp2120-a9165f53f853 | placement-rated |
 | Broad PPO CP1720 | Team | broad-cp1720-bd2d1dc03826 | archived |
 | kaggriculture-herd-safe-sale-window-race-ca25 | **PUBLIC** | 1-output-56c77124caa8 | placement-rated |
 | AFS R1 | Team | historical-3ca540b67e4f | archived |
@@ -446,6 +447,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-1f8c404afcc08f9ae801 | Provisional | 70/384 |
 | placement-1fe783a1f174f85d1b47 | Complete | 1/1 |
 | placement-21a75b8772e565d34823 | Provisional | 51/384 |
+| placement-2449cb8bd0970b0c8bc8 | Complete | 1/1 |
 | placement-2563c94b70791780f79f | Complete | 1/1 |
 | placement-271eedc01ee84213b152 | Complete | 384/384 |
 | placement-27dfff16b561e1a3c4f4 | Provisional | 37/384 |
@@ -2636,7 +2638,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
 - Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
-- kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
+- AFS R1 vs AFS R2: -8.2 percentage points.
