@@ -1,6 +1,6 @@
 # Kaggriculture arena
 
-Updated: Sep 26, 2026 at 5:00 AM UTC
+Updated: Sep 26, 2026 at 5:01 AM UTC
 
 CPU evaluation on WRX90 and the mini PC. Results below are local; they are not Kaggle leaderboard scores.
 
@@ -35,6 +35,7 @@ Public notebooks refresh daily. Exact versions keep separate results. Incomplete
 | Broad PPO CP120 | Team | broad-cp120-844b4e09a4c0 | archived |
 | Broad PPO CP1430 | Team | broad-cp1430-a5a53771121a | archived |
 | demand-preserving-turn-sale-timing | **PUBLIC** | 2-output-c47e316589ea | archived |
+| Broad PPO CP1980 | Team | broad-cp1980-56056037ab37 | placement-rated |
 | kaggriculture-pipe-7-wheat-microstructure | **PUBLIC** | 1-output-4909de76ffa0 | archived |
 | kaggriculture-v36-guarded-four-turn-sales | **PUBLIC** | 1-output-854cd1d0ab40 | archived |
 | Day 9 planner selector | Team | historical-cbef5780feef | active |
@@ -442,6 +443,7 @@ New challengers face the proposed replacement on 32 fresh seeds in both seats (6
 | placement-1aac2704ba94715a5f7e | Complete | 1/1 |
 | placement-1c1982018f8a813409c9 | Complete | 1/1 |
 | placement-1f8c404afcc08f9ae801 | Provisional | 70/384 |
+| placement-1fe783a1f174f85d1b47 | Complete | 1/1 |
 | placement-21a75b8772e565d34823 | Provisional | 51/384 |
 | placement-2563c94b70791780f79f | Complete | 1/1 |
 | placement-271eedc01ee84213b152 | Complete | 384/384 |
@@ -2633,7 +2635,7 @@ Same versions only; descriptive changes, not significance tests.
 
 - kaggriculture-metacounter-r1-scored-agent vs TRI_A08_r11_r3: +9.8 percentage points.
 - TRI_A08_r11_r3 vs kaggriculture-metacounter-r1-scored-agent: -9.8 percentage points.
-- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
-- AFS R1 vs AFS R2: -8.2 percentage points.
 - kaggriculture-utils-v1 vs Day 9 planner selector: -8.2 percentage points.
+- kaggriculture-shop-router-reactive-v4 vs TRI_A08_r11_r3: +8.2 percentage points.
+- TRI_A08_r11_r3 vs kaggriculture-shop-router-reactive-v4: -8.2 percentage points.
 - Day 9 planner selector vs kaggriculture-utils-v1: +8.2 percentage points.
