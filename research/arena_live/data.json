@@ -34966,6 +34966,11 @@
         ]
       },
       {
+        "agent": "1fe783a1f174f85d1b47b8b6d55fc7691dc4cf6b9ae541dc691c79b5b1afd7cc",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "points": []
+      },
+      {
         "agent": "21a75b8772e565d34823c330ab19eee83f3d9db45dd547bf7620e8b945f5f0a1",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
         "points": [
@@ -227945,6 +227950,13 @@
         "score": 0.579803834150691
       },
       {
+        "agent": "1fe783a1f174f85d1b47b8b6d55fc7691dc4cf6b9ae541dc691c79b5b1afd7cc",
+        "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
+        "elo": 1500.0,
+        "games": 0,
+        "score": null
+      },
+      {
         "agent": "089d5df6d4f4e280e650df12b9962986530cbb1f1eb2ec7e6854ffb263307f6f",
         "contract": "ffc8942965b1c6da50a88f7097a91d3012f4f9c3a095e3b0b4e16ae94a81d8b9",
         "elo": 1499.6961524904846,
@@ -228162,21 +228174,21 @@
         "score": 0.0
       }
     ],
-    "updated": "2026-09-26T05:02:39.088714+00:00"
+    "updated": "2026-09-26T05:05:08.071300+00:00"
   },
   "continuous_status": {
-    "at": "2026-09-26T05:02:39.261508+00:00",
+    "at": "2026-09-26T05:05:08.279489+00:00",
     "status": "running",
     "workers": {
       "mini": {
-        "at": "2026-09-26T05:02:06.140357+00:00",
+        "at": "2026-09-26T05:03:59.073087+00:00",
         "daily_games_pending": 0,
-        "pending_rounds": 2,
+        "pending_rounds": 3,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
         "status": "running"
       },
       "vast": {
-        "at": "2026-09-26T05:02:39.246145+00:00",
+        "at": "2026-09-26T05:05:08.264849+00:00",
         "daily_games_pending": 0,
         "pending_rounds": 7,
         "scheduling": "Adaptive: coverage, uncertainty, close competitors, and broad coverage",
@@ -382735,5 +382747,5 @@
     }
   ],
   "schema": 1,
-  "updated": "2026-09-26T05:03:02.613443+00:00"
+  "updated": "2026-09-26T05:05:30.601184+00:00"
 }
